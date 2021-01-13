@@ -1,1 +1,7 @@
-{"creatures":{"0":{"name":"opossum"}}}
+{
+  "creatures": {
+    "0": {
+      "name": "opossum"
+    }
+  }
+}

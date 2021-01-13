@@ -16,17 +16,23 @@
   text-decoration: underline;
 }
 
+
+
 .responses {
   text-align: center;
   margin: 0;
-  padding: 15px;
+  padding: 0;
 }
 
 .btn {
   border-radius: 10px;
 }
 
-.btn-light{
+.btn a {
+  text-decoration: none;
+}
+
+.btn-light {
   background: #999;
   color: #222;
 }
@@ -86,7 +92,7 @@ quote {
 }
 
 a {
-  text-decoration: none;
+  text-decoration-color: #777;
 }
 
 .race-select img,

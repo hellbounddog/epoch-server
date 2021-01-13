@@ -1,0 +1,964 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Epoch - Create Character</title>
+    <style>
+      * {
+        background: #222;
+        font-size: 2em;
+        color: #999;
+        border: 0;
+        /*  margin: 0; */
+        padding: 10px;
+      }
+
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6,
+      p,
+      quote {
+        animation: fadeIn ease 5s;
+        -webkit-animation: fadeIn ease 5s;
+        -moz-animation: fadeIn ease 5s;
+        -o-animation: fadeIn ease 5s;
+        -ms-animation: fadeIn ease 5s;
+      }
+
+      p {
+        font-size: 1.2em;
+      }
+
+      a {
+        text-decoration: none;
+      }
+
+      .race-select img {
+        width: 200px;
+        height: 200px;
+        background: #111;
+        padding: 0;
+      }
+
+      @keyframes fadeIn {
+        0% {
+          opacity: 0;
+        }
+
+        100% {
+          opacity: 1;
+        }
+      }
+
+      @-moz-keyframes fadeIn {
+        0% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+
+      @-webkit-keyframes fadeIn {
+        0% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+
+      @-o-keyframes fadeIn {
+        0% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+
+      @-ms-keyframes fadeIn {
+        0% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+    </style>
+    <script>
+      // creature.js
+      let creature = {
+        id: 0,
+        race: "opossum",
+        avatar: {
+          src:
+            "static/emoji/people_animals/creatures/other_mammals/opossum.svg",
+          width: 200,
+          height: 200,
+        },
+        icon: {
+          src:
+            "static/emoji/people_animals/creatures/other_mammals/opossum.svg",
+          width: 64,
+          height: 64,
+        },
+      };
+
+      // player.js
+      let player = {
+        //
+      };
+    </script>
+  </head>
+  <body>
+    <h2>Race Selection</h2>
+    <p>Please select yourself.</p>
+    <div class="race-select">
+      <a href="creature-select/7">
+        <img
+          src="static/emoji/people_animals/creatures/other_mammals/bear.svg"
+          width="200"
+          height="200"
+        />
+      </a>
+      <a href="creature-select/9">
+        <img
+          src="static/emoji/people_animals/creatures/other_mammals/ram.svg"
+          width="200"
+          height="200"
+        />
+      </a>
+      <a href="creature-select/11">
+        <img
+          src="static/emoji/people_animals/creatures/other_mammals/deer_with_antlers.svg"
+          width="200"
+          height="200"
+        />
+      </a>
+      <a href="creature-select/21">
+        <img
+          src="static/emoji/people_animals/creatures/birds/blue_jay.svg"
+          width="200"
+          height="200"
+        />
+      </a>
+      <a href="creature-select/30">
+        <img
+          src="static/emoji/people_animals/creatures/canids/jackal.svg"
+          width="200"
+          height="200"
+        />
+      </a>
+      <a href="creature-select/31">
+        <img
+          src="static/emoji/people_animals/creatures/canids/wolf.svg"
+          width="200"
+          height="200"
+        />
+      </a>
+      <a href="creature-select/32">
+        <img
+          src="static/emoji/people_animals/creatures/canids/coyote.svg"
+          width="200"
+          height="200"
+        />
+      </a>
+      <a href="creature-select/33">
+        <img
+          src="static/emoji/people_animals/creatures/canids/fox.svg"
+          width="200"
+          height="200"
+        />
+      </a>
+      <a href="creature-select/37">
+        <img
+          src="static/emoji/people_animals/creatures/unicode_people/adult_h4.svg"
+          width="200"
+          height="200"
+        />
+      </a>
+      <a href="creature-select/42">
+        <img
+          src="static/emoji/people_animals/creatures/unicode_people/adult_h3.svg"
+          width="200"
+          height="200"
+        />
+      </a>
+      <a href="creature-select/43">
+        <img
+          src="static/emoji/people_animals/creatures/unicode_people/adult_d3.svg"
+          width="200"
+          height="200"
+        />
+      </a>
+      <a href="creature-select/46">
+        <img
+          src="static/emoji/people_animals/creatures/unicode_people/adult_y3.svg"
+          width="200"
+          height="200"
+        />
+      </a>
+      <a href="creature-select/47">
+        <img
+          src="static/emoji/people_animals/creatures/unicode_people/adult_h2.svg"
+          width="200"
+          height="200"
+        />
+      </a>
+      <a href="creature-select/51">
+        <img
+          src="static/emoji/people_animals/creatures/unicode_people/adult_h1.svg"
+          width="200"
+          height="200"
+        />
+      </a>
+      <a href="creature-select/88">
+        <img
+          src="static/emoji/people_animals/creatures/felids/lynx.svg"
+          width="200"
+          height="200"
+        />
+      </a>
+      <a href="creature-select/89">
+        <img
+          src="static/emoji/people_animals/creatures/felids/jaguar.svg"
+          width="200"
+          height="200"
+        />
+      </a>
+      <a href="creature-select/90">
+        <img
+          src="static/emoji/people_animals/creatures/felids/hyena.svg"
+          width="200"
+          height="200"
+        />
+      </a>
+      <a href="creature-select/91">
+        <img
+          src="static/emoji/people_animals/creatures/felids/lion_with_mane.svg"
+          width="200"
+          height="200"
+        />
+      </a>
+      <a href="creature-select/93">
+        <img
+          src="static/emoji/people_animals/creatures/felids/leopard.svg"
+          width="200"
+          height="200"
+        />
+      </a>
+      <a href="creature-select/94">
+        <img
+          src="static/emoji/people_animals/creatures/felids/tiger.svg"
+          width="200"
+          height="200"
+        />
+      </a>
+      <a href="creature-select/95">
+        <img
+          src="static/emoji/people_animals/creatures/felids/cheetah.svg"
+          width="200"
+          height="200"
+        />
+      </a>
+      <a href="creature-select/96">
+        <img
+          src="static/emoji/people_animals/creatures/felids/snow_leopard.svg"
+          width="200"
+          height="200"
+        />
+      </a>
+      <a href="creature-select/97">
+        <img
+          src="static/emoji/people_animals/creatures/fantasy_metahumans/kobold.svg"
+          width="200"
+          height="200"
+        />
+      </a>
+      <a href="creature-select/98">
+        <img
+          src="static/emoji/people_animals/creatures/fantasy_metahumans/bugbear.svg"
+          width="200"
+          height="200"
+        />
+      </a>
+      <a href="creature-select/99">
+        <img
+          src="static/emoji/people_animals/creatures/fantasy_metahumans/elf.svg"
+          width="200"
+          height="200"
+        />
+      </a>
+      <a href="creature-select/100">
+        <img
+          src="static/emoji/people_animals/creatures/fantasy_metahumans/troll.svg"
+          width="200"
+          height="200"
+        />
+      </a>
+      <a href="creature-select/101">
+        <img
+          src="static/emoji/people_animals/creatures/fantasy_metahumans/dark_elf.svg"
+          width="200"
+          height="200"
+        />
+      </a>
+      <a href="creature-select/102">
+        <img
+          src="static/emoji/people_animals/creatures/fantasy_metahumans/oni.svg"
+          width="200"
+          height="200"
+        />
+      </a>
+      <a href="creature-select/103">
+        <img
+          src="static/emoji/people_animals/creatures/fantasy_metahumans/half_demon.svg"
+          width="200"
+          height="200"
+        />
+      </a>
+      <a href="creature-select/104">
+        <img
+          src="static/emoji/people_animals/creatures/fantasy_metahumans/minotaur.svg"
+          width="200"
+          height="200"
+        />
+      </a>
+      <a href="creature-select/108">
+        <img
+          src="static/emoji/people_animals/creatures/fantasy_metahumans/orc.svg"
+          width="200"
+          height="200"
+        />
+      </a>
+      <a href="creature-select/111">
+        <img
+          src="static/emoji/people_animals/creatures/other/gryphon.svg"
+          width="200"
+          height="200"
+        />
+      </a>
+      <a href="creature-select/117">
+        <img
+          src="static/emoji/people_animals/creatures/reptiles/eastern_dragon.svg"
+          width="200"
+          height="200"
+        />
+      </a>
+      <a href="creature-select/119">
+        <img
+          src="static/emoji/people_animals/creatures/reptiles/western_dragon.svg"
+          width="200"
+          height="200"
+        />
+      </a>
+      <!--
+      <a href="creature-select/10">
+        <img
+          src="static/emoji/people_animals/creatures/other_mammals/boar.svg"
+          width="200"
+          height="200"
+        />
+      </a>
+      <a href="creature-select/0">
+        <img
+          src="static/emoji/people_animals/creatures/other_mammals/opossum.svg"
+          width="200"
+          height="200"
+        />
+      </a>
+      <a href="creature-select/1">
+        <img
+          src="static/emoji/people_animals/creatures/other_mammals/rabbit.svg"
+          width="200"
+          height="200"
+        />
+      </a>
+      <a href="creature-select/2">
+        <img
+          src="static/emoji/people_animals/creatures/other_mammals/bat.svg"
+          width="200"
+          height="200"
+        />
+      </a>
+      <a href="creature-select/3">
+        <img
+          src="static/emoji/people_animals/creatures/other_mammals/raccoon.svg"
+          width="200"
+          height="200"
+        />
+      </a>
+      <a href="creature-select/4">
+        <img
+          src="static/emoji/people_animals/creatures/other_mammals/mouse.svg"
+          width="200"
+          height="200"
+        />
+      </a>
+      <a href="creature-select/5">
+        <img
+          src="static/emoji/people_animals/creatures/other_mammals/otter.svg"
+          width="200"
+          height="200"
+        />
+      </a>
+      <a href="creature-select/6">
+        <img
+          src="static/emoji/people_animals/creatures/other_mammals/deer_without_antlers.svg"
+          width="200"
+          height="200"
+        />
+      </a>
+      <a href="creature-select/8">
+        <img
+          src="static/emoji/people_animals/creatures/other_mammals/red_panda.svg"
+          width="200"
+          height="200"
+        />
+      </a>
+      <a href="creature-select/12">
+        <img
+          src="static/emoji/people_animals/creatures/other_mammals/panda.svg"
+          width="200"
+          height="200"
+        />
+      </a>
+      <a href="creature-select/13">
+        <img
+          src="static/emoji/people_animals/creatures/other_mammals/rat.svg"
+          width="200"
+          height="200"
+        />
+      </a>
+      <a href="creature-select/14">
+        <img
+          src="static/emoji/people_animals/creatures/other_mammals/skunk.svg"
+          width="200"
+          height="200"
+        />
+      </a>
+      <a href="creature-select/15">
+        <img
+          src="static/emoji/people_animals/creatures/other_mammals/squirrel.svg"
+          width="200"
+          height="200"
+        />
+      </a>
+      <a href="creature-select/16">
+        <img
+          src="static/emoji/people_animals/creatures/birds/toucan.svg"
+          width="200"
+          height="200"
+        />
+      </a>
+      <a href="creature-select/17">
+        <img
+          src="static/emoji/people_animals/creatures/birds/peacock.svg"
+          width="200"
+          height="200"
+        />
+      </a>
+      <a href="creature-select/18">
+        <img
+          src="static/emoji/people_animals/creatures/birds/eagle.svg"
+          width="200"
+          height="200"
+        />
+      </a>
+      <a href="creature-select/19">
+        <img
+          src="static/emoji/people_animals/creatures/birds/rooster.svg"
+          width="200"
+          height="200"
+        />
+      </a>
+      <a href="creature-select/20">
+        <img
+          src="static/emoji/people_animals/creatures/birds/pigeon.svg"
+          width="200"
+          height="200"
+        />
+      </a>
+      <a href="creature-select/22">
+        <img
+          src="static/emoji/people_animals/creatures/birds/owl.svg"
+          width="200"
+          height="200"
+        />
+      </a>
+      <a href="creature-select/23">
+        <img
+          src="static/emoji/people_animals/creatures/birds/crane.svg"
+          width="200"
+          height="200"
+        />
+      </a>
+      <a href="creature-select/24">
+        <img
+          src="static/emoji/people_animals/creatures/birds/parrot.svg"
+          width="200"
+          height="200"
+        />
+      </a>
+      <a href="creature-select/25">
+        <img
+          src="static/emoji/people_animals/creatures/birds/penguin.svg"
+          width="200"
+          height="200"
+        />
+      </a>
+      <a href="creature-select/26">
+        <img
+          src="static/emoji/people_animals/creatures/birds/crow.svg"
+          width="200"
+          height="200"
+        />
+      </a>
+      <a href="creature-select/27">
+        <img
+          src="static/emoji/people_animals/creatures/birds/pelican.svg"
+          width="200"
+          height="200"
+        />
+      </a>
+      <a href="creature-select/28">
+        <img
+          src="static/emoji/people_animals/creatures/birds/dove.svg"
+          width="200"
+          height="200"
+        />
+      </a>
+      <a href="creature-select/29">
+        <img
+          src="static/emoji/people_animals/creatures/birds/duck.svg"
+          width="200"
+          height="200"
+        />
+      </a>
+      <a href="creature-select/34">
+        <img
+          src="static/emoji/people_animals/creatures/unicode_people/adult_y2.svg"
+          width="200"
+          height="200"
+        />
+      </a>
+      <a href="creature-select/35">
+        <img
+          src="static/emoji/people_animals/creatures/unicode_people/adult_t2.svg"
+          width="200"
+          height="200"
+        />
+      </a>
+      <a href="creature-select/36">
+        <img
+          src="static/emoji/people_animals/creatures/unicode_people/adult_l2.svg"
+          width="200"
+          height="200"
+        />
+      </a>
+      <a href="creature-select/38">
+        <img
+          src="static/emoji/people_animals/creatures/unicode_people/adult_k1.svg"
+          width="200"
+          height="200"
+        />
+      </a>
+      <a href="creature-select/39">
+        <img
+          src="static/emoji/people_animals/creatures/unicode_people/adult_v2.svg"
+          width="200"
+          height="200"
+        />
+      </a>
+      <a href="creature-select/40">
+        <img
+          src="static/emoji/people_animals/creatures/unicode_people/adult_t1.svg"
+          width="200"
+          height="200"
+        />
+      </a>
+      <a href="creature-select/41">
+        <img
+          src="static/emoji/people_animals/creatures/unicode_people/adult_t3.svg"
+          width="200"
+          height="200"
+        />
+      </a>
+      <a href="creature-select/44">
+        <img
+          src="static/emoji/people_animals/creatures/unicode_people/adult_g2.svg"
+          width="200"
+          height="200"
+        />
+      </a>
+      <a href="creature-select/45">
+        <img
+          src="static/emoji/people_animals/creatures/unicode_people/adult_e3.svg"
+          width="200"
+          height="200"
+        />
+      </a>
+      <a href="creature-select/48">
+        <img
+          src="static/emoji/people_animals/creatures/unicode_people/adult.svg"
+          width="200"
+          height="200"
+        />
+      </a>
+      <a href="creature-select/49">
+        <img
+          src="static/emoji/people_animals/creatures/unicode_people/adult_r3.svg"
+          width="200"
+          height="200"
+        />
+      </a>
+      <a href="creature-select/50">
+        <img
+          src="static/emoji/people_animals/creatures/unicode_people/adult_c1.svg"
+          width="200"
+          height="200"
+        />
+      </a>
+      <a href="creature-select/52">
+        <img
+          src="static/emoji/people_animals/creatures/unicode_people/adult_m3.svg"
+          width="200"
+          height="200"
+        />
+      </a>
+      <a href="creature-select/53">
+        <img
+          src="static/emoji/people_animals/creatures/unicode_people/adult_p1.svg"
+          width="200"
+          height="200"
+        />
+      </a>
+      <a href="creature-select/54">
+        <img
+          src="static/emoji/people_animals/creatures/unicode_people/adult_fe1.svg"
+          width="200"
+          height="200"
+        />
+      </a>
+      <a href="creature-select/55">
+        <img
+          src="static/emoji/people_animals/creatures/unicode_people/adult_b1.svg"
+          width="200"
+          height="200"
+        />
+      </a>
+      <a href="creature-select/56">
+        <img
+          src="static/emoji/people_animals/creatures/unicode_people/adult_v1.svg"
+          width="200"
+          height="200"
+        />
+      </a>
+      <a href="creature-select/57">
+        <img
+          src="static/emoji/people_animals/creatures/unicode_people/adult_k2.svg"
+          width="200"
+          height="200"
+        />
+      </a>
+      <a href="creature-select/58">
+        <img
+          src="static/emoji/people_animals/creatures/unicode_people/adult_s1.svg"
+          width="200"
+          height="200"
+        />
+      </a>
+      <a href="creature-select/59">
+        <img
+          src="static/emoji/people_animals/creatures/unicode_people/adult_m2.svg"
+          width="200"
+          height="200"
+        />
+      </a>
+      <a href="creature-select/60">
+        <img
+          src="static/emoji/people_animals/creatures/unicode_people/adult_d1.svg"
+          width="200"
+          height="200"
+        />
+      </a>
+      <a href="creature-select/61">
+        <img
+          src="static/emoji/people_animals/creatures/unicode_people/adult_e2.svg"
+          width="200"
+          height="200"
+        />
+      </a>
+      <a href="creature-select/62">
+        <img
+          src="static/emoji/people_animals/creatures/unicode_people/adult_v3.svg"
+          width="200"
+          height="200"
+        />
+      </a>
+      <a href="creature-select/63">
+        <img
+          src="static/emoji/people_animals/creatures/unicode_people/adult_s2.svg"
+          width="200"
+          height="200"
+        />
+      </a>
+      <a href="creature-select/200">
+        <img
+          src="static/emoji/people_animals/creatures/unicode_people/adult_c3.svg"
+          width="200"
+          height="200"
+        />
+      </a>
+      <a href="creature-select/65">
+        <img
+          src="static/emoji/people_animals/creatures/unicode_people/adult_o3.svg"
+          width="200"
+          height="200"
+        />
+      </a>
+      <a href="creature-select/66">
+        <img
+          src="static/emoji/people_animals/creatures/unicode_people/adult_e1.svg"
+          width="200"
+          height="200"
+        />
+      </a>
+      <a href="creature-select/67">
+        <img
+          src="static/emoji/people_animals/creatures/unicode_people/adult_h5.svg"
+          width="200"
+          height="200"
+        />
+      </a>
+      <a href="creature-select/68">
+        <img
+          src="static/emoji/people_animals/creatures/unicode_people/adult_fk1.svg"
+          width="200"
+          height="200"
+        />
+      </a>
+      <a href="creature-select/69">
+        <img
+          src="static/emoji/people_animals/creatures/unicode_people/adult_m1.svg"
+          width="200"
+          height="200"
+        />
+      </a>
+      <a href="creature-select/70">
+        <img
+          src="static/emoji/people_animals/creatures/unicode_people/adult_d2.svg"
+          width="200"
+          height="200"
+        />
+      </a>
+      <a href="creature-select/71">
+        <img
+          src="static/emoji/people_animals/creatures/unicode_people/adult_o2.svg"
+          width="200"
+          height="200"
+        />
+      </a>
+      <a href="creature-select/72">
+        <img
+          src="static/emoji/people_animals/creatures/unicode_people/adult_b2.svg"
+          width="200"
+          height="200"
+        />
+      </a>
+      <a href="creature-select/73">
+        <img
+          src="static/emoji/people_a<nimals/creatures/unicode_people/adult_g3.svg"
+          width="200"
+          height="200"
+        />
+      </a>
+      <a href="creature-select/74">
+        <img
+          src="static/emoji/people_animals/creatures/unicode_people/adult_k3.svg"
+          width="200"
+          height="200"
+        />
+      </a>
+      <a href="creature-select/75">
+        <img
+          src="static/emoji/people_animals/creatures/unicode_people/adult_l3.svg"
+          width="200"
+          height="200"
+        />
+      </a>
+      <a href="creature-select/76">
+        <img
+          src="static/emoji/people_animals/creatures/unicode_people/adult_l1.svg"
+          width="200"
+          height="200"
+        />
+      </a>
+      <a href="creature-select/77">
+        <img
+          src="static/emoji/people_animals/creatures/unicode_people/adult_o1.svg"
+          width="200"
+          height="200"
+        />
+      </a>
+      <a href="creature-select/78">
+        <img
+          src="static/emoji/people_animals/creatures/unicode_people/adult_p2.svg"
+          width="200"
+          height="200"
+        />
+      </a>
+      <a href="creature-select/79">
+        <img
+          src="static/emoji/people_animals/creatures/unicode_people/adult_b3.svg"
+          width="200"
+          height="200"
+        />
+      </a>
+      <a href="creature-select/80">
+        <img
+          src="static/emoji/people_animals/creatures/unicode_people/adult_g1.svg"
+          width="200"
+          height="200"
+        />
+      </a>
+      <a href="creature-select/81">
+        <img
+          src="static/emoji/people_animals/creatures/unicode_people/adult_ft1.svg"
+          width="200"
+          height="200"
+        />
+      </a>
+      <a href="creature-select/82">
+        <img
+          src="static/emoji/people_animals/creatures/unicode_people/adult_p3.svg"
+          width="200"
+          height="200"
+        />
+      </a>
+      <a href="creature-select/83">
+        <img
+          src="static/emoji/people_animals/creatures/unicode_people/adult_s3.svg"
+          width="200"
+          height="200"
+        />
+      </a>
+      <a href="creature-select/84">
+        <img
+          src="static/emoji/people_animals/creatures/unicode_people/adult_r2.svg"
+          width="200"
+          height="200"
+        />
+      </a>
+      <a href="creature-select/85">
+        <img
+          src="static/emoji/people_animals/creatures/unicode_people/adult_r1.svg"
+          width="200"
+          height="200"
+        />
+      </a>
+      <a href="creature-select/86">
+        <img
+          src="static/emoji/people_animals/creatures/unicode_people/adult_c2.svg"
+          width="200"
+          height="200"
+        />
+      </a>
+      <a href="creature-select/87">
+        <img
+          src="static/emoji/people_animals/creatures/unicode_people/adult_y1.svg"
+          width="200"
+          height="200"
+        />
+      </a>
+      <a href="creature-select/92">
+        <img
+          src="static/emoji/people_animals/creatures/felids/lion_without_mane.svg"
+          width="200"
+          height="200"
+        />
+      </a>
+      <a href="creature-select/105">
+        <img
+          src="static/emoji/people_animals/creatures/fantasy_metahumans/goblin.svg"
+          width="200"
+          height="200"
+        />
+      </a>
+      <a href="creature-select/106">
+        <img
+          src="static/emoji/people_animals/creatures/fantasy_metahumans/demon.svg"
+          width="200"
+          height="200"
+        />
+      </a>
+      <a href="creature-select/107">
+        <img
+          src="static/emoji/people_animals/creatures/fantasy_metahumans/fish_person.svg"
+          width="200"
+          height="200"
+        />
+      </a>
+      <a href="creature-select/109">
+        <img
+          src="static/emoji/people_animals/creatures/fantasy_metahumans/merperson.svg"
+          width="200"
+          height="200"
+        />
+      </a>
+      <a href="creature-select/110">
+        <img
+          src="static/emoji/people_animals/creatures/other/slime.svg"
+          width="200"
+          height="200"
+        />
+      </a>
+      <a href="creature-select/112">
+        <img
+          src="static/emoji/people_animals/creatures/aquatic/turtle.svg"
+          width="200"
+          height="200"
+        />
+      </a>
+      <a href="creature-select/113">
+        <img
+          src="static/emoji/people_animals/creatures/aquaticshark.svg"
+          width="200"
+          height="200"
+        />
+      </a>
+      <a href="creature-select/114">
+        <img
+          src="static/emoji/people_animals/creatures/aquatic/dolphin.svg"
+          width="200"
+          height="200"
+        />
+      </a>
+      <a href="creature-select/115">
+        <img
+          src="static/emoji/people_animals/creatures/aquatic/puffer_fish.svg"
+          width="200"
+          height="200"
+        />
+      </a>
+      <a href="creature-select/116">
+        <img
+          src="static/emoji/people_animals/creatures/insects/spider.svg"
+          width="200"
+          height="200"
+        />
+      </a>
+      <a href="creature-select/118">
+        <img
+          src="static/emoji/people_animals/creatures/reptiles/snake.svg"
+          width="200"
+          height="200"
+        />
+      </a>
+-->
+    </div>
+  </body>
+</html>

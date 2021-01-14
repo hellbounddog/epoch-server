@@ -1,0 +1,21 @@
+{
+  "name": "epoch",
+  "version": "1.0.0",
+  "description": "A small HTML5 \"text\" RPG.",
+  "main": "index.js",
+  "scripts": {
+    "run": ""
+  },
+  "author": "hellbound.dog",
+  "license": "MIT",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.13.0",
+    "@typescript-eslint/parser": "^4.13.0",
+    "eslint": "^7.17.0",
+    "eslint-config-google": "^0.14.0"
+  },
+  "dependencies": {
+    "bootstrap": "^5.0.0-beta1",
+    "remarkable": "^2.0.1"
+  }
+}

@@ -1,3 +1,36 @@
 creatures:
-    0:
-        name: "opossum"
+  0:
+    name: "opossum"
+    racial-trait-name: "Resist Nature +10%"
+    racial-trait: 0
+    icon:
+      src: "static/emoji/people_animals/creatures/other_mammals/opossum.svg"
+      width: 32
+      height: 32
+    avatar:
+      src: "static/emoji/people_animals/creatures/other_mammals/opossum.svg"
+      width: 200
+      height: 200
+  7:
+    name: "bear"
+    racial-trait-name: "Frenzied Protector"
+    racial-trait-decription: "Your max HP increases by (level * 1.25)"
+    racial-trait: 36 # TODO
+    racial-ability-name: "Ironfur"
+    racial-ability-description: "Your armor is increased by 25% for the next 1 minute."
+    racial-ability-duration: 60
+    racial-ability-cooldown: 120
+    racial-ability: 23 # TODO
+    icon:
+      src: "static/emoji/people_animals/creatures/other_mammals/bear.svg"
+      width: 32
+      height: 32
+    avatar:
+      src: "static/emoji/people_animals/creatures/other_mammals/bear.svg"
+      width: 200
+      height: 200
+
+#  ?:
+#    name: "racoon"
+#    racial-trait-name: "Resist Shadow +10%"
+

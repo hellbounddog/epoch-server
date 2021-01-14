@@ -1,0 +1,11 @@
+spells:
+  0:
+    name: "Resist Nature +10%"
+    type: "passive"
+    castTime: 0
+    whileActive: "creature.attribute.natureResistance = creature.attribute.natureResistance * 0.10"
+  1:
+    name: "Resist Fire +10%"
+    type: "passive"
+    castTime: 0
+    whileActive: "creature.attribute.fireResistance = creature.attribute.fireResistance * 0.10"

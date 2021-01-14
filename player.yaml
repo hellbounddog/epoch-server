@@ -1,0 +1,10 @@
+player:
+  x: 0
+  y: 0
+  name: "Player"
+  race: 0
+  class: 0
+  natureResistance: 0
+  fireResistance: 0
+  
+

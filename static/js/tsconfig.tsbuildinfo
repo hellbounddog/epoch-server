@@ -61,11 +61,6 @@
         "signature": "9d122b7e8c1a5c72506eea50c0973cba55b92b5532d5cafa8a6ce2c547d57551",
         "affectsGlobalScope": true
       },
-      "../../entity.js": {
-        "version": "2b11f6ec3fd51fc9d5c0000c4cfd7c67a644f19440cd073eef9654b7d36a7bf8",
-        "signature": "d6d7dcd50d6809958f96d6dc5f2241d5acd83a462a1cfb620e3304d5711ad72d",
-        "affectsGlobalScope": true
-      },
       "../../index.d.ts": {
         "version": "f667f6b1d66ba55f0dcd27f5ff050063fecfe289bad00e8c5d48344a775c1439",
         "signature": "f667f6b1d66ba55f0dcd27f5ff050063fecfe289bad00e8c5d48344a775c1439",
@@ -79,6 +74,11 @@
       "../../lib/vector2.js": {
         "version": "c77ab32750a0fa71d044d33bd8f61462ec100f94553ad14f3d13887a928d8d6d",
         "signature": "d1ba485f215bec68be1c35c16f5fa8847f6369179b78cc5811b9bf561e4fec33",
+        "affectsGlobalScope": true
+      },
+      "../../lib/entity2d.js": {
+        "version": "2b11f6ec3fd51fc9d5c0000c4cfd7c67a644f19440cd073eef9654b7d36a7bf8",
+        "signature": "0625fc05d45e7dbbd57b40ead28ad66184e947872a1b6477207418823cf67a13",
         "affectsGlobalScope": true
       },
       "../../index.js": {
@@ -948,97 +948,6 @@
             "code": 2339,
             "category": 1,
             "messageText": "Property 'PR' does not exist on type 'Window & typeof globalThis'."
-          }
-        ]
-      ],
-      [
-        "../../entity.js",
-        [
-          {
-            "file": "../../entity.js",
-            "start": 259,
-            "length": 12,
-            "messageText": "'compareLevel' is declared but its value is never read.",
-            "category": 1,
-            "code": 6133,
-            "reportsUnnecessary": true
-          },
-          {
-            "file": "../../entity.js",
-            "start": 322,
-            "length": 8,
-            "messageText": "'getLevel' is declared but its value is never read.",
-            "category": 1,
-            "code": 6133,
-            "reportsUnnecessary": true
-          },
-          {
-            "file": "../../entity.js",
-            "start": 440,
-            "length": 6,
-            "messageText": "Cannot find name 'Entity'.",
-            "category": 1,
-            "code": 2304
-          },
-          {
-            "file": "../../entity.js",
-            "start": 566,
-            "length": 8,
-            "messageText": "'setLevel' is declared but its value is never read.",
-            "category": 1,
-            "code": 6133,
-            "reportsUnnecessary": true
-          },
-          {
-            "file": "../../entity.js",
-            "start": 591,
-            "length": 4,
-            "messageText": "Cannot find name 'NULL'.",
-            "category": 1,
-            "code": 2304
-          },
-          {
-            "file": "../../entity.js",
-            "start": 707,
-            "length": 10,
-            "messageText": "Cannot find name 'EntityType'.",
-            "category": 1,
-            "code": 2304
-          },
-          {
-            "file": "../../entity.js",
-            "start": 761,
-            "length": 7,
-            "messageText": "Cannot find name 'Faction'.",
-            "category": 1,
-            "code": 2304
-          },
-          {
-            "file": "../../entity.js",
-            "start": 881,
-            "length": 12,
-            "messageText": "'createEntity' is declared but its value is never read.",
-            "category": 1,
-            "code": 6133,
-            "reportsUnnecessary": true
-          },
-          {
-            "file": "../../entity.js",
-            "start": 894,
-            "length": 4,
-            "messageText": "'type' is declared but its value is never read.",
-            "category": 1,
-            "code": 6133,
-            "reportsUnnecessary": true
-          },
-          {
-            "file": "../../entity.js",
-            "start": 900,
-            "length": 7,
-            "messageText": "'faction' is declared but its value is never read.",
-            "category": 1,
-            "code": 6133,
-            "reportsUnnecessary": true
           }
         ]
       ],
@@ -2295,9 +2204,9 @@
             "file": "../../index.js",
             "start": 164,
             "length": 19,
-            "messageText": "Cannot find module './lib/entity2d.js' or its corresponding type declarations.",
+            "messageText": "File '/var/www/hellhound.games/lib/entity2d.js' is not a module.",
             "category": 1,
-            "code": 2307
+            "code": 2306
           },
           {
             "file": "../../index.js",
@@ -6869,6 +6778,97 @@
             "code": 2339,
             "category": 1,
             "messageText": "Property 'Vector3' does not exist on type 'typeof Vector3'."
+          }
+        ]
+      ],
+      [
+        "../../lib/entity2d.js",
+        [
+          {
+            "file": "../../lib/entity2d.js",
+            "start": 259,
+            "length": 12,
+            "messageText": "'compareLevel' is declared but its value is never read.",
+            "category": 1,
+            "code": 6133,
+            "reportsUnnecessary": true
+          },
+          {
+            "file": "../../lib/entity2d.js",
+            "start": 322,
+            "length": 8,
+            "messageText": "'getLevel' is declared but its value is never read.",
+            "category": 1,
+            "code": 6133,
+            "reportsUnnecessary": true
+          },
+          {
+            "file": "../../lib/entity2d.js",
+            "start": 440,
+            "length": 6,
+            "messageText": "Cannot find name 'Entity'.",
+            "category": 1,
+            "code": 2304
+          },
+          {
+            "file": "../../lib/entity2d.js",
+            "start": 566,
+            "length": 8,
+            "messageText": "'setLevel' is declared but its value is never read.",
+            "category": 1,
+            "code": 6133,
+            "reportsUnnecessary": true
+          },
+          {
+            "file": "../../lib/entity2d.js",
+            "start": 591,
+            "length": 4,
+            "messageText": "Cannot find name 'NULL'.",
+            "category": 1,
+            "code": 2304
+          },
+          {
+            "file": "../../lib/entity2d.js",
+            "start": 707,
+            "length": 10,
+            "messageText": "Cannot find name 'EntityType'.",
+            "category": 1,
+            "code": 2304
+          },
+          {
+            "file": "../../lib/entity2d.js",
+            "start": 761,
+            "length": 7,
+            "messageText": "Cannot find name 'Faction'.",
+            "category": 1,
+            "code": 2304
+          },
+          {
+            "file": "../../lib/entity2d.js",
+            "start": 881,
+            "length": 12,
+            "messageText": "'createEntity' is declared but its value is never read.",
+            "category": 1,
+            "code": 6133,
+            "reportsUnnecessary": true
+          },
+          {
+            "file": "../../lib/entity2d.js",
+            "start": 894,
+            "length": 4,
+            "messageText": "'type' is declared but its value is never read.",
+            "category": 1,
+            "code": 6133,
+            "reportsUnnecessary": true
+          },
+          {
+            "file": "../../lib/entity2d.js",
+            "start": 900,
+            "length": 7,
+            "messageText": "'faction' is declared but its value is never read.",
+            "category": 1,
+            "code": 6133,
+            "reportsUnnecessary": true
           }
         ]
       ],

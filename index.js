@@ -2,12 +2,13 @@
 
 const fs = require('fs');
 // vector tests
-const vec3 = require('./lib/vector3.js');
-const vec2 = require('./lib/vector2.js');
+const Vec3 = require('./lib/vector3.js');
+const Vec2 = require('./lib/vector2.js');
+const Entity = require('./lib/entity2d.js');
 
-let testv2 = new vec2(0, 1);
+let testv2 = new Vec2(0, 1);
 console.log(testv2);
-let testv3 = new vec3(0, 1, 5);
+let testv3 = new Vec3(0, 1, 5);
 console.log(testv3);
 
 fs.readFile('data/creatures.json', (err, data) => {

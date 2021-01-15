@@ -1,39 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-    <title>JSDoc: Source: js/extras/commons.utils.js</title>
-
-    <script src="scripts/prettify/prettify.js"> </script>
-    <script src="scripts/prettify/lang-css.js"> </script>
-    <!--[if lt IE 9]>
-      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
-    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
-</head>
-
-<body>
-
-<div id="main">
-
-    <h1 class="page-title">Source: js/extras/commons.utils.js</h1>
-
-    
-
-
-
-    
-    <section>
-        <article>
-            <pre class="prettyprint source linenums"><code>"use strict";
-var __rest = (this &amp;&amp; this.__rest) || function (s, e) {
+"use strict";
+var __rest = (this && this.__rest) || function (s, e) {
     var t = {};
-    for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p) &amp;&amp; e.indexOf(p) &lt; 0)
+    for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p) && e.indexOf(p) < 0)
         t[p] = s[p];
-    if (s != null &amp;&amp; typeof Object.getOwnPropertySymbols === "function")
-        for (var i = 0, p = Object.getOwnPropertySymbols(s); i &lt; p.length; i++) {
-            if (e.indexOf(p[i]) &lt; 0 &amp;&amp; Object.prototype.propertyIsEnumerable.call(s, p[i]))
+    if (s != null && typeof Object.getOwnPropertySymbols === "function")
+        for (var i = 0, p = Object.getOwnPropertySymbols(s); i < p.length; i++) {
+            if (e.indexOf(p[i]) < 0 && Object.prototype.propertyIsEnumerable.call(s, p[i]))
                 t[p[i]] = s[p[i]];
         }
     return t;
@@ -74,7 +46,7 @@ ArraysUtils.flattenDeep = (array) => {
     const flattenedArray = [].concat(...array);
     return flattenedArray.some(Array.isArray) ? ArraysUtils.flattenDeep(flattenedArray) : flattenedArray;
 };
-ArraysUtils.flattenByDepth = (arr, depth = 1) => arr.reduce((a, v) => a.concat(depth > 1 &amp;&amp; Array.isArray(v) ? ArraysUtils.flattenByDepth(v, depth - 1) : v), []);
+ArraysUtils.flattenByDepth = (arr, depth = 1) => arr.reduce((a, v) => a.concat(depth > 1 && Array.isArray(v) ? ArraysUtils.flattenByDepth(v, depth - 1) : v), []);
 ArraysUtils.last = (arr) => arr[arr.length - 1];
 ArraysUtils.findIndices = (arr, item) => {
     const ret = [];
@@ -87,7 +59,7 @@ ArraysUtils.findIndices = (arr, item) => {
 ArraysUtils.remove = (key, input) => {
     if (input instanceof Array) {
         input.splice(input.indexOf(key), 1);
-        return input.indexOf(key) &lt; 0 ? input : ArraysUtils.remove(key, input);
+        return input.indexOf(key) < 0 ? input : ArraysUtils.remove(key, input);
     }
     else
         return ObjectsUtils.remove(key, input);
@@ -140,8 +112,8 @@ ObjectsUtils.safeparse = (item, defaultReturn) => {
  * @param type
  * @param val
  */
-ObjectsUtils.is = (type, val) => ![, null].includes(val) &amp;&amp; val.constructor === type;
-ObjectsUtils.isObject = (obj) => !!obj &amp;&amp; obj.constructor === {}.constructor;
+ObjectsUtils.is = (type, val) => ![, null].includes(val) && val.constructor === type;
+ObjectsUtils.isObject = (obj) => !!obj && obj.constructor === {}.constructor;
 ObjectsUtils.isFunction = val => typeof val === 'function';
 ObjectsUtils.objectType1 = (obj) => {
     try {
@@ -204,7 +176,7 @@ StringsUtils.titleCase = (text) => text.split(' ').map((w) => w.charAt(0).toUppe
  *
  * @param text
  */
-StringsUtils.toggleCase = (text) => [...text].map((c) => c.charCodeAt(0) &lt;= 90 ? c.toLowerCase() : c.toUpperCase()).join('');
+StringsUtils.toggleCase = (text) => [...text].map((c) => c.charCodeAt(0) <= 90 ? c.toLowerCase() : c.toUpperCase()).join('');
 StringsUtils.swapCase = (text) => StringsUtils.toggleCase(text);
 /**
  * 1. space is replaced with dot
@@ -216,7 +188,7 @@ StringsUtils.swapCase = (text) => StringsUtils.toggleCase(text);
  */
 StringsUtils.dotCase = (text) => {
     text = text.replace(/\s/g, '.');
-    text = [...text].map((w) => w.charCodeAt(0) &lt;= 90 ? '.' + w.toLowerCase() : w).join('').replace(/\.+/g, '.');
+    text = [...text].map((w) => w.charCodeAt(0) <= 90 ? '.' + w.toLowerCase() : w).join('').replace(/\.+/g, '.');
     return text;
 };
 /**
@@ -225,7 +197,7 @@ StringsUtils.dotCase = (text) => {
  *
  * @param text
  */
-StringsUtils.kebabCase = (text) => text &amp;&amp; text
+StringsUtils.kebabCase = (text) => text && text
     .match(/[A-Z]{2,}(?=[A-Z][a-z]+[0-9]*|\b)|[A-Z]?[a-z]+[0-9]*|[A-Z]|[0-9]+/g)
     .map(x => x.toLowerCase())
     .join('-');
@@ -235,7 +207,7 @@ StringsUtils.kebabCase = (text) => text &amp;&amp; text
  *
  * @param text
  */
-StringsUtils.snakeCase = (text) => text &amp;&amp; text
+StringsUtils.snakeCase = (text) => text && text
     .match(/[A-Z]{2,}(?=[A-Z][a-z]+[0-9]*|\b)|[A-Z]?[a-z]+[0-9]*|[A-Z]|[0-9]+/g)
     .map(x => x.toLowerCase())
     .join('_');
@@ -248,7 +220,7 @@ StringsUtils.snakeCase = (text) => text &amp;&amp; text
 StringsUtils.truncateString = (str, num) => str.length > num ? str.slice(0, num > 3 ? num - 3 : num) + '...' : str;
 StringsUtils.random = {
     default: (min = 0, max = 100) => {
-        if (min >= 0 &amp;&amp; max &lt;= 1)
+        if (min >= 0 && max <= 1)
             return +(Math.random() * (0.00 - 1.00) + 1.00).toFixed(2);
         return ~~(Math.random() * (max - min + 1)) + min;
     },
@@ -274,8 +246,8 @@ StringsUtils.random = {
         if (!text)
             return '#' + (Math.random().toString(16) + '0000000').slice(2, 8);
         let hash = 0;
-        for (let i = 0; i &lt; text.length; i++) {
-            hash = text.charCodeAt(i) + ((hash &lt;&lt; 5) - hash);
+        for (let i = 0; i < text.length; i++) {
+            hash = text.charCodeAt(i) + ((hash << 5) - hash);
         }
         const h = hash % 360;
         return 'hsl(' + h + ', ' + s + '%, ' + l + '%)';
@@ -308,7 +280,7 @@ StringsUtils.isJsonString = (a) => {
     return true;
 };
 StringsUtils.isInteger = (number) => (number ^ 0) === number;
-StringsUtils.isNumber = (n) => !isNaN(parseFloat(n)) &amp;&amp; isFinite(n) &amp;&amp; Number(n) == n;
+StringsUtils.isNumber = (n) => !isNaN(parseFloat(n)) && isFinite(n) && Number(n) == n;
 StringsUtils.size1 = (item) => {
     if (item === null)
         return 0;
@@ -318,7 +290,7 @@ StringsUtils.size1 = (item) => {
 };
 StringsUtils.size = val => Array.isArray(val)
     ? val.length
-    : val &amp;&amp; typeof val === 'object'
+    : val && typeof val === 'object'
         ? val.size || val.length || Object.keys(val).length
         : typeof val === 'string'
             ? new Blob([val]).size
@@ -327,8 +299,8 @@ StringsUtils.queryStringToObject = (query = window.location.search.substring(1))
     if (query.startsWith('?'))
         query = query.substr(1);
     let query_string = {};
-    const vars = query.split("&amp;");
-    for (let i = 0; i &lt; vars.length; i++) {
+    const vars = query.split("&");
+    for (let i = 0; i < vars.length; i++) {
         const pair = vars[i].split("=");
         if (typeof query_string[pair[0]] === "undefined") {
             query_string[pair[0]] = decodeURIComponent(pair[1]);
@@ -344,21 +316,21 @@ StringsUtils.queryStringToObject = (query = window.location.search.substring(1))
     return query_string;
 };
 StringsUtils.removeHtmlTags = (a) => {
-    return a.replace(/(&lt;([^>]+)>)/ig, "");
+    return a.replace(/(<([^>]+)>)/ig, "");
 };
-StringsUtils.escapeHTML = str => str.replace(/[&amp;&lt;>'"]/g, tag => ({
-    '&amp;': '&amp;amp;',
-    '&lt;': '&amp;lt;',
-    '>': '&amp;gt;',
-    "'": '&amp;#39;',
-    '"': '&amp;quot;'
+StringsUtils.escapeHTML = str => str.replace(/[&<>'"]/g, tag => ({
+    '&': '&amp;',
+    '<': '&lt;',
+    '>': '&gt;',
+    "'": '&#39;',
+    '"': '&quot;'
 }[tag] || tag));
-StringsUtils.unescapeHTML = str => str.replace(/&amp;amp;|&amp;lt;|&amp;gt;|&amp;#39;|&amp;quot;/g, tag => ({
-    '&amp;amp;': '&amp;',
-    '&amp;lt;': '&lt;',
-    '&amp;gt;': '>',
-    '&amp;#39;': "'",
-    '&amp;quot;': '"'
+StringsUtils.unescapeHTML = str => str.replace(/&amp;|&lt;|&gt;|&#39;|&quot;/g, tag => ({
+    '&amp;': '&',
+    '&lt;': '<',
+    '&gt;': '>',
+    '&#39;': "'",
+    '&quot;': '"'
 }[tag] || tag));
 StringsUtils.slugify = (text) => {
     const a = 'àáäâèéëêìíïîòóöôùúüûñçßÿœæŕśńṕẃǵǹḿǘẍźḧ·/_,:;';
@@ -367,14 +339,14 @@ StringsUtils.slugify = (text) => {
     return text.toString().toLowerCase()
         .replace(/\s+/g, '-')
         .replace(p, c => b.charAt(a.indexOf(c)))
-        .replace(/&amp;/g, '-and-')
+        .replace(/&/g, '-and-')
         .replace(/[^\w-]+/g, '')
         .replace(/--+/g, '-')
         .replace(/^-+/, '')
         .replace(/-+$/, '');
 };
 StringsUtils.formatCurrency = (value) => {
-    return parseFloat('' + value).toFixed(2).replace(/\d(?=(\d{3})+\.)/g, "$&amp;,");
+    return parseFloat('' + value).toFixed(2).replace(/\d(?=(\d{3})+\.)/g, "$&,");
 };
 /**
  * toCurrency(123456.789, 'EUR'); // €123,456.79  | currency: Euro | currencyLangFormat: Local
@@ -467,13 +439,13 @@ StringsUtils.hexToRGB = hex => {
         '(' +
         (h >>> (alpha ? 24 : 16)) +
         ', ' +
-        ((h &amp; (alpha ? 0x00ff0000 : 0x00ff00)) >>> (alpha ? 16 : 8)) +
+        ((h & (alpha ? 0x00ff0000 : 0x00ff00)) >>> (alpha ? 16 : 8)) +
         ', ' +
-        ((h &amp; (alpha ? 0x0000ff00 : 0x0000ff)) >>> (alpha ? 8 : 0)) +
-        (alpha ? `, ${h &amp; 0x000000ff}` : '') +
+        ((h & (alpha ? 0x0000ff00 : 0x0000ff)) >>> (alpha ? 8 : 0)) +
+        (alpha ? `, ${h & 0x000000ff}` : '') +
         ')');
 };
-StringsUtils.RGBToHex = (r, g, b) => ((r &lt;&lt; 16) + (g &lt;&lt; 8) + b).toString(16).padStart(6, '0');
+StringsUtils.RGBToHex = (r, g, b) => ((r << 16) + (g << 8) + b).toString(16).padStart(6, '0');
 /**
  * Replace text at particular index with char;
  *
@@ -482,7 +454,7 @@ StringsUtils.RGBToHex = (r, g, b) => ((r &lt;&lt; 16) + (g &lt;&lt; 8) + b).toSt
  * @param index
  */
 StringsUtils.replaceAt = (text, char, index) => {
-    if (index &lt; 0)
+    if (index < 0)
         return text;
     return text.substr(0, index) + char + text.substr(index + 1);
 };
@@ -493,7 +465,7 @@ StringsUtils.replaceAt = (text, char, index) => {
  * @param index
  */
 StringsUtils.removeAt = (text, index) => {
-    if (index &lt; 0)
+    if (index < 0)
         return text;
     return text.substr(0, index) + text.substr(index + 1);
 };
@@ -529,7 +501,7 @@ MathsUtils.lcm = (...arr) => {
 };
 MathsUtils.isPrime = num => {
     const boundary = Math.floor(Math.sqrt(num));
-    for (var i = 2; i &lt;= boundary; i++)
+    for (var i = 2; i <= boundary; i++)
         if (num % i === 0)
             return false;
     return num >= 2;
@@ -571,7 +543,7 @@ MathsUtils.median = arr => {
  * @param arr
  * @param val
  */
-MathsUtils.percentile = (arr, val) => (100 * arr.reduce((acc, v) => acc + (v &lt; val ? 1 : 0) + (v === val ? 0.5 : 0), 0)) / arr.length;
+MathsUtils.percentile = (arr, val) => (100 * arr.reduce((acc, v) => acc + (v < val ? 1 : 0) + (v === val ? 0.5 : 0), 0)) / arr.length;
 /**
  * toSafeInteger('3.2'); // 3
  * toSafeInteger(Infinity); // 9007199254740991
@@ -618,7 +590,7 @@ ValidationsUtils.isValidEmail = (email) => {
     return false;
 };
 ValidationsUtils.isValidUrl = (value) => {
-    var regexp = /(ftp|http|https):\/\/(\w+:{0,1}\w*@)?(\S+)(:[0-9]+)?(\/|\/([\w#!:.?+=&amp;%@!\-\/]))?/;
+    var regexp = /(ftp|http|https):\/\/(\w+:{0,1}\w*@)?(\S+)(:[0-9]+)?(\/|\/([\w#!:.?+=&%@!\-\/]))?/;
     if (regexp.test(value.toLowerCase())) {
         return true;
     }
@@ -647,7 +619,7 @@ ValidationsUtils.isValidDate = (value, userFormat = 'mm/dd/yyyy') => {
     const theDate = value.split(delimiter);
     function isDate(date, format) {
         let m, d, y, i = 0, len = format.length, f;
-        for (i; i &lt; len; i++) {
+        for (i; i < len; i++) {
             f = format[i];
             if (/m/.test(f))
                 m = date[i];
@@ -656,10 +628,10 @@ ValidationsUtils.isValidDate = (value, userFormat = 'mm/dd/yyyy') => {
             if (/y/.test(f))
                 y = date[i];
         }
-        return (m > 0 &amp;&amp; m &lt; 13 &amp;&amp;
-            y &amp;&amp; y.length === 4 &amp;&amp;
-            d > 0 &amp;&amp;
-            d &lt;= (new Date(y, m, 0)).getDate());
+        return (m > 0 && m < 13 &&
+            y && y.length === 4 &&
+            d > 0 &&
+            d <= (new Date(y, m, 0)).getDate());
     }
     return isDate(theDate, theFormat);
 };
@@ -720,12 +692,12 @@ ValidationsUtils.isValidCreditCard = (type, ccnum) => {
         return false;
     ccnum = ccnum.split("-").join("");
     let checksum = 0;
-    for (let i = (2 - (ccnum.length % 2)); i &lt;= ccnum.length; i += 2) { // Add even digits in even length strings or odd digits in odd length strings.
+    for (let i = (2 - (ccnum.length % 2)); i <= ccnum.length; i += 2) { // Add even digits in even length strings or odd digits in odd length strings.
         checksum += parseInt(ccnum.charAt(i - 1));
     }
-    for (let i = (ccnum.length % 2) + 1; i &lt; ccnum.length; i += 2) { // Analyze odd digits in even length strings or even digits in odd length strings.
+    for (let i = (ccnum.length % 2) + 1; i < ccnum.length; i += 2) { // Analyze odd digits in even length strings or even digits in odd length strings.
         let digit = parseInt(ccnum.charAt(i - 1)) * 2;
-        if (digit &lt; 10) {
+        if (digit < 10) {
             checksum += digit;
         }
         else {
@@ -750,7 +722,7 @@ ValidationsUtils.isValidCitizenId = (id, country) => {
             [0, 2, 4, 6, 8, 1, 3, 5, 7, 9]
         ], e = 0; b--;)
             e += d[c][parseInt(a.charAt(b), 10)], c ^= 1;
-        return e % 10 === 0 &amp;&amp; e > 0;
+        return e % 10 === 0 && e > 0;
     }
     ;
     function mod37And36(a, b) {
@@ -766,32 +738,32 @@ ValidationsUtils.isValidCitizenId = (id, country) => {
             let cx = 0;
             for (var br = 0; 9 > cx; cx++)
                 br += (10 - cx) * parseInt(id.charAt(cx), 10);
-            if (br = 11 - br % 11, (10 === br || 11 === br) &amp;&amp; (br = 0), br + "" !== id.charAt(9))
+            if (br = 11 - br % 11, (10 === br || 11 === br) && (br = 0), br + "" !== id.charAt(9))
                 return !1;
             var d = 0;
             let cxx = 0;
             for (cxx = 0; 10 > cxx; cxx++)
                 d += (11 - cxx) * parseInt(id.charAt(cxx), 10);
-            return d = 11 - d % 11, (10 === d || 11 === d) &amp;&amp; (d = 0), d + "" === id.charAt(10);
+            return d = 11 - d % 11, (10 === d || 11 === d) && (d = 0), d + "" === id.charAt(10);
         case "HR":
             return /^[0-9]{11}$/.test(id) ? mod11And10(id) : !1;
         case "IE":
             if (!/^\d{7}[A-W][AHWTX]?$/.test(id))
                 return !1;
             let b = function (id) {
-                for (; id.length &lt; 7;)
+                for (; id.length < 7;)
                     id = "0" + id;
                 for (var b = "WABCDEFGHIJKLMNOPQRSTUV", c = 0, d = 0; 7 > d; d++)
                     c += parseInt(id.charAt(d), 10) * (8 - d);
                 return c += 9 * b.indexOf(id.substr(7)), b[c % 23];
             };
-            return 9 !== id.length || "A" !== id.charAt(8) &amp;&amp; "H" !== id.charAt(8) ? id.charAt(7) === b(id.substr(0, 7)) : id.charAt(7) === b(id.substr(0, 7) + id.substr(8) + "");
+            return 9 !== id.length || "A" !== id.charAt(8) && "H" !== id.charAt(8) ? id.charAt(7) === b(id.substr(0, 7)) : id.charAt(7) === b(id.substr(0, 7) + id.substr(8) + "");
         case "SM":
             return /^\d{5}$/.test(id);
         case "TH":
             if (id.length != 13)
                 return false;
-            for (var i = 0, sum = 0; i &lt; 12; i++)
+            for (var i = 0, sum = 0; i < 12; i++)
                 sum += parseFloat(id.charAt(i)) * (13 - i);
             if ((11 - sum % 11) % 10 != parseFloat(id.charAt(12)))
                 return false;
@@ -974,26 +946,4 @@ exports.isValidDate = ValidationsUtils.isValidDate;
 exports.isValidCreditCard = ValidationsUtils.isValidCreditCard;
 exports.isValidCitizenId = ValidationsUtils.isValidCitizenId;
 exports.promisify = PromiseUtil.promisify;
-//# sourceMappingURL=commons.utils.js.map</code></pre>
-        </article>
-    </section>
-
-
-
-
-</div>
-
-<nav>
-    <h2><a href="index.html">Home</a></h2><h3>Global</h3><ul><li><a href="global.html#createEntity">createEntity</a></li><li><a href="global.html#Entity2D">Entity2D</a></li><li><a href="global.html#setLevel">setLevel</a></li></ul>
-</nav>
-
-<br class="clear">
-
-<footer>
-    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 3.6.6</a> on Sat Jan 16 2021 00:55:04 GMT+0100 (Central European Standard Time)
-</footer>
-
-<script> prettyPrint(); </script>
-<script src="scripts/linenumber.js"> </script>
-</body>
-</html>
+//# sourceMappingURL=commons.utils.js.map

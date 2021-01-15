@@ -76,8 +76,18 @@
         "signature": "f667f6b1d66ba55f0dcd27f5ff050063fecfe289bad00e8c5d48344a775c1439",
         "affectsGlobalScope": false
       },
+      "../lib/vector3.js": {
+        "version": "fd3bd8a56f78506c5bf8b7c3d0dd780fe1d05608b0590f1e741dde4a04b58f62",
+        "signature": "c45a462b047c7303c0bdbb1a28862121579e0e40da8e4e3aa5ee43dd703e8d00",
+        "affectsGlobalScope": true
+      },
+      "../lib/vector2.js": {
+        "version": "150ef83224cf41dba83c3ee2020ccb76a3f6d1123534f37caaa6e368a53ab381",
+        "signature": "d1ba485f215bec68be1c35c16f5fa8847f6369179b78cc5811b9bf561e4fec33",
+        "affectsGlobalScope": true
+      },
       "../index.js": {
-        "version": "e2d9b97262883456ed24968d97b61f12d132eae0178a454aad764d8493478685",
+        "version": "14248804de92dca7057f855b8d99b7be24854878e5490f6014e5f2965b689214",
         "signature": "f667f6b1d66ba55f0dcd27f5ff050063fecfe289bad00e8c5d48344a775c1439",
         "affectsGlobalScope": true
       },
@@ -164,7 +174,12 @@
       "forceConsistentCasingInFileNames": true,
       "configFilePath": "../tsconfig.json"
     },
-    "referencedMap": {},
+    "referencedMap": {
+      "../index.js": [
+        "../lib/vector2.js",
+        "../lib/vector3.js"
+      ]
+    },
     "exportedModulesMap": {},
     "semanticDiagnosticsPerFile": [
       "../../../../usr/lib/node_modules/typescript/lib/lib.dom.d.ts",
@@ -2040,7 +2055,7 @@
           },
           {
             "file": "../index.js",
-            "start": 78,
+            "start": 282,
             "length": 3,
             "messageText": "Parameter 'err' implicitly has an 'any' type.",
             "category": 1,
@@ -2048,7 +2063,7 @@
           },
           {
             "file": "../index.js",
-            "start": 83,
+            "start": 287,
             "length": 4,
             "messageText": "Parameter 'data' implicitly has an 'any' type.",
             "category": 1,
@@ -2056,7 +2071,7 @@
           },
           {
             "file": "../index.js",
-            "start": 302,
+            "start": 510,
             "length": 3,
             "messageText": "Parameter 'err' implicitly has an 'any' type.",
             "category": 1,
@@ -2064,27 +2079,1579 @@
           },
           {
             "file": "../index.js",
+            "start": 515,
+            "length": 4,
+            "messageText": "Parameter 'data' implicitly has an 'any' type.",
+            "category": 1,
+            "code": 7006
+          },
+          {
+            "file": "../index.js",
+            "start": 730,
+            "length": 3,
+            "messageText": "Parameter 'err' implicitly has an 'any' type.",
+            "category": 1,
+            "code": 7006
+          },
+          {
+            "file": "../index.js",
+            "start": 735,
+            "length": 4,
+            "messageText": "Parameter 'data' implicitly has an 'any' type.",
+            "category": 1,
+            "code": 7006
+          }
+        ]
+      ],
+      [
+        "../lib/vector2.js",
+        [
+          {
+            "file": "../lib/vector2.js",
+            "start": 45,
+            "length": 1,
+            "messageText": "Parameter 'x' implicitly has an 'any' type.",
+            "category": 1,
+            "code": 7006
+          },
+          {
+            "file": "../lib/vector2.js",
+            "start": 48,
+            "length": 1,
+            "messageText": "Parameter 'y' implicitly has an 'any' type.",
+            "category": 1,
+            "code": 7006
+          },
+          {
+            "file": "../lib/vector2.js",
+            "start": 180,
+            "length": 1,
+            "messageText": "Parameter 'x' implicitly has an 'any' type.",
+            "category": 1,
+            "code": 7006
+          },
+          {
+            "file": "../lib/vector2.js",
+            "start": 183,
+            "length": 1,
+            "messageText": "Parameter 'y' implicitly has an 'any' type.",
+            "category": 1,
+            "code": 7006
+          },
+          {
+            "file": "../lib/vector2.js",
+            "start": 273,
+            "length": 1,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'x' does not exist on type 'Vector2'."
+          },
+          {
+            "file": "../lib/vector2.js",
+            "start": 298,
+            "length": 1,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'y' does not exist on type 'Vector2'."
+          },
+          {
+            "file": "../lib/vector2.js",
+            "start": 364,
+            "length": 1,
+            "messageText": "Parameter 'x' implicitly has an 'any' type.",
+            "category": 1,
+            "code": 7006
+          },
+          {
+            "file": "../lib/vector2.js",
+            "start": 367,
+            "length": 1,
+            "messageText": "Parameter 'y' implicitly has an 'any' type.",
+            "category": 1,
+            "code": 7006
+          },
+          {
+            "file": "../lib/vector2.js",
+            "start": 419,
+            "length": 1,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'x' does not exist on type 'Vector2'."
+          },
+          {
+            "file": "../lib/vector2.js",
+            "start": 426,
+            "length": 1,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'x' does not exist on type '{ constructor: typeof Vector2; init: typeof init; add: (x: any, y: any) => this; substract: (x: any, y: any) => this; multiply: (x: any, y: any) => this; multiplyBy: (number: any) => this; divide: (x: any, y: any) => this; ... 7 more ...; clone: typeof clone; }'."
+          },
+          {
+            "file": "../lib/vector2.js",
+            "start": 442,
+            "length": 1,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'y' does not exist on type 'Vector2'."
+          },
+          {
+            "file": "../lib/vector2.js",
+            "start": 449,
+            "length": 1,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'y' does not exist on type '{ constructor: typeof Vector2; init: typeof init; add: (x: any, y: any) => this; substract: (x: any, y: any) => this; multiply: (x: any, y: any) => this; multiplyBy: (number: any) => this; divide: (x: any, y: any) => this; ... 7 more ...; clone: typeof clone; }'."
+          },
+          {
+            "file": "../lib/vector2.js",
+            "start": 480,
+            "length": 1,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'x' does not exist on type 'Vector2'."
+          },
+          {
+            "file": "../lib/vector2.js",
+            "start": 501,
+            "length": 1,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'y' does not exist on type 'Vector2'."
+          },
+          {
+            "file": "../lib/vector2.js",
+            "start": 569,
+            "length": 1,
+            "messageText": "Parameter 'x' implicitly has an 'any' type.",
+            "category": 1,
+            "code": 7006
+          },
+          {
+            "file": "../lib/vector2.js",
+            "start": 572,
+            "length": 1,
+            "messageText": "Parameter 'y' implicitly has an 'any' type.",
+            "category": 1,
+            "code": 7006
+          },
+          {
+            "file": "../lib/vector2.js",
+            "start": 624,
+            "length": 1,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'x' does not exist on type 'Vector2'."
+          },
+          {
+            "file": "../lib/vector2.js",
+            "start": 631,
+            "length": 1,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'x' does not exist on type '{ constructor: typeof Vector2; init: typeof init; add: (x: any, y: any) => this; substract: (x: any, y: any) => this; multiply: (x: any, y: any) => this; multiplyBy: (number: any) => this; divide: (x: any, y: any) => this; ... 7 more ...; clone: typeof clone; }'."
+          },
+          {
+            "file": "../lib/vector2.js",
+            "start": 647,
+            "length": 1,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'y' does not exist on type 'Vector2'."
+          },
+          {
+            "file": "../lib/vector2.js",
+            "start": 654,
+            "length": 1,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'y' does not exist on type '{ constructor: typeof Vector2; init: typeof init; add: (x: any, y: any) => this; substract: (x: any, y: any) => this; multiply: (x: any, y: any) => this; multiplyBy: (number: any) => this; divide: (x: any, y: any) => this; ... 7 more ...; clone: typeof clone; }'."
+          },
+          {
+            "file": "../lib/vector2.js",
+            "start": 685,
+            "length": 1,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'x' does not exist on type 'Vector2'."
+          },
+          {
+            "file": "../lib/vector2.js",
+            "start": 706,
+            "length": 1,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'y' does not exist on type 'Vector2'."
+          },
+          {
+            "file": "../lib/vector2.js",
+            "start": 773,
+            "length": 1,
+            "messageText": "Parameter 'x' implicitly has an 'any' type.",
+            "category": 1,
+            "code": 7006
+          },
+          {
+            "file": "../lib/vector2.js",
+            "start": 776,
+            "length": 1,
+            "messageText": "Parameter 'y' implicitly has an 'any' type.",
+            "category": 1,
+            "code": 7006
+          },
+          {
+            "file": "../lib/vector2.js",
+            "start": 828,
+            "length": 1,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'x' does not exist on type 'Vector2'."
+          },
+          {
+            "file": "../lib/vector2.js",
+            "start": 835,
+            "length": 1,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'x' does not exist on type '{ constructor: typeof Vector2; init: typeof init; add: (x: any, y: any) => this; substract: (x: any, y: any) => this; multiply: (x: any, y: any) => this; multiplyBy: (number: any) => this; divide: (x: any, y: any) => this; ... 7 more ...; clone: typeof clone; }'."
+          },
+          {
+            "file": "../lib/vector2.js",
+            "start": 851,
+            "length": 1,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'y' does not exist on type 'Vector2'."
+          },
+          {
+            "file": "../lib/vector2.js",
+            "start": 858,
+            "length": 1,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'y' does not exist on type '{ constructor: typeof Vector2; init: typeof init; add: (x: any, y: any) => this; substract: (x: any, y: any) => this; multiply: (x: any, y: any) => this; multiplyBy: (number: any) => this; divide: (x: any, y: any) => this; ... 7 more ...; clone: typeof clone; }'."
+          },
+          {
+            "file": "../lib/vector2.js",
+            "start": 889,
+            "length": 1,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'x' does not exist on type 'Vector2'."
+          },
+          {
+            "file": "../lib/vector2.js",
+            "start": 910,
+            "length": 1,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'y' does not exist on type 'Vector2'."
+          },
+          {
+            "file": "../lib/vector2.js",
+            "start": 979,
+            "length": 6,
+            "messageText": "Parameter 'number' implicitly has an 'any' type.",
+            "category": 1,
+            "code": 7006
+          },
+          {
+            "file": "../lib/vector2.js",
+            "start": 1000,
+            "length": 1,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'x' does not exist on type 'Vector2'."
+          },
+          {
+            "file": "../lib/vector2.js",
+            "start": 1024,
+            "length": 1,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'y' does not exist on type 'Vector2'."
+          },
+          {
+            "file": "../lib/vector2.js",
+            "start": 1086,
+            "length": 1,
+            "messageText": "Parameter 'x' implicitly has an 'any' type.",
+            "category": 1,
+            "code": 7006
+          },
+          {
+            "file": "../lib/vector2.js",
+            "start": 1089,
+            "length": 1,
+            "messageText": "Parameter 'y' implicitly has an 'any' type.",
+            "category": 1,
+            "code": 7006
+          },
+          {
+            "file": "../lib/vector2.js",
+            "start": 1141,
+            "length": 1,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'x' does not exist on type 'Vector2'."
+          },
+          {
+            "file": "../lib/vector2.js",
+            "start": 1148,
+            "length": 1,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'x' does not exist on type '{ constructor: typeof Vector2; init: typeof init; add: (x: any, y: any) => this; substract: (x: any, y: any) => this; multiply: (x: any, y: any) => this; multiplyBy: (number: any) => this; divide: (x: any, y: any) => this; ... 7 more ...; clone: typeof clone; }'."
+          },
+          {
+            "file": "../lib/vector2.js",
+            "start": 1164,
+            "length": 1,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'y' does not exist on type 'Vector2'."
+          },
+          {
+            "file": "../lib/vector2.js",
+            "start": 1171,
+            "length": 1,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'y' does not exist on type '{ constructor: typeof Vector2; init: typeof init; add: (x: any, y: any) => this; substract: (x: any, y: any) => this; multiply: (x: any, y: any) => this; multiplyBy: (number: any) => this; divide: (x: any, y: any) => this; ... 7 more ...; clone: typeof clone; }'."
+          },
+          {
+            "file": "../lib/vector2.js",
+            "start": 1202,
+            "length": 1,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'x' does not exist on type 'Vector2'."
+          },
+          {
+            "file": "../lib/vector2.js",
+            "start": 1223,
+            "length": 1,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'y' does not exist on type 'Vector2'."
+          },
+          {
+            "file": "../lib/vector2.js",
+            "start": 1290,
+            "length": 6,
+            "messageText": "Parameter 'number' implicitly has an 'any' type.",
+            "category": 1,
+            "code": 7006
+          },
+          {
+            "file": "../lib/vector2.js",
+            "start": 1311,
+            "length": 1,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'x' does not exist on type 'Vector2'."
+          },
+          {
+            "file": "../lib/vector2.js",
+            "start": 1335,
+            "length": 1,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'y' does not exist on type 'Vector2'."
+          },
+          {
+            "file": "../lib/vector2.js",
+            "start": 1430,
+            "length": 1,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'x' does not exist on type 'Vector2'."
+          },
+          {
+            "file": "../lib/vector2.js",
+            "start": 1439,
+            "length": 1,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'x' does not exist on type 'Vector2'."
+          },
+          {
+            "file": "../lib/vector2.js",
+            "start": 1450,
+            "length": 1,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'y' does not exist on type 'Vector2'."
+          },
+          {
+            "file": "../lib/vector2.js",
+            "start": 1459,
+            "length": 1,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'y' does not exist on type 'Vector2'."
+          },
+          {
+            "file": "../lib/vector2.js",
+            "start": 1490,
+            "length": 6,
+            "messageText": "Parameter 'vector' implicitly has an 'any' type.",
+            "category": 1,
+            "code": 7006
+          },
+          {
+            "file": "../lib/vector2.js",
+            "start": 1518,
+            "length": 1,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'x' does not exist on type 'Vector2'."
+          },
+          {
+            "file": "../lib/vector2.js",
+            "start": 1538,
+            "length": 1,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'y' does not exist on type 'Vector2'."
+          },
+          {
+            "file": "../lib/vector2.js",
+            "start": 1558,
+            "length": 1,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'z' does not exist on type 'Vector2'."
+          },
+          {
+            "file": "../lib/vector2.js",
+            "start": 1600,
+            "length": 6,
+            "messageText": "Parameter 'vector' implicitly has an 'any' type.",
+            "category": 1,
+            "code": 7006
+          },
+          {
+            "file": "../lib/vector2.js",
+            "start": 1629,
+            "length": 1,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'x' does not exist on type 'Vector2'."
+          },
+          {
+            "file": "../lib/vector2.js",
+            "start": 1651,
+            "length": 1,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'y' does not exist on type 'Vector2'."
+          },
+          {
+            "file": "../lib/vector2.js",
+            "start": 1673,
+            "length": 1,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'z' does not exist on type 'Vector2'."
+          },
+          {
+            "file": "../lib/vector2.js",
+            "start": 1688,
+            "length": 1,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'x' does not exist on type 'Vector2'."
+          },
+          {
+            "file": "../lib/vector2.js",
+            "start": 1732,
+            "length": 1,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'y' does not exist on type 'Vector2'."
+          },
+          {
+            "file": "../lib/vector2.js",
+            "start": 1776,
+            "length": 1,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'z' does not exist on type 'Vector2'."
+          },
+          {
+            "file": "../lib/vector2.js",
+            "start": 1892,
+            "length": 8,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'divideBy' does not exist on type 'init'."
+          },
+          {
+            "file": "../lib/vector2.js",
+            "start": 1945,
+            "length": 6,
+            "messageText": "Parameter 'vector' implicitly has an 'any' type.",
+            "category": 1,
+            "code": 7006
+          },
+          {
+            "file": "../lib/vector2.js",
+            "start": 2001,
+            "length": 3,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'dot' does not exist on type 'init'."
+          },
+          {
+            "file": "../lib/vector2.js",
+            "start": 2040,
+            "length": 6,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'length' does not exist on type 'init'."
+          },
+          {
+            "file": "../lib/vector2.js",
+            "start": 2067,
+            "length": 6,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'length' does not exist on type 'init'."
+          },
+          {
+            "file": "../lib/vector2.js",
+            "start": 2114,
+            "length": 6,
+            "messageText": "Parameter 'vector' implicitly has an 'any' type.",
+            "category": 1,
+            "code": 7006
+          },
+          {
+            "file": "../lib/vector2.js",
+            "start": 2142,
+            "length": 1,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'x' does not exist on type 'Vector2'."
+          },
+          {
+            "file": "../lib/vector2.js",
+            "start": 2165,
+            "length": 1,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'y' does not exist on type 'Vector2'."
+          },
+          {
+            "file": "../lib/vector2.js",
+            "start": 3140,
+            "length": 6,
+            "messageText": "Parameter 'vector' implicitly has an 'any' type.",
+            "category": 1,
+            "code": 7006
+          },
+          {
+            "file": "../lib/vector2.js",
+            "start": 3161,
+            "length": 1,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'x' does not exist on type 'Vector2'."
+          },
+          {
+            "file": "../lib/vector2.js",
+            "start": 3186,
+            "length": 1,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'y' does not exist on type 'Vector2'."
+          },
+          {
+            "file": "../lib/vector2.js",
+            "start": 3211,
+            "length": 1,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'z' does not exist on type 'Vector2'."
+          },
+          {
+            "file": "../lib/vector2.js",
+            "start": 3319,
+            "length": 6,
+            "messageText": "Cannot find name 'define'.",
+            "category": 1,
+            "code": 2304
+          },
+          {
+            "file": "../lib/vector2.js",
+            "start": 3349,
+            "length": 6,
+            "messageText": "Cannot find name 'define'.",
+            "category": 1,
+            "code": 2304
+          },
+          {
+            "file": "../lib/vector2.js",
+            "start": 3383,
+            "length": 6,
+            "messageText": "Cannot find name 'define'.",
+            "category": 1,
+            "code": 2304
+          },
+          {
+            "file": "../lib/vector2.js",
+            "start": 3417,
+            "length": 6,
+            "messageText": "Cannot find name 'define'.",
+            "category": 1,
+            "code": 2304
+          },
+          {
+            "file": "../lib/vector2.js",
+            "start": 3605,
+            "length": 7,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'Vector2' does not exist on type 'typeof Vector2'."
+          }
+        ]
+      ],
+      [
+        "../lib/vector3.js",
+        [
+          {
+            "file": "../lib/vector3.js",
+            "start": 45,
+            "length": 1,
+            "messageText": "Parameter 'x' implicitly has an 'any' type.",
+            "category": 1,
+            "code": 7006
+          },
+          {
+            "file": "../lib/vector3.js",
+            "start": 48,
+            "length": 1,
+            "messageText": "Parameter 'y' implicitly has an 'any' type.",
+            "category": 1,
+            "code": 7006
+          },
+          {
+            "file": "../lib/vector3.js",
+            "start": 51,
+            "length": 1,
+            "messageText": "Parameter 'z' implicitly has an 'any' type.",
+            "category": 1,
+            "code": 7006
+          },
+          {
+            "file": "../lib/vector3.js",
+            "start": 186,
+            "length": 1,
+            "messageText": "Parameter 'x' implicitly has an 'any' type.",
+            "category": 1,
+            "code": 7006
+          },
+          {
+            "file": "../lib/vector3.js",
+            "start": 189,
+            "length": 1,
+            "messageText": "Parameter 'y' implicitly has an 'any' type.",
+            "category": 1,
+            "code": 7006
+          },
+          {
+            "file": "../lib/vector3.js",
+            "start": 192,
+            "length": 1,
+            "messageText": "Parameter 'z' implicitly has an 'any' type.",
+            "category": 1,
+            "code": 7006
+          },
+          {
+            "file": "../lib/vector3.js",
+            "start": 282,
+            "length": 1,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'x' does not exist on type 'Vector3'."
+          },
+          {
+            "file": "../lib/vector3.js",
             "start": 307,
-            "length": 4,
-            "messageText": "Parameter 'data' implicitly has an 'any' type.",
+            "length": 1,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'y' does not exist on type 'Vector3'."
+          },
+          {
+            "file": "../lib/vector3.js",
+            "start": 332,
+            "length": 1,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'z' does not exist on type 'Vector3'."
+          },
+          {
+            "file": "../lib/vector3.js",
+            "start": 398,
+            "length": 1,
+            "messageText": "Parameter 'x' implicitly has an 'any' type.",
             "category": 1,
             "code": 7006
           },
           {
-            "file": "../index.js",
-            "start": 516,
+            "file": "../lib/vector3.js",
+            "start": 401,
+            "length": 1,
+            "messageText": "Parameter 'y' implicitly has an 'any' type.",
+            "category": 1,
+            "code": 7006
+          },
+          {
+            "file": "../lib/vector3.js",
+            "start": 404,
+            "length": 1,
+            "messageText": "Parameter 'z' implicitly has an 'any' type.",
+            "category": 1,
+            "code": 7006
+          },
+          {
+            "file": "../lib/vector3.js",
+            "start": 456,
+            "length": 1,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'x' does not exist on type 'Vector3'."
+          },
+          {
+            "file": "../lib/vector3.js",
+            "start": 463,
+            "length": 1,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'x' does not exist on type '{ constructor: typeof Vector3; init: typeof init; add: (x: any, y: any, z: any) => this; substract: (x: any, y: any, z: any) => this; multiply: (x: any, y: any, z: any) => this; multiplyBy: (number: any) => this; ... 9 more ...; clone: typeof clone; }'."
+          },
+          {
+            "file": "../lib/vector3.js",
+            "start": 479,
+            "length": 1,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'y' does not exist on type 'Vector3'."
+          },
+          {
+            "file": "../lib/vector3.js",
+            "start": 486,
+            "length": 1,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'y' does not exist on type '{ constructor: typeof Vector3; init: typeof init; add: (x: any, y: any, z: any) => this; substract: (x: any, y: any, z: any) => this; multiply: (x: any, y: any, z: any) => this; multiplyBy: (number: any) => this; ... 9 more ...; clone: typeof clone; }'."
+          },
+          {
+            "file": "../lib/vector3.js",
+            "start": 502,
+            "length": 1,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'z' does not exist on type 'Vector3'."
+          },
+          {
+            "file": "../lib/vector3.js",
+            "start": 509,
+            "length": 1,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'z' does not exist on type '{ constructor: typeof Vector3; init: typeof init; add: (x: any, y: any, z: any) => this; substract: (x: any, y: any, z: any) => this; multiply: (x: any, y: any, z: any) => this; multiplyBy: (number: any) => this; ... 9 more ...; clone: typeof clone; }'."
+          },
+          {
+            "file": "../lib/vector3.js",
+            "start": 540,
+            "length": 1,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'x' does not exist on type 'Vector3'."
+          },
+          {
+            "file": "../lib/vector3.js",
+            "start": 561,
+            "length": 1,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'y' does not exist on type 'Vector3'."
+          },
+          {
+            "file": "../lib/vector3.js",
+            "start": 582,
+            "length": 1,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'z' does not exist on type 'Vector3'."
+          },
+          {
+            "file": "../lib/vector3.js",
+            "start": 650,
+            "length": 1,
+            "messageText": "Parameter 'x' implicitly has an 'any' type.",
+            "category": 1,
+            "code": 7006
+          },
+          {
+            "file": "../lib/vector3.js",
+            "start": 653,
+            "length": 1,
+            "messageText": "Parameter 'y' implicitly has an 'any' type.",
+            "category": 1,
+            "code": 7006
+          },
+          {
+            "file": "../lib/vector3.js",
+            "start": 656,
+            "length": 1,
+            "messageText": "Parameter 'z' implicitly has an 'any' type.",
+            "category": 1,
+            "code": 7006
+          },
+          {
+            "file": "../lib/vector3.js",
+            "start": 708,
+            "length": 1,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'x' does not exist on type 'Vector3'."
+          },
+          {
+            "file": "../lib/vector3.js",
+            "start": 715,
+            "length": 1,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'x' does not exist on type '{ constructor: typeof Vector3; init: typeof init; add: (x: any, y: any, z: any) => this; substract: (x: any, y: any, z: any) => this; multiply: (x: any, y: any, z: any) => this; multiplyBy: (number: any) => this; ... 9 more ...; clone: typeof clone; }'."
+          },
+          {
+            "file": "../lib/vector3.js",
+            "start": 731,
+            "length": 1,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'y' does not exist on type 'Vector3'."
+          },
+          {
+            "file": "../lib/vector3.js",
+            "start": 738,
+            "length": 1,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'y' does not exist on type '{ constructor: typeof Vector3; init: typeof init; add: (x: any, y: any, z: any) => this; substract: (x: any, y: any, z: any) => this; multiply: (x: any, y: any, z: any) => this; multiplyBy: (number: any) => this; ... 9 more ...; clone: typeof clone; }'."
+          },
+          {
+            "file": "../lib/vector3.js",
+            "start": 754,
+            "length": 1,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'z' does not exist on type 'Vector3'."
+          },
+          {
+            "file": "../lib/vector3.js",
+            "start": 761,
+            "length": 1,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'z' does not exist on type '{ constructor: typeof Vector3; init: typeof init; add: (x: any, y: any, z: any) => this; substract: (x: any, y: any, z: any) => this; multiply: (x: any, y: any, z: any) => this; multiplyBy: (number: any) => this; ... 9 more ...; clone: typeof clone; }'."
+          },
+          {
+            "file": "../lib/vector3.js",
+            "start": 792,
+            "length": 1,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'x' does not exist on type 'Vector3'."
+          },
+          {
+            "file": "../lib/vector3.js",
+            "start": 813,
+            "length": 1,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'y' does not exist on type 'Vector3'."
+          },
+          {
+            "file": "../lib/vector3.js",
+            "start": 834,
+            "length": 1,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'z' does not exist on type 'Vector3'."
+          },
+          {
+            "file": "../lib/vector3.js",
+            "start": 901,
+            "length": 1,
+            "messageText": "Parameter 'x' implicitly has an 'any' type.",
+            "category": 1,
+            "code": 7006
+          },
+          {
+            "file": "../lib/vector3.js",
+            "start": 904,
+            "length": 1,
+            "messageText": "Parameter 'y' implicitly has an 'any' type.",
+            "category": 1,
+            "code": 7006
+          },
+          {
+            "file": "../lib/vector3.js",
+            "start": 907,
+            "length": 1,
+            "messageText": "Parameter 'z' implicitly has an 'any' type.",
+            "category": 1,
+            "code": 7006
+          },
+          {
+            "file": "../lib/vector3.js",
+            "start": 959,
+            "length": 1,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'x' does not exist on type 'Vector3'."
+          },
+          {
+            "file": "../lib/vector3.js",
+            "start": 966,
+            "length": 1,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'x' does not exist on type '{ constructor: typeof Vector3; init: typeof init; add: (x: any, y: any, z: any) => this; substract: (x: any, y: any, z: any) => this; multiply: (x: any, y: any, z: any) => this; multiplyBy: (number: any) => this; ... 9 more ...; clone: typeof clone; }'."
+          },
+          {
+            "file": "../lib/vector3.js",
+            "start": 982,
+            "length": 1,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'y' does not exist on type 'Vector3'."
+          },
+          {
+            "file": "../lib/vector3.js",
+            "start": 989,
+            "length": 1,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'y' does not exist on type '{ constructor: typeof Vector3; init: typeof init; add: (x: any, y: any, z: any) => this; substract: (x: any, y: any, z: any) => this; multiply: (x: any, y: any, z: any) => this; multiplyBy: (number: any) => this; ... 9 more ...; clone: typeof clone; }'."
+          },
+          {
+            "file": "../lib/vector3.js",
+            "start": 1005,
+            "length": 1,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'z' does not exist on type 'Vector3'."
+          },
+          {
+            "file": "../lib/vector3.js",
+            "start": 1012,
+            "length": 1,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'z' does not exist on type '{ constructor: typeof Vector3; init: typeof init; add: (x: any, y: any, z: any) => this; substract: (x: any, y: any, z: any) => this; multiply: (x: any, y: any, z: any) => this; multiplyBy: (number: any) => this; ... 9 more ...; clone: typeof clone; }'."
+          },
+          {
+            "file": "../lib/vector3.js",
+            "start": 1043,
+            "length": 1,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'x' does not exist on type 'Vector3'."
+          },
+          {
+            "file": "../lib/vector3.js",
+            "start": 1064,
+            "length": 1,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'y' does not exist on type 'Vector3'."
+          },
+          {
+            "file": "../lib/vector3.js",
+            "start": 1085,
+            "length": 1,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'z' does not exist on type 'Vector3'."
+          },
+          {
+            "file": "../lib/vector3.js",
+            "start": 1154,
+            "length": 6,
+            "messageText": "Parameter 'number' implicitly has an 'any' type.",
+            "category": 1,
+            "code": 7006
+          },
+          {
+            "file": "../lib/vector3.js",
+            "start": 1175,
+            "length": 1,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'x' does not exist on type 'Vector3'."
+          },
+          {
+            "file": "../lib/vector3.js",
+            "start": 1199,
+            "length": 1,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'y' does not exist on type 'Vector3'."
+          },
+          {
+            "file": "../lib/vector3.js",
+            "start": 1223,
+            "length": 1,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'z' does not exist on type 'Vector3'."
+          },
+          {
+            "file": "../lib/vector3.js",
+            "start": 1285,
+            "length": 1,
+            "messageText": "Parameter 'x' implicitly has an 'any' type.",
+            "category": 1,
+            "code": 7006
+          },
+          {
+            "file": "../lib/vector3.js",
+            "start": 1288,
+            "length": 1,
+            "messageText": "Parameter 'y' implicitly has an 'any' type.",
+            "category": 1,
+            "code": 7006
+          },
+          {
+            "file": "../lib/vector3.js",
+            "start": 1291,
+            "length": 1,
+            "messageText": "Parameter 'z' implicitly has an 'any' type.",
+            "category": 1,
+            "code": 7006
+          },
+          {
+            "file": "../lib/vector3.js",
+            "start": 1343,
+            "length": 1,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'x' does not exist on type 'Vector3'."
+          },
+          {
+            "file": "../lib/vector3.js",
+            "start": 1350,
+            "length": 1,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'x' does not exist on type '{ constructor: typeof Vector3; init: typeof init; add: (x: any, y: any, z: any) => this; substract: (x: any, y: any, z: any) => this; multiply: (x: any, y: any, z: any) => this; multiplyBy: (number: any) => this; ... 9 more ...; clone: typeof clone; }'."
+          },
+          {
+            "file": "../lib/vector3.js",
+            "start": 1366,
+            "length": 1,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'y' does not exist on type 'Vector3'."
+          },
+          {
+            "file": "../lib/vector3.js",
+            "start": 1373,
+            "length": 1,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'y' does not exist on type '{ constructor: typeof Vector3; init: typeof init; add: (x: any, y: any, z: any) => this; substract: (x: any, y: any, z: any) => this; multiply: (x: any, y: any, z: any) => this; multiplyBy: (number: any) => this; ... 9 more ...; clone: typeof clone; }'."
+          },
+          {
+            "file": "../lib/vector3.js",
+            "start": 1389,
+            "length": 1,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'z' does not exist on type 'Vector3'."
+          },
+          {
+            "file": "../lib/vector3.js",
+            "start": 1396,
+            "length": 1,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'z' does not exist on type '{ constructor: typeof Vector3; init: typeof init; add: (x: any, y: any, z: any) => this; substract: (x: any, y: any, z: any) => this; multiply: (x: any, y: any, z: any) => this; multiplyBy: (number: any) => this; ... 9 more ...; clone: typeof clone; }'."
+          },
+          {
+            "file": "../lib/vector3.js",
+            "start": 1427,
+            "length": 1,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'x' does not exist on type 'Vector3'."
+          },
+          {
+            "file": "../lib/vector3.js",
+            "start": 1448,
+            "length": 1,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'y' does not exist on type 'Vector3'."
+          },
+          {
+            "file": "../lib/vector3.js",
+            "start": 1469,
+            "length": 1,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'z' does not exist on type 'Vector3'."
+          },
+          {
+            "file": "../lib/vector3.js",
+            "start": 1536,
+            "length": 6,
+            "messageText": "Parameter 'number' implicitly has an 'any' type.",
+            "category": 1,
+            "code": 7006
+          },
+          {
+            "file": "../lib/vector3.js",
+            "start": 1557,
+            "length": 1,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'x' does not exist on type 'Vector3'."
+          },
+          {
+            "file": "../lib/vector3.js",
+            "start": 1581,
+            "length": 1,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'y' does not exist on type 'Vector3'."
+          },
+          {
+            "file": "../lib/vector3.js",
+            "start": 1605,
+            "length": 1,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'z' does not exist on type 'Vector3'."
+          },
+          {
+            "file": "../lib/vector3.js",
+            "start": 1699,
+            "length": 1,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'x' does not exist on type 'Vector3'."
+          },
+          {
+            "file": "../lib/vector3.js",
+            "start": 1708,
+            "length": 1,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'x' does not exist on type 'Vector3'."
+          },
+          {
+            "file": "../lib/vector3.js",
+            "start": 1717,
+            "length": 1,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'y' does not exist on type 'Vector3'."
+          },
+          {
+            "file": "../lib/vector3.js",
+            "start": 1726,
+            "length": 1,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'y' does not exist on type 'Vector3'."
+          },
+          {
+            "file": "../lib/vector3.js",
+            "start": 1735,
+            "length": 1,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'z' does not exist on type 'Vector3'."
+          },
+          {
+            "file": "../lib/vector3.js",
+            "start": 1744,
+            "length": 1,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'z' does not exist on type 'Vector3'."
+          },
+          {
+            "file": "../lib/vector3.js",
+            "start": 1774,
+            "length": 6,
+            "messageText": "Parameter 'vector' implicitly has an 'any' type.",
+            "category": 1,
+            "code": 7006
+          },
+          {
+            "file": "../lib/vector3.js",
+            "start": 1802,
+            "length": 1,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'x' does not exist on type 'Vector3'."
+          },
+          {
+            "file": "../lib/vector3.js",
+            "start": 1822,
+            "length": 1,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'y' does not exist on type 'Vector3'."
+          },
+          {
+            "file": "../lib/vector3.js",
+            "start": 1842,
+            "length": 1,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'z' does not exist on type 'Vector3'."
+          },
+          {
+            "file": "../lib/vector3.js",
+            "start": 1884,
+            "length": 6,
+            "messageText": "Parameter 'vector' implicitly has an 'any' type.",
+            "category": 1,
+            "code": 7006
+          },
+          {
+            "file": "../lib/vector3.js",
+            "start": 1913,
+            "length": 1,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'x' does not exist on type 'Vector3'."
+          },
+          {
+            "file": "../lib/vector3.js",
+            "start": 1935,
+            "length": 1,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'y' does not exist on type 'Vector3'."
+          },
+          {
+            "file": "../lib/vector3.js",
+            "start": 1957,
+            "length": 1,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'z' does not exist on type 'Vector3'."
+          },
+          {
+            "file": "../lib/vector3.js",
+            "start": 1972,
+            "length": 1,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'x' does not exist on type 'Vector3'."
+          },
+          {
+            "file": "../lib/vector3.js",
+            "start": 2016,
+            "length": 1,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'y' does not exist on type 'Vector3'."
+          },
+          {
+            "file": "../lib/vector3.js",
+            "start": 2060,
+            "length": 1,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'z' does not exist on type 'Vector3'."
+          },
+          {
+            "file": "../lib/vector3.js",
+            "start": 2176,
+            "length": 8,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'divideBy' does not exist on type 'init'."
+          },
+          {
+            "file": "../lib/vector3.js",
+            "start": 2229,
+            "length": 6,
+            "messageText": "Parameter 'vector' implicitly has an 'any' type.",
+            "category": 1,
+            "code": 7006
+          },
+          {
+            "file": "../lib/vector3.js",
+            "start": 2285,
             "length": 3,
-            "messageText": "Parameter 'err' implicitly has an 'any' type.",
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'dot' does not exist on type 'init'."
+          },
+          {
+            "file": "../lib/vector3.js",
+            "start": 2324,
+            "length": 6,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'length' does not exist on type 'init'."
+          },
+          {
+            "file": "../lib/vector3.js",
+            "start": 2351,
+            "length": 6,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'length' does not exist on type 'init'."
+          },
+          {
+            "file": "../lib/vector3.js",
+            "start": 2398,
+            "length": 6,
+            "messageText": "Parameter 'vector' implicitly has an 'any' type.",
             "category": 1,
             "code": 7006
           },
           {
-            "file": "../index.js",
-            "start": 521,
-            "length": 4,
-            "messageText": "Parameter 'data' implicitly has an 'any' type.",
+            "file": "../lib/vector3.js",
+            "start": 2426,
+            "length": 1,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'x' does not exist on type 'Vector3'."
+          },
+          {
+            "file": "../lib/vector3.js",
+            "start": 2449,
+            "length": 1,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'y' does not exist on type 'Vector3'."
+          },
+          {
+            "file": "../lib/vector3.js",
+            "start": 2472,
+            "length": 1,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'z' does not exist on type 'Vector3'."
+          },
+          {
+            "file": "../lib/vector3.js",
+            "start": 2517,
+            "length": 1,
+            "messageText": "Parameter 'x' implicitly has an 'any' type.",
             "category": 1,
             "code": 7006
+          },
+          {
+            "file": "../lib/vector3.js",
+            "start": 2520,
+            "length": 1,
+            "messageText": "Parameter 'y' implicitly has an 'any' type.",
+            "category": 1,
+            "code": 7006
+          },
+          {
+            "file": "../lib/vector3.js",
+            "start": 2523,
+            "length": 1,
+            "messageText": "Parameter 'z' implicitly has an 'any' type.",
+            "category": 1,
+            "code": 7006
+          },
+          {
+            "file": "../lib/vector3.js",
+            "start": 2538,
+            "length": 2,
+            "messageText": "The left-hand side of an 'instanceof' expression must be of type 'any', an object type or a type parameter.",
+            "category": 1,
+            "code": 2358
+          },
+          {
+            "file": "../lib/vector3.js",
+            "start": 2626,
+            "length": 1,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'x' does not exist on type 'Vector3'."
+          },
+          {
+            "file": "../lib/vector3.js",
+            "start": 2649,
+            "length": 1,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'y' does not exist on type 'Vector3'."
+          },
+          {
+            "file": "../lib/vector3.js",
+            "start": 2672,
+            "length": 1,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'z' does not exist on type 'Vector3'."
+          },
+          {
+            "file": "../lib/vector3.js",
+            "start": 3013,
+            "length": 1,
+            "messageText": "Subsequent variable declarations must have the same type.  Variable 'x' must be of type 'any', but here has type 'number'.",
+            "category": 1,
+            "code": 2403,
+            "relatedInformation": [
+              {
+                "file": "../lib/vector3.js",
+                "start": 2517,
+                "length": 1,
+                "messageText": "'x' was also declared here.",
+                "category": 3,
+                "code": 6203
+              }
+            ]
+          },
+          {
+            "file": "../lib/vector3.js",
+            "start": 3057,
+            "length": 1,
+            "messageText": "Subsequent variable declarations must have the same type.  Variable 'y' must be of type 'any', but here has type 'number'.",
+            "category": 1,
+            "code": 2403,
+            "relatedInformation": [
+              {
+                "file": "../lib/vector3.js",
+                "start": 2520,
+                "length": 1,
+                "messageText": "'y' was also declared here.",
+                "category": 3,
+                "code": 6203
+              }
+            ]
+          },
+          {
+            "file": "../lib/vector3.js",
+            "start": 3101,
+            "length": 1,
+            "messageText": "Subsequent variable declarations must have the same type.  Variable 'z' must be of type 'any', but here has type 'number'.",
+            "category": 1,
+            "code": 2403,
+            "relatedInformation": [
+              {
+                "file": "../lib/vector3.js",
+                "start": 2523,
+                "length": 1,
+                "messageText": "'z' was also declared here.",
+                "category": 3,
+                "code": 6203
+              }
+            ]
+          },
+          {
+            "file": "../lib/vector3.js",
+            "start": 3487,
+            "length": 1,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'x' does not exist on type 'Vector3'."
+          },
+          {
+            "file": "../lib/vector3.js",
+            "start": 3531,
+            "length": 1,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'y' does not exist on type 'Vector3'."
+          },
+          {
+            "file": "../lib/vector3.js",
+            "start": 3575,
+            "length": 1,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'z' does not exist on type 'Vector3'."
+          },
+          {
+            "file": "../lib/vector3.js",
+            "start": 3657,
+            "length": 6,
+            "messageText": "Parameter 'vector' implicitly has an 'any' type.",
+            "category": 1,
+            "code": 7006
+          },
+          {
+            "file": "../lib/vector3.js",
+            "start": 3678,
+            "length": 1,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'x' does not exist on type 'Vector3'."
+          },
+          {
+            "file": "../lib/vector3.js",
+            "start": 3703,
+            "length": 1,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'y' does not exist on type 'Vector3'."
+          },
+          {
+            "file": "../lib/vector3.js",
+            "start": 3728,
+            "length": 1,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'z' does not exist on type 'Vector3'."
+          },
+          {
+            "file": "../lib/vector3.js",
+            "start": 3836,
+            "length": 6,
+            "messageText": "Cannot find name 'define'.",
+            "category": 1,
+            "code": 2304
+          },
+          {
+            "file": "../lib/vector3.js",
+            "start": 3866,
+            "length": 6,
+            "messageText": "Cannot find name 'define'.",
+            "category": 1,
+            "code": 2304
+          },
+          {
+            "file": "../lib/vector3.js",
+            "start": 3900,
+            "length": 6,
+            "messageText": "Cannot find name 'define'.",
+            "category": 1,
+            "code": 2304
+          },
+          {
+            "file": "../lib/vector3.js",
+            "start": 3934,
+            "length": 6,
+            "messageText": "Cannot find name 'define'.",
+            "category": 1,
+            "code": 2304
+          },
+          {
+            "file": "../lib/vector3.js",
+            "start": 4122,
+            "length": 7,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'Vector3' does not exist on type 'typeof Vector3'."
           }
         ]
       ]

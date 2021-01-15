@@ -1,0 +1,96 @@
+{
+  "program": {
+    "fileInfos": {
+      "../../../usr/lib/node_modules/typescript/lib/lib.d.ts": {
+        "version": "2dc8c927c9c162a773c6bb3cdc4f3286c23f10eedc67414028f9cb5951610f60",
+        "signature": "2dc8c927c9c162a773c6bb3cdc4f3286c23f10eedc67414028f9cb5951610f60",
+        "affectsGlobalScope": false
+      },
+      "../../../usr/lib/node_modules/typescript/lib/lib.es5.d.ts": {
+        "version": "9622e8bd7cc72a7dab819a8011ecbf81d443638082e5cb99ecf2e75ff56ffc9d",
+        "signature": "9622e8bd7cc72a7dab819a8011ecbf81d443638082e5cb99ecf2e75ff56ffc9d",
+        "affectsGlobalScope": true
+      },
+      "../../../usr/lib/node_modules/typescript/lib/lib.dom.d.ts": {
+        "version": "abadddbf660adeec27e9a56584907d52fa1d6e1e1dc49f639a921baa951b7a84",
+        "signature": "abadddbf660adeec27e9a56584907d52fa1d6e1e1dc49f639a921baa951b7a84",
+        "affectsGlobalScope": true
+      },
+      "../../../usr/lib/node_modules/typescript/lib/lib.webworker.importscripts.d.ts": {
+        "version": "7fac8cb5fc820bc2a59ae11ef1c5b38d3832c6d0dfaec5acdb5569137d09a481",
+        "signature": "7fac8cb5fc820bc2a59ae11ef1c5b38d3832c6d0dfaec5acdb5569137d09a481",
+        "affectsGlobalScope": true
+      },
+      "../../../usr/lib/node_modules/typescript/lib/lib.scripthost.d.ts": {
+        "version": "097a57355ded99c68e6df1b738990448e0bf170e606707df5a7c0481ff2427cd",
+        "signature": "097a57355ded99c68e6df1b738990448e0bf170e606707df5a7c0481ff2427cd",
+        "affectsGlobalScope": true
+      },
+      "./entity.js": {
+        "version": "135ced21bd3252aed3557c9135ead4971a81bba63de056ea3590f76bde13117f",
+        "signature": "d79f831c8390cec10e79f9f69fae33f57b6bb89ad58ca23579386b8bfd827710",
+        "affectsGlobalScope": true
+      },
+      "./index.js": {
+        "version": "e2d9b97262883456ed24968d97b61f12d132eae0178a454aad764d8493478685",
+        "signature": "f667f6b1d66ba55f0dcd27f5ff050063fecfe289bad00e8c5d48344a775c1439",
+        "affectsGlobalScope": true
+      },
+      "./doc/scripts/linenumber.js": {
+        "version": "823284680b49a0137de2d1474c93bf40c5a6da264dec349763f1001ab1f3c77d",
+        "signature": "b54c83044c48b620c86d95e6111337e5ff2d438752a0eb35765cb190d081c883",
+        "affectsGlobalScope": true
+      },
+      "./doc/scripts/prettify/lang-css.js": {
+        "version": "9b6ac483033b02572714eb4d37ee199185c41008eb2b3f46a00ab0ebce6a20c5",
+        "signature": "428ff5b2a8290fba686891089485801daee0b7dac51ec053ed0b42d4073d2f31",
+        "affectsGlobalScope": true
+      },
+      "./doc/scripts/prettify/prettify.js": {
+        "version": "e2e576e3bc607cd179ff511947010f645d3441a35313aec0dbd06c4437f83b77",
+        "signature": "fd3ec021e6d969f9a9132f0e1a832a5df0856d03a135a1bcca78e06d5dd8c9db",
+        "affectsGlobalScope": true
+      },
+      "./extras/a.ts": {
+        "version": "a481acd204c05ca598de7947183a92817fd249f1406ef4b4fd8c596ab22010bd",
+        "signature": "12678387af48c9bea9f96b35546a1109bc92fc1220076ace160a5f106d5cf10c",
+        "affectsGlobalScope": true
+      },
+      "./extras/commons.utils.ts": {
+        "version": "ffbe8a52827efa33bbd25442b3c5baabf65fee0dd2a0c4e77446caad9ab9dfff",
+        "signature": "0cdf1472dddd61e5d69f33acae0c0e5f1d096c34621fe4dc0e559d2a0b12a982",
+        "affectsGlobalScope": false
+      },
+      "./extras/hellbound.js/array.random.js": {
+        "version": "b0b04bc75b244f2d2101a933a4f0b8da7c6ee410848df0461ab9964725f1f97c",
+        "signature": "e5b3398ccd8117fbef70db6eec46d42e2e039debf8f1762035f11d967053c5c8",
+        "affectsGlobalScope": true
+      },
+      "./extras/tests/test-randomizer.js": {
+        "version": "89d9777a5a2e30485f80f3581ad821ee1227b6afaec98fd8d5b4e9fc7b87acbe",
+        "signature": "94ea8ce1008b40ca728d4b008fd6bb3702215063285561197afd0b3a065fab0c",
+        "affectsGlobalScope": true
+      }
+    },
+    "options": {
+      "incremental": true,
+      "target": 1,
+      "module": 1,
+      "allowJs": true,
+      "checkJs": true,
+      "declaration": true,
+      "declarationMap": true,
+      "sourceMap": true,
+      "composite": true,
+      "strict": true,
+      "esModuleInterop": true,
+      "skipLibCheck": true,
+      "forceConsistentCasingInFileNames": true,
+      "configFilePath": "./tsconfig.json"
+    },
+    "referencedMap": {},
+    "exportedModulesMap": {},
+    "semanticDiagnosticsPerFile": []
+  },
+  "version": "4.1.3"
+}

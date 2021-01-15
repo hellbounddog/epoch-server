@@ -11,6 +11,9 @@
       "name": "Resist Fire +10%",
       "type": "passive",
       "whileActive": "creature.attribute.fireResistance = creature.attribute.fireResistance * 0.10"
+    },
+    "2": {
+      "name": ""
     }
   }
 }

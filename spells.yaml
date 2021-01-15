@@ -9,3 +9,5 @@ spells:
     type: "passive"
     castTime: 0
     whileActive: "creature.attribute.fireResistance = creature.attribute.fireResistance * 0.10"
+  2:
+    name: ""

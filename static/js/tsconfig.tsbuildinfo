@@ -11,6 +11,21 @@
         "signature": "dc47c4fa66b9b9890cf076304de2a9c5201e94b740cffdf09f87296d877d71f6",
         "affectsGlobalScope": false
       },
+      "../../../../../usr/lib/node_modules/typescript/lib/lib.es2016.d.ts": {
+        "version": "7a387c58583dfca701b6c85e0adaf43fb17d590fb16d5b2dc0a2fbd89f35c467",
+        "signature": "7a387c58583dfca701b6c85e0adaf43fb17d590fb16d5b2dc0a2fbd89f35c467",
+        "affectsGlobalScope": false
+      },
+      "../../../../../usr/lib/node_modules/typescript/lib/lib.es2017.d.ts": {
+        "version": "8a12173c586e95f4433e0c6dc446bc88346be73ffe9ca6eec7aa63c8f3dca7f9",
+        "signature": "8a12173c586e95f4433e0c6dc446bc88346be73ffe9ca6eec7aa63c8f3dca7f9",
+        "affectsGlobalScope": false
+      },
+      "../../../../../usr/lib/node_modules/typescript/lib/lib.es2018.d.ts": {
+        "version": "5f4e733ced4e129482ae2186aae29fde948ab7182844c3a5a51dd346182c7b06",
+        "signature": "5f4e733ced4e129482ae2186aae29fde948ab7182844c3a5a51dd346182c7b06",
+        "affectsGlobalScope": false
+      },
       "../../../../../usr/lib/node_modules/typescript/lib/lib.dom.d.ts": {
         "version": "abadddbf660adeec27e9a56584907d52fa1d6e1e1dc49f639a921baa951b7a84",
         "signature": "abadddbf660adeec27e9a56584907d52fa1d6e1e1dc49f639a921baa951b7a84",
@@ -61,29 +76,74 @@
         "signature": "9d122b7e8c1a5c72506eea50c0973cba55b92b5532d5cafa8a6ce2c547d57551",
         "affectsGlobalScope": true
       },
-      "../../index.d.ts": {
-        "version": "f667f6b1d66ba55f0dcd27f5ff050063fecfe289bad00e8c5d48344a775c1439",
-        "signature": "f667f6b1d66ba55f0dcd27f5ff050063fecfe289bad00e8c5d48344a775c1439",
-        "affectsGlobalScope": false
-      },
-      "../../lib/vector3.js": {
-        "version": "fd3bd8a56f78506c5bf8b7c3d0dd780fe1d05608b0590f1e741dde4a04b58f62",
-        "signature": "c45a462b047c7303c0bdbb1a28862121579e0e40da8e4e3aa5ee43dd703e8d00",
+      "../../../../../usr/lib/node_modules/typescript/lib/lib.es2016.array.include.d.ts": {
+        "version": "3be5a1453daa63e031d266bf342f3943603873d890ab8b9ada95e22389389006",
+        "signature": "3be5a1453daa63e031d266bf342f3943603873d890ab8b9ada95e22389389006",
         "affectsGlobalScope": true
       },
-      "../../lib/vector2.js": {
-        "version": "c77ab32750a0fa71d044d33bd8f61462ec100f94553ad14f3d13887a928d8d6d",
-        "signature": "d1ba485f215bec68be1c35c16f5fa8847f6369179b78cc5811b9bf561e4fec33",
+      "../../../../../usr/lib/node_modules/typescript/lib/lib.es2017.object.d.ts": {
+        "version": "17bb1fc99591b00515502d264fa55dc8370c45c5298f4a5c2083557dccba5a2a",
+        "signature": "17bb1fc99591b00515502d264fa55dc8370c45c5298f4a5c2083557dccba5a2a",
         "affectsGlobalScope": true
       },
-      "../../lib/entity2d.js": {
-        "version": "2b11f6ec3fd51fc9d5c0000c4cfd7c67a644f19440cd073eef9654b7d36a7bf8",
-        "signature": "0625fc05d45e7dbbd57b40ead28ad66184e947872a1b6477207418823cf67a13",
+      "../../../../../usr/lib/node_modules/typescript/lib/lib.es2017.sharedmemory.d.ts": {
+        "version": "7ce9f0bde3307ca1f944119f6365f2d776d281a393b576a18a2f2893a2d75c98",
+        "signature": "7ce9f0bde3307ca1f944119f6365f2d776d281a393b576a18a2f2893a2d75c98",
         "affectsGlobalScope": true
       },
-      "../../index.js": {
-        "version": "e1c50d7da682c7c174aa146529c2b9360cedb4d0e21497a4b3986b84f8c990f8",
-        "signature": "f667f6b1d66ba55f0dcd27f5ff050063fecfe289bad00e8c5d48344a775c1439",
+      "../../../../../usr/lib/node_modules/typescript/lib/lib.es2017.string.d.ts": {
+        "version": "6a6b173e739a6a99629a8594bfb294cc7329bfb7b227f12e1f7c11bc163b8577",
+        "signature": "6a6b173e739a6a99629a8594bfb294cc7329bfb7b227f12e1f7c11bc163b8577",
+        "affectsGlobalScope": true
+      },
+      "../../../../../usr/lib/node_modules/typescript/lib/lib.es2017.intl.d.ts": {
+        "version": "12a310447c5d23c7d0d5ca2af606e3bd08afda69100166730ab92c62999ebb9d",
+        "signature": "12a310447c5d23c7d0d5ca2af606e3bd08afda69100166730ab92c62999ebb9d",
+        "affectsGlobalScope": true
+      },
+      "../../../../../usr/lib/node_modules/typescript/lib/lib.es2017.typedarrays.d.ts": {
+        "version": "b0124885ef82641903d232172577f2ceb5d3e60aed4da1153bab4221e1f6dd4e",
+        "signature": "b0124885ef82641903d232172577f2ceb5d3e60aed4da1153bab4221e1f6dd4e",
+        "affectsGlobalScope": true
+      },
+      "../../../../../usr/lib/node_modules/typescript/lib/lib.es2018.asyncgenerator.d.ts": {
+        "version": "0eb85d6c590b0d577919a79e0084fa1744c1beba6fd0d4e951432fa1ede5510a",
+        "signature": "0eb85d6c590b0d577919a79e0084fa1744c1beba6fd0d4e951432fa1ede5510a",
+        "affectsGlobalScope": true
+      },
+      "../../../../../usr/lib/node_modules/typescript/lib/lib.es2018.asynciterable.d.ts": {
+        "version": "a40c4d82bf13fcded295ac29f354eb7d40249613c15e07b53f2fc75e45e16359",
+        "signature": "a40c4d82bf13fcded295ac29f354eb7d40249613c15e07b53f2fc75e45e16359",
+        "affectsGlobalScope": true
+      },
+      "../../../../../usr/lib/node_modules/typescript/lib/lib.es2018.intl.d.ts": {
+        "version": "df9c8a72ca8b0ed62f5470b41208a0587f0f73f0a7db28e5a1272cf92537518e",
+        "signature": "df9c8a72ca8b0ed62f5470b41208a0587f0f73f0a7db28e5a1272cf92537518e",
+        "affectsGlobalScope": true
+      },
+      "../../../../../usr/lib/node_modules/typescript/lib/lib.es2018.promise.d.ts": {
+        "version": "bb2d3fb05a1d2ffbca947cc7cbc95d23e1d053d6595391bd325deb265a18d36c",
+        "signature": "bb2d3fb05a1d2ffbca947cc7cbc95d23e1d053d6595391bd325deb265a18d36c",
+        "affectsGlobalScope": true
+      },
+      "../../../../../usr/lib/node_modules/typescript/lib/lib.es2018.regexp.d.ts": {
+        "version": "c80df75850fea5caa2afe43b9949338ce4e2de086f91713e9af1a06f973872b8",
+        "signature": "c80df75850fea5caa2afe43b9949338ce4e2de086f91713e9af1a06f973872b8",
+        "affectsGlobalScope": true
+      },
+      "../../../../../usr/lib/node_modules/typescript/lib/lib.es2020.bigint.d.ts": {
+        "version": "7b5a10e3c897fabece5a51aa85b4111727d7adb53c2734b5d37230ff96802a09",
+        "signature": "7b5a10e3c897fabece5a51aa85b4111727d7adb53c2734b5d37230ff96802a09",
+        "affectsGlobalScope": true
+      },
+      "../../../../../usr/lib/node_modules/typescript/lib/lib.esnext.intl.d.ts": {
+        "version": "89bf2b7a601b73ea4311eda9c41f86a58994fec1bee3b87c4a14d68d9adcdcbd",
+        "signature": "89bf2b7a601b73ea4311eda9c41f86a58994fec1bee3b87c4a14d68d9adcdcbd",
+        "affectsGlobalScope": true
+      },
+      "../../index.ts": {
+        "version": "24ada621af42e24b03cb2fb8858fae80d3958908e9b25f8c7af9445e6a346aa2",
+        "signature": "ea9e4ed01e37ccd8010481c401ad0ee5cef992dedcbb83400ad0250a024953e1",
         "affectsGlobalScope": true
       },
       "../../doc/scripts/linenumber.d.ts": {
@@ -215,6 +275,256 @@
         "version": "93c4ba68a57bf320cdbd5d374ff0a6f6dd69e5cf8a343b9d7490510a23188c1e",
         "signature": "94ea8ce1008b40ca728d4b008fd6bb3702215063285561197afd0b3a065fab0c",
         "affectsGlobalScope": true
+      },
+      "../../lib/entity2d.ts": {
+        "version": "2b11f6ec3fd51fc9d5c0000c4cfd7c67a644f19440cd073eef9654b7d36a7bf8",
+        "signature": "71aa031acbfd929d62fb178295c1ff92195c7727e2f4d3b1211f5bc62497b54a",
+        "affectsGlobalScope": true
+      },
+      "../../lib/vector2.ts": {
+        "version": "c77ab32750a0fa71d044d33bd8f61462ec100f94553ad14f3d13887a928d8d6d",
+        "signature": "7f5f5aa030e40a73d600224ea26e8a6804090b871eabccd2a6af8b4e97c7e237",
+        "affectsGlobalScope": true
+      },
+      "../../lib/vector3.ts": {
+        "version": "fd3bd8a56f78506c5bf8b7c3d0dd780fe1d05608b0590f1e741dde4a04b58f62",
+        "signature": "8280ef6d81c273ce5bb7072ec02132e9bbc221fc2465bb1372b9a33302d49c5f",
+        "affectsGlobalScope": true
+      },
+      "../../node_modules/@types/node/globals.d.ts": {
+        "version": "215d8d9a2c480fd460127edc048d68d9931d3b27f95132253a6e71975f060bb1",
+        "signature": "215d8d9a2c480fd460127edc048d68d9931d3b27f95132253a6e71975f060bb1",
+        "affectsGlobalScope": true
+      },
+      "../../node_modules/@types/node/async_hooks.d.ts": {
+        "version": "c438b413e94ff76dfa20ae005f33a1c84f2480d1d66e0fd687501020d0de9b50",
+        "signature": "c438b413e94ff76dfa20ae005f33a1c84f2480d1d66e0fd687501020d0de9b50",
+        "affectsGlobalScope": false
+      },
+      "../../node_modules/@types/node/buffer.d.ts": {
+        "version": "bc6a78961535181265845bf9b9e8a147ffd0ca275097ceb670a9b92afa825152",
+        "signature": "bc6a78961535181265845bf9b9e8a147ffd0ca275097ceb670a9b92afa825152",
+        "affectsGlobalScope": false
+      },
+      "../../node_modules/@types/node/child_process.d.ts": {
+        "version": "a4b5411d87995b9fb847f491f4388b38f829d8ab39be3e2fd65a3e40709f29a8",
+        "signature": "a4b5411d87995b9fb847f491f4388b38f829d8ab39be3e2fd65a3e40709f29a8",
+        "affectsGlobalScope": false
+      },
+      "../../node_modules/@types/node/cluster.d.ts": {
+        "version": "123ec69e4b3a686eb49afd94ebe3292a5c84a867ecbcb6bb84bdd720a12af803",
+        "signature": "123ec69e4b3a686eb49afd94ebe3292a5c84a867ecbcb6bb84bdd720a12af803",
+        "affectsGlobalScope": false
+      },
+      "../../node_modules/@types/node/console.d.ts": {
+        "version": "eb5197aade83cb0e360ac407289c53a8009e8fdae7939892a0240d30444496b6",
+        "signature": "eb5197aade83cb0e360ac407289c53a8009e8fdae7939892a0240d30444496b6",
+        "affectsGlobalScope": true
+      },
+      "../../node_modules/@types/node/constants.d.ts": {
+        "version": "90c85ddbb8de82cd19198bda062065fc51b7407c0f206f2e399e65a52e979720",
+        "signature": "90c85ddbb8de82cd19198bda062065fc51b7407c0f206f2e399e65a52e979720",
+        "affectsGlobalScope": false
+      },
+      "../../node_modules/@types/node/crypto.d.ts": {
+        "version": "3d9c3ccc05ebc6e288bef007bcc47a2fc0dce748ea634093ef0732b9be743805",
+        "signature": "3d9c3ccc05ebc6e288bef007bcc47a2fc0dce748ea634093ef0732b9be743805",
+        "affectsGlobalScope": false
+      },
+      "../../node_modules/@types/node/dgram.d.ts": {
+        "version": "7e050b767ed10c7ffbc01f314defbf420bf0b5d54ce666e1c87507c035dfc191",
+        "signature": "7e050b767ed10c7ffbc01f314defbf420bf0b5d54ce666e1c87507c035dfc191",
+        "affectsGlobalScope": false
+      },
+      "../../node_modules/@types/node/dns.d.ts": {
+        "version": "d6bc4b879a18de0a1ba065b9a1c6888c67d98f3fe4886584459cdaa9e211a5f7",
+        "signature": "d6bc4b879a18de0a1ba065b9a1c6888c67d98f3fe4886584459cdaa9e211a5f7",
+        "affectsGlobalScope": false
+      },
+      "../../node_modules/@types/node/domain.d.ts": {
+        "version": "2866a528b2708aa272ec3eaafd3c980abb23aec1ef831cfc5eb2186b98c37ce5",
+        "signature": "2866a528b2708aa272ec3eaafd3c980abb23aec1ef831cfc5eb2186b98c37ce5",
+        "affectsGlobalScope": true
+      },
+      "../../node_modules/@types/node/events.d.ts": {
+        "version": "153d835dc32985120790e10102834b0a5bd979bb5e42bfbb33c0ff6260cf03ce",
+        "signature": "153d835dc32985120790e10102834b0a5bd979bb5e42bfbb33c0ff6260cf03ce",
+        "affectsGlobalScope": true
+      },
+      "../../node_modules/@types/node/fs.d.ts": {
+        "version": "80b94a222a5e83289583833de76f8b3a5962ec4c3803690e20c875a2776ddfdc",
+        "signature": "80b94a222a5e83289583833de76f8b3a5962ec4c3803690e20c875a2776ddfdc",
+        "affectsGlobalScope": false
+      },
+      "../../node_modules/@types/node/fs/promises.d.ts": {
+        "version": "05b5679a897598ebe556ee93415b3af1f456e674ea82e4d7afcd716bfe43aa98",
+        "signature": "05b5679a897598ebe556ee93415b3af1f456e674ea82e4d7afcd716bfe43aa98",
+        "affectsGlobalScope": false
+      },
+      "../../node_modules/@types/node/http.d.ts": {
+        "version": "f2f8a385694fd71a421616cbaca477a539f30f4098f11261b1d188d72dc3478a",
+        "signature": "f2f8a385694fd71a421616cbaca477a539f30f4098f11261b1d188d72dc3478a",
+        "affectsGlobalScope": false
+      },
+      "../../node_modules/@types/node/http2.d.ts": {
+        "version": "f15f1f1104aaf47d25124de81949375416e3f8ee704e3d221bea339e35421edb",
+        "signature": "f15f1f1104aaf47d25124de81949375416e3f8ee704e3d221bea339e35421edb",
+        "affectsGlobalScope": false
+      },
+      "../../node_modules/@types/node/https.d.ts": {
+        "version": "c969bf4c7cdfe4d5dd28aa09432f99d09ad1d8d8b839959646579521d0467d1a",
+        "signature": "c969bf4c7cdfe4d5dd28aa09432f99d09ad1d8d8b839959646579521d0467d1a",
+        "affectsGlobalScope": false
+      },
+      "../../node_modules/@types/node/inspector.d.ts": {
+        "version": "6c3857edaeeaaf43812f527830ebeece9266b6e8eb5271ab6d2f0008306c9947",
+        "signature": "6c3857edaeeaaf43812f527830ebeece9266b6e8eb5271ab6d2f0008306c9947",
+        "affectsGlobalScope": false
+      },
+      "../../node_modules/@types/node/module.d.ts": {
+        "version": "bc6a77e750f4d34584e46b1405b771fb69a224197dd6bafe5b0392a29a70b665",
+        "signature": "bc6a77e750f4d34584e46b1405b771fb69a224197dd6bafe5b0392a29a70b665",
+        "affectsGlobalScope": false
+      },
+      "../../node_modules/@types/node/net.d.ts": {
+        "version": "5345d90ffb42ef6a15807f494b38b818f668f5fd6e5086586497ea0125334cd4",
+        "signature": "5345d90ffb42ef6a15807f494b38b818f668f5fd6e5086586497ea0125334cd4",
+        "affectsGlobalScope": false
+      },
+      "../../node_modules/@types/node/os.d.ts": {
+        "version": "ed4ae81196cccc10f297d228bca8d02e31058e6d723a3c5bc4be5fb3c61c6a34",
+        "signature": "ed4ae81196cccc10f297d228bca8d02e31058e6d723a3c5bc4be5fb3c61c6a34",
+        "affectsGlobalScope": false
+      },
+      "../../node_modules/@types/node/path.d.ts": {
+        "version": "84044697c8b3e08ef24e4b32cfe6440143d07e469a5e34bda0635276d32d9f35",
+        "signature": "84044697c8b3e08ef24e4b32cfe6440143d07e469a5e34bda0635276d32d9f35",
+        "affectsGlobalScope": false
+      },
+      "../../node_modules/@types/node/perf_hooks.d.ts": {
+        "version": "4982d94cb6427263c8839d8d6324a8bbe129e931deb61a7380f8fad17ba2cfc0",
+        "signature": "4982d94cb6427263c8839d8d6324a8bbe129e931deb61a7380f8fad17ba2cfc0",
+        "affectsGlobalScope": false
+      },
+      "../../node_modules/@types/node/process.d.ts": {
+        "version": "ae4bc1dd4d9de7bbea6ce419db45af82a81358e6014c9e1235b5d252e06f8ab8",
+        "signature": "ae4bc1dd4d9de7bbea6ce419db45af82a81358e6014c9e1235b5d252e06f8ab8",
+        "affectsGlobalScope": true
+      },
+      "../../node_modules/@types/node/punycode.d.ts": {
+        "version": "3f6a1fd73c9dc3bd7f4b79bc075297ca6527904df69b0f2c2c94e4c4c7d9a32c",
+        "signature": "3f6a1fd73c9dc3bd7f4b79bc075297ca6527904df69b0f2c2c94e4c4c7d9a32c",
+        "affectsGlobalScope": false
+      },
+      "../../node_modules/@types/node/querystring.d.ts": {
+        "version": "884560fda6c3868f925f022adc3a1289fe6507bbb45adb10fa1bbcc73a941bb0",
+        "signature": "884560fda6c3868f925f022adc3a1289fe6507bbb45adb10fa1bbcc73a941bb0",
+        "affectsGlobalScope": false
+      },
+      "../../node_modules/@types/node/readline.d.ts": {
+        "version": "6b2bb67b0942bcfce93e1d6fad5f70afd54940a2b13df7f311201fba54b2cbe9",
+        "signature": "6b2bb67b0942bcfce93e1d6fad5f70afd54940a2b13df7f311201fba54b2cbe9",
+        "affectsGlobalScope": false
+      },
+      "../../node_modules/@types/node/repl.d.ts": {
+        "version": "acbed967a379b3e9f73237ba9473f8b337eeea14b7dc64d445430b5d695751da",
+        "signature": "acbed967a379b3e9f73237ba9473f8b337eeea14b7dc64d445430b5d695751da",
+        "affectsGlobalScope": false
+      },
+      "../../node_modules/@types/node/stream.d.ts": {
+        "version": "e7b5a3f40f19d9eea71890c70dfb37ac5dd82cbffe5f95bc8f23c536455732d0",
+        "signature": "e7b5a3f40f19d9eea71890c70dfb37ac5dd82cbffe5f95bc8f23c536455732d0",
+        "affectsGlobalScope": false
+      },
+      "../../node_modules/@types/node/string_decoder.d.ts": {
+        "version": "d67e08745494b000da9410c1ae2fdc9965fc6d593fe0f381a47491f75417d457",
+        "signature": "d67e08745494b000da9410c1ae2fdc9965fc6d593fe0f381a47491f75417d457",
+        "affectsGlobalScope": false
+      },
+      "../../node_modules/@types/node/timers.d.ts": {
+        "version": "b40652bf8ce4a18133b31349086523b219724dca8df3448c1a0742528e7ad5b9",
+        "signature": "b40652bf8ce4a18133b31349086523b219724dca8df3448c1a0742528e7ad5b9",
+        "affectsGlobalScope": false
+      },
+      "../../node_modules/@types/node/tls.d.ts": {
+        "version": "c52eb62e3388a01b966c57bd14ca0ee9d5f6e656d6a18f6ce6b7cdece63734a3",
+        "signature": "c52eb62e3388a01b966c57bd14ca0ee9d5f6e656d6a18f6ce6b7cdece63734a3",
+        "affectsGlobalScope": false
+      },
+      "../../node_modules/@types/node/trace_events.d.ts": {
+        "version": "a77fdb357c78b70142b2fdbbfb72958d69e8f765fd2a3c69946c1018e89d4638",
+        "signature": "a77fdb357c78b70142b2fdbbfb72958d69e8f765fd2a3c69946c1018e89d4638",
+        "affectsGlobalScope": false
+      },
+      "../../node_modules/@types/node/tty.d.ts": {
+        "version": "3c2ac350c3baa61fd2b1925844109e098f4376d0768a4643abc82754fd752748",
+        "signature": "3c2ac350c3baa61fd2b1925844109e098f4376d0768a4643abc82754fd752748",
+        "affectsGlobalScope": false
+      },
+      "../../node_modules/@types/node/url.d.ts": {
+        "version": "4001971b90f18161f7bd46d68150d32a5da47e3f177956a267a2b29a2771896a",
+        "signature": "4001971b90f18161f7bd46d68150d32a5da47e3f177956a267a2b29a2771896a",
+        "affectsGlobalScope": false
+      },
+      "../../node_modules/@types/node/util.d.ts": {
+        "version": "f28704c27e1bd58068052f5407541a3306f0ffc77f068e2891f46527a4569e25",
+        "signature": "f28704c27e1bd58068052f5407541a3306f0ffc77f068e2891f46527a4569e25",
+        "affectsGlobalScope": false
+      },
+      "../../node_modules/@types/node/v8.d.ts": {
+        "version": "289be113bad7ee27ee7fa5b1e373c964c9789a5e9ed7db5ddcb631371120b953",
+        "signature": "289be113bad7ee27ee7fa5b1e373c964c9789a5e9ed7db5ddcb631371120b953",
+        "affectsGlobalScope": false
+      },
+      "../../node_modules/@types/node/vm.d.ts": {
+        "version": "baf0b82ffc5d2616f44a6fb1f81e8d798545bebf0c30f5d8b003a1dba1acfb3f",
+        "signature": "baf0b82ffc5d2616f44a6fb1f81e8d798545bebf0c30f5d8b003a1dba1acfb3f",
+        "affectsGlobalScope": false
+      },
+      "../../node_modules/@types/node/worker_threads.d.ts": {
+        "version": "c6a5b34f1e725019445754f1e733585f113e0dced75f137bd3c4af5853d3f6ab",
+        "signature": "c6a5b34f1e725019445754f1e733585f113e0dced75f137bd3c4af5853d3f6ab",
+        "affectsGlobalScope": false
+      },
+      "../../node_modules/@types/node/zlib.d.ts": {
+        "version": "15fbe50526244954eb2f933546bca6cdcf0db16c9428d099b3b386c1db5799ab",
+        "signature": "15fbe50526244954eb2f933546bca6cdcf0db16c9428d099b3b386c1db5799ab",
+        "affectsGlobalScope": false
+      },
+      "../../node_modules/@types/node/ts3.4/base.d.ts": {
+        "version": "d44028ae0127eb3e9fcfa5f55a8b81d64775ce15aca1020fe25c511bbb055834",
+        "signature": "d44028ae0127eb3e9fcfa5f55a8b81d64775ce15aca1020fe25c511bbb055834",
+        "affectsGlobalScope": false
+      },
+      "../../node_modules/@types/node/globals.global.d.ts": {
+        "version": "2708349d5a11a5c2e5f3a0765259ebe7ee00cdcc8161cb9990cb4910328442a1",
+        "signature": "2708349d5a11a5c2e5f3a0765259ebe7ee00cdcc8161cb9990cb4910328442a1",
+        "affectsGlobalScope": true
+      },
+      "../../node_modules/@types/node/wasi.d.ts": {
+        "version": "4e0a4d84b15692ea8669fe4f3d05a4f204567906b1347da7a58b75f45bae48d3",
+        "signature": "4e0a4d84b15692ea8669fe4f3d05a4f204567906b1347da7a58b75f45bae48d3",
+        "affectsGlobalScope": false
+      },
+      "../../node_modules/@types/node/ts3.6/base.d.ts": {
+        "version": "ad1ae5ae98eceb9af99061e83e867b9897d267aebc8f3b938c9424deabadf4bb",
+        "signature": "ad1ae5ae98eceb9af99061e83e867b9897d267aebc8f3b938c9424deabadf4bb",
+        "affectsGlobalScope": false
+      },
+      "../../node_modules/@types/node/assert.d.ts": {
+        "version": "b3593bd345ebea5e4d0a894c03251a3774b34df3d6db57075c18e089a599ba76",
+        "signature": "b3593bd345ebea5e4d0a894c03251a3774b34df3d6db57075c18e089a599ba76",
+        "affectsGlobalScope": false
+      },
+      "../../node_modules/@types/node/base.d.ts": {
+        "version": "e61a21e9418f279bc480394a94d1581b2dee73747adcbdef999b6737e34d721b",
+        "signature": "e61a21e9418f279bc480394a94d1581b2dee73747adcbdef999b6737e34d721b",
+        "affectsGlobalScope": false
+      },
+      "../../node_modules/@types/node/index.d.ts": {
+        "version": "744e6430bafc6f39f66c4fc1e6a0d8c9551260ffd1782aa7e3f5166ac6aa1f86",
+        "signature": "744e6430bafc6f39f66c4fc1e6a0d8c9551260ffd1782aa7e3f5166ac6aa1f86",
+        "affectsGlobalScope": false
       }
     },
     "options": {
@@ -248,16 +558,354 @@
       "configFilePath": "../../tsconfig.json"
     },
     "referencedMap": {
-      "../../index.js": [
-        "../../lib/vector2.js",
-        "../../lib/vector3.js"
-      ],
       "../../js/index.js": [
         "../../js/lib/vector2.js",
-        "../../js/lib/vector3.js"
+        "../../js/lib/vector3.js",
+        "../../node_modules/@types/node/fs.d.ts"
+      ],
+      "../../node_modules/@types/node/base.d.ts": [
+        "../../node_modules/@types/node/assert.d.ts",
+        "../../node_modules/@types/node/ts3.6/base.d.ts"
+      ],
+      "../../node_modules/@types/node/child_process.d.ts": [
+        "../../node_modules/@types/node/events.d.ts",
+        "../../node_modules/@types/node/fs.d.ts",
+        "../../node_modules/@types/node/net.d.ts",
+        "../../node_modules/@types/node/stream.d.ts"
+      ],
+      "../../node_modules/@types/node/cluster.d.ts": [
+        "../../node_modules/@types/node/child_process.d.ts",
+        "../../node_modules/@types/node/events.d.ts",
+        "../../node_modules/@types/node/net.d.ts"
+      ],
+      "../../node_modules/@types/node/console.d.ts": [
+        "../../node_modules/@types/node/util.d.ts"
+      ],
+      "../../node_modules/@types/node/constants.d.ts": [
+        "../../node_modules/@types/node/crypto.d.ts",
+        "../../node_modules/@types/node/fs.d.ts",
+        "../../node_modules/@types/node/os.d.ts"
+      ],
+      "../../node_modules/@types/node/crypto.d.ts": [
+        "../../node_modules/@types/node/stream.d.ts"
+      ],
+      "../../node_modules/@types/node/dgram.d.ts": [
+        "../../node_modules/@types/node/dns.d.ts",
+        "../../node_modules/@types/node/events.d.ts",
+        "../../node_modules/@types/node/net.d.ts"
+      ],
+      "../../node_modules/@types/node/domain.d.ts": [
+        "../../node_modules/@types/node/events.d.ts"
+      ],
+      "../../node_modules/@types/node/events.d.ts": [
+        "../../node_modules/@types/node/events.d.ts"
+      ],
+      "../../node_modules/@types/node/fs.d.ts": [
+        "../../node_modules/@types/node/events.d.ts",
+        "../../node_modules/@types/node/fs/promises.d.ts",
+        "../../node_modules/@types/node/stream.d.ts",
+        "../../node_modules/@types/node/url.d.ts"
+      ],
+      "../../node_modules/@types/node/fs/promises.d.ts": [
+        "../../node_modules/@types/node/fs.d.ts"
+      ],
+      "../../node_modules/@types/node/http.d.ts": [
+        "../../node_modules/@types/node/net.d.ts",
+        "../../node_modules/@types/node/stream.d.ts",
+        "../../node_modules/@types/node/url.d.ts"
+      ],
+      "../../node_modules/@types/node/http2.d.ts": [
+        "../../node_modules/@types/node/events.d.ts",
+        "../../node_modules/@types/node/fs.d.ts",
+        "../../node_modules/@types/node/http.d.ts",
+        "../../node_modules/@types/node/net.d.ts",
+        "../../node_modules/@types/node/stream.d.ts",
+        "../../node_modules/@types/node/tls.d.ts",
+        "../../node_modules/@types/node/url.d.ts"
+      ],
+      "../../node_modules/@types/node/https.d.ts": [
+        "../../node_modules/@types/node/events.d.ts",
+        "../../node_modules/@types/node/http.d.ts",
+        "../../node_modules/@types/node/tls.d.ts",
+        "../../node_modules/@types/node/url.d.ts"
+      ],
+      "../../node_modules/@types/node/index.d.ts": [
+        "../../node_modules/@types/node/base.d.ts"
+      ],
+      "../../node_modules/@types/node/inspector.d.ts": [
+        "../../node_modules/@types/node/events.d.ts"
+      ],
+      "../../node_modules/@types/node/module.d.ts": [
+        "../../node_modules/@types/node/url.d.ts"
+      ],
+      "../../node_modules/@types/node/net.d.ts": [
+        "../../node_modules/@types/node/dns.d.ts",
+        "../../node_modules/@types/node/events.d.ts",
+        "../../node_modules/@types/node/stream.d.ts"
+      ],
+      "../../node_modules/@types/node/perf_hooks.d.ts": [
+        "../../node_modules/@types/node/async_hooks.d.ts"
+      ],
+      "../../node_modules/@types/node/process.d.ts": [
+        "../../node_modules/@types/node/tty.d.ts"
+      ],
+      "../../node_modules/@types/node/readline.d.ts": [
+        "../../node_modules/@types/node/events.d.ts",
+        "../../node_modules/@types/node/stream.d.ts"
+      ],
+      "../../node_modules/@types/node/repl.d.ts": [
+        "../../node_modules/@types/node/readline.d.ts",
+        "../../node_modules/@types/node/util.d.ts",
+        "../../node_modules/@types/node/vm.d.ts"
+      ],
+      "../../node_modules/@types/node/stream.d.ts": [
+        "../../node_modules/@types/node/events.d.ts"
+      ],
+      "../../node_modules/@types/node/tls.d.ts": [
+        "../../node_modules/@types/node/crypto.d.ts",
+        "../../node_modules/@types/node/dns.d.ts",
+        "../../node_modules/@types/node/net.d.ts",
+        "../../node_modules/@types/node/stream.d.ts"
+      ],
+      "../../node_modules/@types/node/ts3.4/base.d.ts": [
+        "../../node_modules/@types/node/async_hooks.d.ts",
+        "../../node_modules/@types/node/buffer.d.ts",
+        "../../node_modules/@types/node/child_process.d.ts",
+        "../../node_modules/@types/node/cluster.d.ts",
+        "../../node_modules/@types/node/console.d.ts",
+        "../../node_modules/@types/node/constants.d.ts",
+        "../../node_modules/@types/node/crypto.d.ts",
+        "../../node_modules/@types/node/dgram.d.ts",
+        "../../node_modules/@types/node/dns.d.ts",
+        "../../node_modules/@types/node/domain.d.ts",
+        "../../node_modules/@types/node/events.d.ts",
+        "../../node_modules/@types/node/fs.d.ts",
+        "../../node_modules/@types/node/fs/promises.d.ts",
+        "../../node_modules/@types/node/globals.d.ts",
+        "../../node_modules/@types/node/http.d.ts",
+        "../../node_modules/@types/node/http2.d.ts",
+        "../../node_modules/@types/node/https.d.ts",
+        "../../node_modules/@types/node/inspector.d.ts",
+        "../../node_modules/@types/node/module.d.ts",
+        "../../node_modules/@types/node/net.d.ts",
+        "../../node_modules/@types/node/os.d.ts",
+        "../../node_modules/@types/node/path.d.ts",
+        "../../node_modules/@types/node/perf_hooks.d.ts",
+        "../../node_modules/@types/node/process.d.ts",
+        "../../node_modules/@types/node/punycode.d.ts",
+        "../../node_modules/@types/node/querystring.d.ts",
+        "../../node_modules/@types/node/readline.d.ts",
+        "../../node_modules/@types/node/repl.d.ts",
+        "../../node_modules/@types/node/stream.d.ts",
+        "../../node_modules/@types/node/string_decoder.d.ts",
+        "../../node_modules/@types/node/timers.d.ts",
+        "../../node_modules/@types/node/tls.d.ts",
+        "../../node_modules/@types/node/trace_events.d.ts",
+        "../../node_modules/@types/node/tty.d.ts",
+        "../../node_modules/@types/node/url.d.ts",
+        "../../node_modules/@types/node/util.d.ts",
+        "../../node_modules/@types/node/v8.d.ts",
+        "../../node_modules/@types/node/vm.d.ts",
+        "../../node_modules/@types/node/worker_threads.d.ts",
+        "../../node_modules/@types/node/zlib.d.ts"
+      ],
+      "../../node_modules/@types/node/ts3.6/base.d.ts": [
+        "../../node_modules/@types/node/globals.global.d.ts",
+        "../../node_modules/@types/node/ts3.4/base.d.ts",
+        "../../node_modules/@types/node/wasi.d.ts"
+      ],
+      "../../node_modules/@types/node/tty.d.ts": [
+        "../../node_modules/@types/node/net.d.ts"
+      ],
+      "../../node_modules/@types/node/url.d.ts": [
+        "../../node_modules/@types/node/querystring.d.ts"
+      ],
+      "../../node_modules/@types/node/v8.d.ts": [
+        "../../node_modules/@types/node/stream.d.ts"
+      ],
+      "../../node_modules/@types/node/worker_threads.d.ts": [
+        "../../node_modules/@types/node/events.d.ts",
+        "../../node_modules/@types/node/fs/promises.d.ts",
+        "../../node_modules/@types/node/stream.d.ts",
+        "../../node_modules/@types/node/url.d.ts",
+        "../../node_modules/@types/node/vm.d.ts"
+      ],
+      "../../node_modules/@types/node/zlib.d.ts": [
+        "../../node_modules/@types/node/stream.d.ts"
       ]
     },
-    "exportedModulesMap": {},
+    "exportedModulesMap": {
+      "../../node_modules/@types/node/base.d.ts": [
+        "../../node_modules/@types/node/assert.d.ts",
+        "../../node_modules/@types/node/ts3.6/base.d.ts"
+      ],
+      "../../node_modules/@types/node/child_process.d.ts": [
+        "../../node_modules/@types/node/events.d.ts",
+        "../../node_modules/@types/node/fs.d.ts",
+        "../../node_modules/@types/node/net.d.ts",
+        "../../node_modules/@types/node/stream.d.ts"
+      ],
+      "../../node_modules/@types/node/cluster.d.ts": [
+        "../../node_modules/@types/node/child_process.d.ts",
+        "../../node_modules/@types/node/events.d.ts",
+        "../../node_modules/@types/node/net.d.ts"
+      ],
+      "../../node_modules/@types/node/console.d.ts": [
+        "../../node_modules/@types/node/util.d.ts"
+      ],
+      "../../node_modules/@types/node/constants.d.ts": [
+        "../../node_modules/@types/node/crypto.d.ts",
+        "../../node_modules/@types/node/fs.d.ts",
+        "../../node_modules/@types/node/os.d.ts"
+      ],
+      "../../node_modules/@types/node/crypto.d.ts": [
+        "../../node_modules/@types/node/stream.d.ts"
+      ],
+      "../../node_modules/@types/node/dgram.d.ts": [
+        "../../node_modules/@types/node/dns.d.ts",
+        "../../node_modules/@types/node/events.d.ts",
+        "../../node_modules/@types/node/net.d.ts"
+      ],
+      "../../node_modules/@types/node/domain.d.ts": [
+        "../../node_modules/@types/node/events.d.ts"
+      ],
+      "../../node_modules/@types/node/events.d.ts": [
+        "../../node_modules/@types/node/events.d.ts"
+      ],
+      "../../node_modules/@types/node/fs.d.ts": [
+        "../../node_modules/@types/node/events.d.ts",
+        "../../node_modules/@types/node/fs/promises.d.ts",
+        "../../node_modules/@types/node/stream.d.ts",
+        "../../node_modules/@types/node/url.d.ts"
+      ],
+      "../../node_modules/@types/node/fs/promises.d.ts": [
+        "../../node_modules/@types/node/fs.d.ts"
+      ],
+      "../../node_modules/@types/node/http.d.ts": [
+        "../../node_modules/@types/node/net.d.ts",
+        "../../node_modules/@types/node/stream.d.ts",
+        "../../node_modules/@types/node/url.d.ts"
+      ],
+      "../../node_modules/@types/node/http2.d.ts": [
+        "../../node_modules/@types/node/events.d.ts",
+        "../../node_modules/@types/node/fs.d.ts",
+        "../../node_modules/@types/node/http.d.ts",
+        "../../node_modules/@types/node/net.d.ts",
+        "../../node_modules/@types/node/stream.d.ts",
+        "../../node_modules/@types/node/tls.d.ts",
+        "../../node_modules/@types/node/url.d.ts"
+      ],
+      "../../node_modules/@types/node/https.d.ts": [
+        "../../node_modules/@types/node/events.d.ts",
+        "../../node_modules/@types/node/http.d.ts",
+        "../../node_modules/@types/node/tls.d.ts",
+        "../../node_modules/@types/node/url.d.ts"
+      ],
+      "../../node_modules/@types/node/index.d.ts": [
+        "../../node_modules/@types/node/base.d.ts"
+      ],
+      "../../node_modules/@types/node/inspector.d.ts": [
+        "../../node_modules/@types/node/events.d.ts"
+      ],
+      "../../node_modules/@types/node/module.d.ts": [
+        "../../node_modules/@types/node/url.d.ts"
+      ],
+      "../../node_modules/@types/node/net.d.ts": [
+        "../../node_modules/@types/node/dns.d.ts",
+        "../../node_modules/@types/node/events.d.ts",
+        "../../node_modules/@types/node/stream.d.ts"
+      ],
+      "../../node_modules/@types/node/perf_hooks.d.ts": [
+        "../../node_modules/@types/node/async_hooks.d.ts"
+      ],
+      "../../node_modules/@types/node/process.d.ts": [
+        "../../node_modules/@types/node/tty.d.ts"
+      ],
+      "../../node_modules/@types/node/readline.d.ts": [
+        "../../node_modules/@types/node/events.d.ts",
+        "../../node_modules/@types/node/stream.d.ts"
+      ],
+      "../../node_modules/@types/node/repl.d.ts": [
+        "../../node_modules/@types/node/readline.d.ts",
+        "../../node_modules/@types/node/util.d.ts",
+        "../../node_modules/@types/node/vm.d.ts"
+      ],
+      "../../node_modules/@types/node/stream.d.ts": [
+        "../../node_modules/@types/node/events.d.ts"
+      ],
+      "../../node_modules/@types/node/tls.d.ts": [
+        "../../node_modules/@types/node/crypto.d.ts",
+        "../../node_modules/@types/node/dns.d.ts",
+        "../../node_modules/@types/node/net.d.ts",
+        "../../node_modules/@types/node/stream.d.ts"
+      ],
+      "../../node_modules/@types/node/ts3.4/base.d.ts": [
+        "../../node_modules/@types/node/async_hooks.d.ts",
+        "../../node_modules/@types/node/buffer.d.ts",
+        "../../node_modules/@types/node/child_process.d.ts",
+        "../../node_modules/@types/node/cluster.d.ts",
+        "../../node_modules/@types/node/console.d.ts",
+        "../../node_modules/@types/node/constants.d.ts",
+        "../../node_modules/@types/node/crypto.d.ts",
+        "../../node_modules/@types/node/dgram.d.ts",
+        "../../node_modules/@types/node/dns.d.ts",
+        "../../node_modules/@types/node/domain.d.ts",
+        "../../node_modules/@types/node/events.d.ts",
+        "../../node_modules/@types/node/fs.d.ts",
+        "../../node_modules/@types/node/fs/promises.d.ts",
+        "../../node_modules/@types/node/globals.d.ts",
+        "../../node_modules/@types/node/http.d.ts",
+        "../../node_modules/@types/node/http2.d.ts",
+        "../../node_modules/@types/node/https.d.ts",
+        "../../node_modules/@types/node/inspector.d.ts",
+        "../../node_modules/@types/node/module.d.ts",
+        "../../node_modules/@types/node/net.d.ts",
+        "../../node_modules/@types/node/os.d.ts",
+        "../../node_modules/@types/node/path.d.ts",
+        "../../node_modules/@types/node/perf_hooks.d.ts",
+        "../../node_modules/@types/node/process.d.ts",
+        "../../node_modules/@types/node/punycode.d.ts",
+        "../../node_modules/@types/node/querystring.d.ts",
+        "../../node_modules/@types/node/readline.d.ts",
+        "../../node_modules/@types/node/repl.d.ts",
+        "../../node_modules/@types/node/stream.d.ts",
+        "../../node_modules/@types/node/string_decoder.d.ts",
+        "../../node_modules/@types/node/timers.d.ts",
+        "../../node_modules/@types/node/tls.d.ts",
+        "../../node_modules/@types/node/trace_events.d.ts",
+        "../../node_modules/@types/node/tty.d.ts",
+        "../../node_modules/@types/node/url.d.ts",
+        "../../node_modules/@types/node/util.d.ts",
+        "../../node_modules/@types/node/v8.d.ts",
+        "../../node_modules/@types/node/vm.d.ts",
+        "../../node_modules/@types/node/worker_threads.d.ts",
+        "../../node_modules/@types/node/zlib.d.ts"
+      ],
+      "../../node_modules/@types/node/ts3.6/base.d.ts": [
+        "../../node_modules/@types/node/globals.global.d.ts",
+        "../../node_modules/@types/node/ts3.4/base.d.ts",
+        "../../node_modules/@types/node/wasi.d.ts"
+      ],
+      "../../node_modules/@types/node/tty.d.ts": [
+        "../../node_modules/@types/node/net.d.ts"
+      ],
+      "../../node_modules/@types/node/url.d.ts": [
+        "../../node_modules/@types/node/querystring.d.ts"
+      ],
+      "../../node_modules/@types/node/v8.d.ts": [
+        "../../node_modules/@types/node/stream.d.ts"
+      ],
+      "../../node_modules/@types/node/worker_threads.d.ts": [
+        "../../node_modules/@types/node/events.d.ts",
+        "../../node_modules/@types/node/fs/promises.d.ts",
+        "../../node_modules/@types/node/stream.d.ts",
+        "../../node_modules/@types/node/url.d.ts",
+        "../../node_modules/@types/node/vm.d.ts"
+      ],
+      "../../node_modules/@types/node/zlib.d.ts": [
+        "../../node_modules/@types/node/stream.d.ts"
+      ]
+    },
     "semanticDiagnosticsPerFile": [
       "../../../../../usr/lib/node_modules/typescript/lib/lib.dom.d.ts",
       "../../../../../usr/lib/node_modules/typescript/lib/lib.es2015.collection.d.ts",
@@ -270,7 +918,23 @@
       "../../../../../usr/lib/node_modules/typescript/lib/lib.es2015.reflect.d.ts",
       "../../../../../usr/lib/node_modules/typescript/lib/lib.es2015.symbol.d.ts",
       "../../../../../usr/lib/node_modules/typescript/lib/lib.es2015.symbol.wellknown.d.ts",
+      "../../../../../usr/lib/node_modules/typescript/lib/lib.es2016.array.include.d.ts",
+      "../../../../../usr/lib/node_modules/typescript/lib/lib.es2016.d.ts",
+      "../../../../../usr/lib/node_modules/typescript/lib/lib.es2017.d.ts",
+      "../../../../../usr/lib/node_modules/typescript/lib/lib.es2017.intl.d.ts",
+      "../../../../../usr/lib/node_modules/typescript/lib/lib.es2017.object.d.ts",
+      "../../../../../usr/lib/node_modules/typescript/lib/lib.es2017.sharedmemory.d.ts",
+      "../../../../../usr/lib/node_modules/typescript/lib/lib.es2017.string.d.ts",
+      "../../../../../usr/lib/node_modules/typescript/lib/lib.es2017.typedarrays.d.ts",
+      "../../../../../usr/lib/node_modules/typescript/lib/lib.es2018.asyncgenerator.d.ts",
+      "../../../../../usr/lib/node_modules/typescript/lib/lib.es2018.asynciterable.d.ts",
+      "../../../../../usr/lib/node_modules/typescript/lib/lib.es2018.d.ts",
+      "../../../../../usr/lib/node_modules/typescript/lib/lib.es2018.intl.d.ts",
+      "../../../../../usr/lib/node_modules/typescript/lib/lib.es2018.promise.d.ts",
+      "../../../../../usr/lib/node_modules/typescript/lib/lib.es2018.regexp.d.ts",
+      "../../../../../usr/lib/node_modules/typescript/lib/lib.es2020.bigint.d.ts",
       "../../../../../usr/lib/node_modules/typescript/lib/lib.es5.d.ts",
+      "../../../../../usr/lib/node_modules/typescript/lib/lib.esnext.intl.d.ts",
       "../../doc/scripts/linenumber.d.ts",
       "../../doc/scripts/linenumber.js",
       "../../doc/scripts/prettify/lang-css.d.ts",
@@ -1149,14 +1813,6 @@
           },
           {
             "file": "../../extras/commons.utils.ts",
-            "start": 3745,
-            "length": 8,
-            "code": 2550,
-            "category": 1,
-            "messageText": "Property 'includes' does not exist on type '(null | undefined)[]'. Do you need to change your target library? Try changing the `lib` compiler option to 'es2016' or later."
-          },
-          {
-            "file": "../../extras/commons.utils.ts",
             "start": 3812,
             "length": 3,
             "messageText": "Parameter 'obj' implicitly has an 'any' type.",
@@ -1194,14 +1850,6 @@
             "messageText": "Parameter 'val' implicitly has an 'any' type.",
             "category": 1,
             "code": 7006
-          },
-          {
-            "file": "../../extras/commons.utils.ts",
-            "start": 4624,
-            "length": 8,
-            "code": 2550,
-            "category": 1,
-            "messageText": "Property 'includes' does not exist on type 'string[]'. Do you need to change your target library? Try changing the `lib` compiler option to 'es2016' or later."
           },
           {
             "file": "../../extras/commons.utils.ts",
@@ -2179,37 +2827,11 @@
           }
         ]
       ],
-      "../../index.d.ts",
       [
-        "../../index.js",
+        "../../index.ts",
         [
           {
-            "file": "../../index.js",
-            "start": 34,
-            "length": 4,
-            "messageText": "Cannot find module 'fs' or its corresponding type declarations.",
-            "category": 1,
-            "code": 2307
-          },
-          {
-            "file": "../../index.js",
-            "start": 147,
-            "length": 6,
-            "messageText": "'Entity' is declared but its value is never read.",
-            "category": 1,
-            "code": 6133,
-            "reportsUnnecessary": true
-          },
-          {
-            "file": "../../index.js",
-            "start": 164,
-            "length": 19,
-            "messageText": "File '/var/www/hellhound.games/lib/entity2d.js' is not a module.",
-            "category": 1,
-            "code": 2306
-          },
-          {
-            "file": "../../index.js",
+            "file": "../../index.ts",
             "start": 327,
             "length": 3,
             "messageText": "Parameter 'err' implicitly has an 'any' type.",
@@ -2217,7 +2839,7 @@
             "code": 7006
           },
           {
-            "file": "../../index.js",
+            "file": "../../index.ts",
             "start": 332,
             "length": 4,
             "messageText": "Parameter 'data' implicitly has an 'any' type.",
@@ -2225,7 +2847,7 @@
             "code": 7006
           },
           {
-            "file": "../../index.js",
+            "file": "../../index.ts",
             "start": 430,
             "length": 9,
             "messageText": "'creatures' is declared but its value is never read.",
@@ -2234,7 +2856,7 @@
             "reportsUnnecessary": true
           },
           {
-            "file": "../../index.js",
+            "file": "../../index.ts",
             "start": 557,
             "length": 3,
             "messageText": "Parameter 'err' implicitly has an 'any' type.",
@@ -2242,7 +2864,7 @@
             "code": 7006
           },
           {
-            "file": "../../index.js",
+            "file": "../../index.ts",
             "start": 562,
             "length": 4,
             "messageText": "Parameter 'data' implicitly has an 'any' type.",
@@ -2250,24 +2872,24 @@
             "code": 7006
           },
           {
-            "file": "../../index.js",
-            "start": 943,
+            "file": "../../index.ts",
+            "start": 1060,
             "length": 3,
             "messageText": "Parameter 'err' implicitly has an 'any' type.",
             "category": 1,
             "code": 7006
           },
           {
-            "file": "../../index.js",
-            "start": 948,
+            "file": "../../index.ts",
+            "start": 1065,
             "length": 4,
             "messageText": "Parameter 'data' implicitly has an 'any' type.",
             "category": 1,
             "code": 7006
           },
           {
-            "file": "../../index.js",
-            "start": 1053,
+            "file": "../../index.ts",
+            "start": 1170,
             "length": 6,
             "messageText": "'player' is declared but its value is never read.",
             "category": 1,
@@ -2280,14 +2902,6 @@
       [
         "../../js/entity.js",
         [
-          {
-            "file": "../../js/entity.js",
-            "start": 273,
-            "length": 6,
-            "messageText": "Cannot find name 'Entity'.",
-            "category": 1,
-            "code": 2304
-          },
           {
             "file": "../../js/entity.js",
             "start": 402,
@@ -2344,9 +2958,19 @@
             "file": "../../js/entity.js",
             "start": 728,
             "length": 6,
-            "messageText": "Cannot find name 'entity'.",
+            "messageText": "Cannot find name 'entity'. Did you mean 'Entity'?",
             "category": 1,
-            "code": 2304
+            "code": 2552,
+            "relatedInformation": [
+              {
+                "file": "../../index.ts",
+                "start": 147,
+                "length": 6,
+                "messageText": "'Entity' is declared here.",
+                "category": 3,
+                "code": 2728
+              }
+            ]
           },
           {
             "file": "../../js/entity.js",
@@ -3711,14 +4335,6 @@
           },
           {
             "file": "../../js/extras/commons.utils.js",
-            "start": 5734,
-            "length": 8,
-            "code": 2550,
-            "category": 1,
-            "messageText": "Property 'includes' does not exist on type '(null | undefined)[]'. Do you need to change your target library? Try changing the `lib` compiler option to 'es2016' or later."
-          },
-          {
-            "file": "../../js/extras/commons.utils.js",
             "start": 5802,
             "length": 3,
             "messageText": "Parameter 'obj' implicitly has an 'any' type.",
@@ -3756,14 +4372,6 @@
             "messageText": "Parameter 'val' implicitly has an 'any' type.",
             "category": 1,
             "code": 7006
-          },
-          {
-            "file": "../../js/extras/commons.utils.js",
-            "start": 6535,
-            "length": 8,
-            "code": 2550,
-            "category": 1,
-            "messageText": "Property 'includes' does not exist on type 'string[]'. Do you need to change your target library? Try changing the `lib` compiler option to 'es2016' or later."
           },
           {
             "file": "../../js/extras/commons.utils.js",
@@ -5155,43 +5763,11 @@
         [
           {
             "file": "../../js/index.js",
-            "start": 33,
+            "start": 419,
             "length": 4,
-            "messageText": "Cannot find module 'fs' or its corresponding type declarations.",
+            "code": 2345,
             "category": 1,
-            "code": 2307
-          },
-          {
-            "file": "../../js/index.js",
-            "start": 279,
-            "length": 3,
-            "messageText": "Parameter 'err' implicitly has an 'any' type.",
-            "category": 1,
-            "code": 7006
-          },
-          {
-            "file": "../../js/index.js",
-            "start": 284,
-            "length": 4,
-            "messageText": "Parameter 'data' implicitly has an 'any' type.",
-            "category": 1,
-            "code": 7006
-          },
-          {
-            "file": "../../js/index.js",
-            "start": 524,
-            "length": 3,
-            "messageText": "Parameter 'err' implicitly has an 'any' type.",
-            "category": 1,
-            "code": 7006
-          },
-          {
-            "file": "../../js/index.js",
-            "start": 529,
-            "length": 4,
-            "messageText": "Parameter 'data' implicitly has an 'any' type.",
-            "category": 1,
-            "code": 7006
+            "messageText": "Argument of type 'Buffer' is not assignable to parameter of type 'string'."
           },
           {
             "file": "../../js/index.js",
@@ -5204,19 +5780,11 @@
           },
           {
             "file": "../../js/index.js",
-            "start": 761,
-            "length": 3,
-            "messageText": "Parameter 'err' implicitly has an 'any' type.",
-            "category": 1,
-            "code": 7006
-          },
-          {
-            "file": "../../js/index.js",
-            "start": 766,
+            "start": 657,
             "length": 4,
-            "messageText": "Parameter 'data' implicitly has an 'any' type.",
+            "code": 2345,
             "category": 1,
-            "code": 7006
+            "messageText": "Argument of type 'Buffer' is not assignable to parameter of type 'string'."
           },
           {
             "file": "../../js/index.js",
@@ -5226,6 +5794,14 @@
             "category": 1,
             "code": 6133,
             "reportsUnnecessary": true
+          },
+          {
+            "file": "../../js/index.js",
+            "start": 905,
+            "length": 4,
+            "code": 2345,
+            "category": 1,
+            "messageText": "Argument of type 'Buffer' is not assignable to parameter of type 'string'."
           }
         ]
       ],
@@ -6782,10 +7358,10 @@
         ]
       ],
       [
-        "../../lib/entity2d.js",
+        "../../lib/entity2d.ts",
         [
           {
-            "file": "../../lib/entity2d.js",
+            "file": "../../lib/entity2d.ts",
             "start": 259,
             "length": 12,
             "messageText": "'compareLevel' is declared but its value is never read.",
@@ -6794,7 +7370,7 @@
             "reportsUnnecessary": true
           },
           {
-            "file": "../../lib/entity2d.js",
+            "file": "../../lib/entity2d.ts",
             "start": 322,
             "length": 8,
             "messageText": "'getLevel' is declared but its value is never read.",
@@ -6803,15 +7379,7 @@
             "reportsUnnecessary": true
           },
           {
-            "file": "../../lib/entity2d.js",
-            "start": 440,
-            "length": 6,
-            "messageText": "Cannot find name 'Entity'.",
-            "category": 1,
-            "code": 2304
-          },
-          {
-            "file": "../../lib/entity2d.js",
+            "file": "../../lib/entity2d.ts",
             "start": 566,
             "length": 8,
             "messageText": "'setLevel' is declared but its value is never read.",
@@ -6820,7 +7388,15 @@
             "reportsUnnecessary": true
           },
           {
-            "file": "../../lib/entity2d.js",
+            "file": "../../lib/entity2d.ts",
+            "start": 575,
+            "length": 6,
+            "messageText": "Parameter 'entity' implicitly has an 'any' type.",
+            "category": 1,
+            "code": 7006
+          },
+          {
+            "file": "../../lib/entity2d.ts",
             "start": 591,
             "length": 4,
             "messageText": "Cannot find name 'NULL'.",
@@ -6828,23 +7404,7 @@
             "code": 2304
           },
           {
-            "file": "../../lib/entity2d.js",
-            "start": 707,
-            "length": 10,
-            "messageText": "Cannot find name 'EntityType'.",
-            "category": 1,
-            "code": 2304
-          },
-          {
-            "file": "../../lib/entity2d.js",
-            "start": 761,
-            "length": 7,
-            "messageText": "Cannot find name 'Faction'.",
-            "category": 1,
-            "code": 2304
-          },
-          {
-            "file": "../../lib/entity2d.js",
+            "file": "../../lib/entity2d.ts",
             "start": 881,
             "length": 12,
             "messageText": "'createEntity' is declared but its value is never read.",
@@ -6853,7 +7413,7 @@
             "reportsUnnecessary": true
           },
           {
-            "file": "../../lib/entity2d.js",
+            "file": "../../lib/entity2d.ts",
             "start": 894,
             "length": 4,
             "messageText": "'type' is declared but its value is never read.",
@@ -6862,21 +7422,37 @@
             "reportsUnnecessary": true
           },
           {
-            "file": "../../lib/entity2d.js",
+            "file": "../../lib/entity2d.ts",
+            "start": 894,
+            "length": 4,
+            "messageText": "Parameter 'type' implicitly has an 'any' type.",
+            "category": 1,
+            "code": 7006
+          },
+          {
+            "file": "../../lib/entity2d.ts",
             "start": 900,
             "length": 7,
             "messageText": "'faction' is declared but its value is never read.",
             "category": 1,
             "code": 6133,
             "reportsUnnecessary": true
+          },
+          {
+            "file": "../../lib/entity2d.ts",
+            "start": 900,
+            "length": 7,
+            "messageText": "Parameter 'faction' implicitly has an 'any' type.",
+            "category": 1,
+            "code": 7006
           }
         ]
       ],
       [
-        "../../lib/vector2.js",
+        "../../lib/vector2.ts",
         [
           {
-            "file": "../../lib/vector2.js",
+            "file": "../../lib/vector2.ts",
             "start": 46,
             "length": 1,
             "messageText": "Parameter 'x' implicitly has an 'any' type.",
@@ -6884,7 +7460,7 @@
             "code": 7006
           },
           {
-            "file": "../../lib/vector2.js",
+            "file": "../../lib/vector2.ts",
             "start": 49,
             "length": 1,
             "messageText": "Parameter 'y' implicitly has an 'any' type.",
@@ -6892,7 +7468,15 @@
             "code": 7006
           },
           {
-            "file": "../../lib/vector2.js",
+            "file": "../../lib/vector2.ts",
+            "start": 65,
+            "length": 25,
+            "messageText": "'new' expression, whose target lacks a construct signature, implicitly has an 'any' type.",
+            "category": 1,
+            "code": 7009
+          },
+          {
+            "file": "../../lib/vector2.ts",
             "start": 180,
             "length": 1,
             "messageText": "Parameter 'x' implicitly has an 'any' type.",
@@ -6900,7 +7484,7 @@
             "code": 7006
           },
           {
-            "file": "../../lib/vector2.js",
+            "file": "../../lib/vector2.ts",
             "start": 183,
             "length": 1,
             "messageText": "Parameter 'y' implicitly has an 'any' type.",
@@ -6908,23 +7492,7 @@
             "code": 7006
           },
           {
-            "file": "../../lib/vector2.js",
-            "start": 273,
-            "length": 1,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property 'x' does not exist on type 'Vector2'."
-          },
-          {
-            "file": "../../lib/vector2.js",
-            "start": 298,
-            "length": 1,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property 'y' does not exist on type 'Vector2'."
-          },
-          {
-            "file": "../../lib/vector2.js",
+            "file": "../../lib/vector2.ts",
             "start": 363,
             "length": 1,
             "messageText": "Parameter 'x' implicitly has an 'any' type.",
@@ -6932,7 +7500,7 @@
             "code": 7006
           },
           {
-            "file": "../../lib/vector2.js",
+            "file": "../../lib/vector2.ts",
             "start": 366,
             "length": 1,
             "messageText": "Parameter 'y' implicitly has an 'any' type.",
@@ -6940,55 +7508,23 @@
             "code": 7006
           },
           {
-            "file": "../../lib/vector2.js",
-            "start": 418,
-            "length": 1,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property 'x' does not exist on type 'Vector2'."
-          },
-          {
-            "file": "../../lib/vector2.js",
+            "file": "../../lib/vector2.ts",
             "start": 425,
             "length": 1,
             "code": 2339,
             "category": 1,
-            "messageText": "Property 'x' does not exist on type '{ constructor: typeof Vector2; init: typeof init; add: (x: any, y: any) => this; substract: (x: any, y: any) => this; multiply: (x: any, y: any) => this; multiplyBy: (number: any) => this; divide: (x: any, y: any) => this; ... 7 more ...; clone: typeof clone; }'."
+            "messageText": "Property 'x' does not exist on type '{}'."
           },
           {
-            "file": "../../lib/vector2.js",
-            "start": 441,
-            "length": 1,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property 'y' does not exist on type 'Vector2'."
-          },
-          {
-            "file": "../../lib/vector2.js",
+            "file": "../../lib/vector2.ts",
             "start": 448,
             "length": 1,
             "code": 2339,
             "category": 1,
-            "messageText": "Property 'y' does not exist on type '{ constructor: typeof Vector2; init: typeof init; add: (x: any, y: any) => this; substract: (x: any, y: any) => this; multiply: (x: any, y: any) => this; multiplyBy: (number: any) => this; divide: (x: any, y: any) => this; ... 7 more ...; clone: typeof clone; }'."
+            "messageText": "Property 'y' does not exist on type '{}'."
           },
           {
-            "file": "../../lib/vector2.js",
-            "start": 479,
-            "length": 1,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property 'x' does not exist on type 'Vector2'."
-          },
-          {
-            "file": "../../lib/vector2.js",
-            "start": 500,
-            "length": 1,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property 'y' does not exist on type 'Vector2'."
-          },
-          {
-            "file": "../../lib/vector2.js",
+            "file": "../../lib/vector2.ts",
             "start": 567,
             "length": 1,
             "messageText": "Parameter 'x' implicitly has an 'any' type.",
@@ -6996,7 +7532,7 @@
             "code": 7006
           },
           {
-            "file": "../../lib/vector2.js",
+            "file": "../../lib/vector2.ts",
             "start": 570,
             "length": 1,
             "messageText": "Parameter 'y' implicitly has an 'any' type.",
@@ -7004,55 +7540,23 @@
             "code": 7006
           },
           {
-            "file": "../../lib/vector2.js",
-            "start": 622,
-            "length": 1,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property 'x' does not exist on type 'Vector2'."
-          },
-          {
-            "file": "../../lib/vector2.js",
+            "file": "../../lib/vector2.ts",
             "start": 629,
             "length": 1,
             "code": 2339,
             "category": 1,
-            "messageText": "Property 'x' does not exist on type '{ constructor: typeof Vector2; init: typeof init; add: (x: any, y: any) => this; substract: (x: any, y: any) => this; multiply: (x: any, y: any) => this; multiplyBy: (number: any) => this; divide: (x: any, y: any) => this; ... 7 more ...; clone: typeof clone; }'."
+            "messageText": "Property 'x' does not exist on type '{}'."
           },
           {
-            "file": "../../lib/vector2.js",
-            "start": 645,
-            "length": 1,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property 'y' does not exist on type 'Vector2'."
-          },
-          {
-            "file": "../../lib/vector2.js",
+            "file": "../../lib/vector2.ts",
             "start": 652,
             "length": 1,
             "code": 2339,
             "category": 1,
-            "messageText": "Property 'y' does not exist on type '{ constructor: typeof Vector2; init: typeof init; add: (x: any, y: any) => this; substract: (x: any, y: any) => this; multiply: (x: any, y: any) => this; multiplyBy: (number: any) => this; divide: (x: any, y: any) => this; ... 7 more ...; clone: typeof clone; }'."
+            "messageText": "Property 'y' does not exist on type '{}'."
           },
           {
-            "file": "../../lib/vector2.js",
-            "start": 683,
-            "length": 1,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property 'x' does not exist on type 'Vector2'."
-          },
-          {
-            "file": "../../lib/vector2.js",
-            "start": 704,
-            "length": 1,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property 'y' does not exist on type 'Vector2'."
-          },
-          {
-            "file": "../../lib/vector2.js",
+            "file": "../../lib/vector2.ts",
             "start": 770,
             "length": 1,
             "messageText": "Parameter 'x' implicitly has an 'any' type.",
@@ -7060,7 +7564,7 @@
             "code": 7006
           },
           {
-            "file": "../../lib/vector2.js",
+            "file": "../../lib/vector2.ts",
             "start": 773,
             "length": 1,
             "messageText": "Parameter 'y' implicitly has an 'any' type.",
@@ -7068,55 +7572,23 @@
             "code": 7006
           },
           {
-            "file": "../../lib/vector2.js",
-            "start": 825,
-            "length": 1,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property 'x' does not exist on type 'Vector2'."
-          },
-          {
-            "file": "../../lib/vector2.js",
+            "file": "../../lib/vector2.ts",
             "start": 832,
             "length": 1,
             "code": 2339,
             "category": 1,
-            "messageText": "Property 'x' does not exist on type '{ constructor: typeof Vector2; init: typeof init; add: (x: any, y: any) => this; substract: (x: any, y: any) => this; multiply: (x: any, y: any) => this; multiplyBy: (number: any) => this; divide: (x: any, y: any) => this; ... 7 more ...; clone: typeof clone; }'."
+            "messageText": "Property 'x' does not exist on type '{}'."
           },
           {
-            "file": "../../lib/vector2.js",
-            "start": 848,
-            "length": 1,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property 'y' does not exist on type 'Vector2'."
-          },
-          {
-            "file": "../../lib/vector2.js",
+            "file": "../../lib/vector2.ts",
             "start": 855,
             "length": 1,
             "code": 2339,
             "category": 1,
-            "messageText": "Property 'y' does not exist on type '{ constructor: typeof Vector2; init: typeof init; add: (x: any, y: any) => this; substract: (x: any, y: any) => this; multiply: (x: any, y: any) => this; multiplyBy: (number: any) => this; divide: (x: any, y: any) => this; ... 7 more ...; clone: typeof clone; }'."
+            "messageText": "Property 'y' does not exist on type '{}'."
           },
           {
-            "file": "../../lib/vector2.js",
-            "start": 886,
-            "length": 1,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property 'x' does not exist on type 'Vector2'."
-          },
-          {
-            "file": "../../lib/vector2.js",
-            "start": 907,
-            "length": 1,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property 'y' does not exist on type 'Vector2'."
-          },
-          {
-            "file": "../../lib/vector2.js",
+            "file": "../../lib/vector2.ts",
             "start": 975,
             "length": 6,
             "messageText": "Parameter 'number' implicitly has an 'any' type.",
@@ -7124,23 +7596,7 @@
             "code": 7006
           },
           {
-            "file": "../../lib/vector2.js",
-            "start": 996,
-            "length": 1,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property 'x' does not exist on type 'Vector2'."
-          },
-          {
-            "file": "../../lib/vector2.js",
-            "start": 1020,
-            "length": 1,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property 'y' does not exist on type 'Vector2'."
-          },
-          {
-            "file": "../../lib/vector2.js",
+            "file": "../../lib/vector2.ts",
             "start": 1081,
             "length": 1,
             "messageText": "Parameter 'x' implicitly has an 'any' type.",
@@ -7148,7 +7604,7 @@
             "code": 7006
           },
           {
-            "file": "../../lib/vector2.js",
+            "file": "../../lib/vector2.ts",
             "start": 1084,
             "length": 1,
             "messageText": "Parameter 'y' implicitly has an 'any' type.",
@@ -7156,55 +7612,23 @@
             "code": 7006
           },
           {
-            "file": "../../lib/vector2.js",
-            "start": 1136,
-            "length": 1,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property 'x' does not exist on type 'Vector2'."
-          },
-          {
-            "file": "../../lib/vector2.js",
+            "file": "../../lib/vector2.ts",
             "start": 1143,
             "length": 1,
             "code": 2339,
             "category": 1,
-            "messageText": "Property 'x' does not exist on type '{ constructor: typeof Vector2; init: typeof init; add: (x: any, y: any) => this; substract: (x: any, y: any) => this; multiply: (x: any, y: any) => this; multiplyBy: (number: any) => this; divide: (x: any, y: any) => this; ... 7 more ...; clone: typeof clone; }'."
+            "messageText": "Property 'x' does not exist on type '{}'."
           },
           {
-            "file": "../../lib/vector2.js",
-            "start": 1159,
-            "length": 1,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property 'y' does not exist on type 'Vector2'."
-          },
-          {
-            "file": "../../lib/vector2.js",
+            "file": "../../lib/vector2.ts",
             "start": 1166,
             "length": 1,
             "code": 2339,
             "category": 1,
-            "messageText": "Property 'y' does not exist on type '{ constructor: typeof Vector2; init: typeof init; add: (x: any, y: any) => this; substract: (x: any, y: any) => this; multiply: (x: any, y: any) => this; multiplyBy: (number: any) => this; divide: (x: any, y: any) => this; ... 7 more ...; clone: typeof clone; }'."
+            "messageText": "Property 'y' does not exist on type '{}'."
           },
           {
-            "file": "../../lib/vector2.js",
-            "start": 1197,
-            "length": 1,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property 'x' does not exist on type 'Vector2'."
-          },
-          {
-            "file": "../../lib/vector2.js",
-            "start": 1218,
-            "length": 1,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property 'y' does not exist on type 'Vector2'."
-          },
-          {
-            "file": "../../lib/vector2.js",
+            "file": "../../lib/vector2.ts",
             "start": 1284,
             "length": 6,
             "messageText": "Parameter 'number' implicitly has an 'any' type.",
@@ -7212,55 +7636,7 @@
             "code": 7006
           },
           {
-            "file": "../../lib/vector2.js",
-            "start": 1305,
-            "length": 1,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property 'x' does not exist on type 'Vector2'."
-          },
-          {
-            "file": "../../lib/vector2.js",
-            "start": 1329,
-            "length": 1,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property 'y' does not exist on type 'Vector2'."
-          },
-          {
-            "file": "../../lib/vector2.js",
-            "start": 1423,
-            "length": 1,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property 'x' does not exist on type 'Vector2'."
-          },
-          {
-            "file": "../../lib/vector2.js",
-            "start": 1432,
-            "length": 1,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property 'x' does not exist on type 'Vector2'."
-          },
-          {
-            "file": "../../lib/vector2.js",
-            "start": 1443,
-            "length": 1,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property 'y' does not exist on type 'Vector2'."
-          },
-          {
-            "file": "../../lib/vector2.js",
-            "start": 1452,
-            "length": 1,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property 'y' does not exist on type 'Vector2'."
-          },
-          {
-            "file": "../../lib/vector2.js",
+            "file": "../../lib/vector2.ts",
             "start": 1482,
             "length": 6,
             "messageText": "Parameter 'vector' implicitly has an 'any' type.",
@@ -7268,31 +7644,7 @@
             "code": 7006
           },
           {
-            "file": "../../lib/vector2.js",
-            "start": 1510,
-            "length": 1,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property 'x' does not exist on type 'Vector2'."
-          },
-          {
-            "file": "../../lib/vector2.js",
-            "start": 1530,
-            "length": 1,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property 'y' does not exist on type 'Vector2'."
-          },
-          {
-            "file": "../../lib/vector2.js",
-            "start": 1550,
-            "length": 1,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property 'z' does not exist on type 'Vector2'."
-          },
-          {
-            "file": "../../lib/vector2.js",
+            "file": "../../lib/vector2.ts",
             "start": 1591,
             "length": 6,
             "messageText": "Parameter 'vector' implicitly has an 'any' type.",
@@ -7300,63 +7652,25 @@
             "code": 7006
           },
           {
-            "file": "../../lib/vector2.js",
-            "start": 1620,
-            "length": 1,
-            "code": 2339,
+            "file": "../../lib/vector2.ts",
+            "start": 1868,
+            "length": 13,
+            "messageText": "Expected 2 arguments, but got 1.",
             "category": 1,
-            "messageText": "Property 'x' does not exist on type 'Vector2'."
+            "code": 2554,
+            "relatedInformation": [
+              {
+                "file": "../../lib/vector2.ts",
+                "start": 49,
+                "length": 1,
+                "messageText": "An argument for 'y' was not provided.",
+                "category": 3,
+                "code": 6210
+              }
+            ]
           },
           {
-            "file": "../../lib/vector2.js",
-            "start": 1642,
-            "length": 1,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property 'y' does not exist on type 'Vector2'."
-          },
-          {
-            "file": "../../lib/vector2.js",
-            "start": 1664,
-            "length": 1,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property 'z' does not exist on type 'Vector2'."
-          },
-          {
-            "file": "../../lib/vector2.js",
-            "start": 1679,
-            "length": 1,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property 'x' does not exist on type 'Vector2'."
-          },
-          {
-            "file": "../../lib/vector2.js",
-            "start": 1723,
-            "length": 1,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property 'y' does not exist on type 'Vector2'."
-          },
-          {
-            "file": "../../lib/vector2.js",
-            "start": 1767,
-            "length": 1,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property 'z' does not exist on type 'Vector2'."
-          },
-          {
-            "file": "../../lib/vector2.js",
-            "start": 1882,
-            "length": 8,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property 'divideBy' does not exist on type 'init'."
-          },
-          {
-            "file": "../../lib/vector2.js",
+            "file": "../../lib/vector2.ts",
             "start": 1934,
             "length": 6,
             "messageText": "Parameter 'vector' implicitly has an 'any' type.",
@@ -7364,31 +7678,61 @@
             "code": 7006
           },
           {
-            "file": "../../lib/vector2.js",
-            "start": 1990,
-            "length": 3,
-            "code": 2339,
+            "file": "../../lib/vector2.ts",
+            "start": 1976,
+            "length": 13,
+            "messageText": "Expected 2 arguments, but got 1.",
             "category": 1,
-            "messageText": "Property 'dot' does not exist on type 'init'."
+            "code": 2554,
+            "relatedInformation": [
+              {
+                "file": "../../lib/vector2.ts",
+                "start": 49,
+                "length": 1,
+                "messageText": "An argument for 'y' was not provided.",
+                "category": 3,
+                "code": 6210
+              }
+            ]
           },
           {
-            "file": "../../lib/vector2.js",
-            "start": 2029,
-            "length": 6,
-            "code": 2339,
+            "file": "../../lib/vector2.ts",
+            "start": 2015,
+            "length": 13,
+            "messageText": "Expected 2 arguments, but got 1.",
             "category": 1,
-            "messageText": "Property 'length' does not exist on type 'init'."
+            "code": 2554,
+            "relatedInformation": [
+              {
+                "file": "../../lib/vector2.ts",
+                "start": 49,
+                "length": 1,
+                "messageText": "An argument for 'y' was not provided.",
+                "category": 3,
+                "code": 6210
+              }
+            ]
           },
           {
-            "file": "../../lib/vector2.js",
-            "start": 2056,
-            "length": 6,
-            "code": 2339,
+            "file": "../../lib/vector2.ts",
+            "start": 2040,
+            "length": 15,
+            "messageText": "Expected 2 arguments, but got 1.",
             "category": 1,
-            "messageText": "Property 'length' does not exist on type 'init'."
+            "code": 2554,
+            "relatedInformation": [
+              {
+                "file": "../../lib/vector2.ts",
+                "start": 49,
+                "length": 1,
+                "messageText": "An argument for 'y' was not provided.",
+                "category": 3,
+                "code": 6210
+              }
+            ]
           },
           {
-            "file": "../../lib/vector2.js",
+            "file": "../../lib/vector2.ts",
             "start": 2102,
             "length": 6,
             "messageText": "Parameter 'vector' implicitly has an 'any' type.",
@@ -7396,23 +7740,7 @@
             "code": 7006
           },
           {
-            "file": "../../lib/vector2.js",
-            "start": 2130,
-            "length": 1,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property 'x' does not exist on type 'Vector2'."
-          },
-          {
-            "file": "../../lib/vector2.js",
-            "start": 2153,
-            "length": 1,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property 'y' does not exist on type 'Vector2'."
-          },
-          {
-            "file": "../../lib/vector2.js",
+            "file": "../../lib/vector2.ts",
             "start": 3127,
             "length": 6,
             "messageText": "Parameter 'vector' implicitly has an 'any' type.",
@@ -7420,31 +7748,7 @@
             "code": 7006
           },
           {
-            "file": "../../lib/vector2.js",
-            "start": 3148,
-            "length": 1,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property 'x' does not exist on type 'Vector2'."
-          },
-          {
-            "file": "../../lib/vector2.js",
-            "start": 3173,
-            "length": 1,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property 'y' does not exist on type 'Vector2'."
-          },
-          {
-            "file": "../../lib/vector2.js",
-            "start": 3198,
-            "length": 1,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property 'z' does not exist on type 'Vector2'."
-          },
-          {
-            "file": "../../lib/vector2.js",
+            "file": "../../lib/vector2.ts",
             "start": 3306,
             "length": 6,
             "messageText": "Cannot find name 'define'.",
@@ -7452,7 +7756,7 @@
             "code": 2304
           },
           {
-            "file": "../../lib/vector2.js",
+            "file": "../../lib/vector2.ts",
             "start": 3336,
             "length": 6,
             "messageText": "Cannot find name 'define'.",
@@ -7460,7 +7764,7 @@
             "code": 2304
           },
           {
-            "file": "../../lib/vector2.js",
+            "file": "../../lib/vector2.ts",
             "start": 3370,
             "length": 6,
             "messageText": "Cannot find name 'define'.",
@@ -7468,7 +7772,7 @@
             "code": 2304
           },
           {
-            "file": "../../lib/vector2.js",
+            "file": "../../lib/vector2.ts",
             "start": 3404,
             "length": 6,
             "messageText": "Cannot find name 'define'.",
@@ -7476,20 +7780,28 @@
             "code": 2304
           },
           {
-            "file": "../../lib/vector2.js",
+            "file": "../../lib/vector2.ts",
             "start": 3591,
             "length": 7,
-            "code": 2339,
+            "messageText": "Element implicitly has an 'any' type because type 'typeof globalThis' has no index signature.",
             "category": 1,
-            "messageText": "Property 'Vector2' does not exist on type 'typeof Vector2'."
+            "code": 7017
           }
         ]
       ],
       [
-        "../../lib/vector3.js",
+        "../../lib/vector3.ts",
         [
           {
-            "file": "../../lib/vector3.js",
+            "file": "../../lib/vector3.ts",
+            "start": 25,
+            "length": 7,
+            "messageText": "'Vector3' implicitly has return type 'any' because it does not have a return type annotation and is referenced directly or indirectly in one of its return expressions.",
+            "category": 1,
+            "code": 7023
+          },
+          {
+            "file": "../../lib/vector3.ts",
             "start": 45,
             "length": 1,
             "messageText": "Parameter 'x' implicitly has an 'any' type.",
@@ -7497,7 +7809,7 @@
             "code": 7006
           },
           {
-            "file": "../../lib/vector3.js",
+            "file": "../../lib/vector3.ts",
             "start": 48,
             "length": 1,
             "messageText": "Parameter 'y' implicitly has an 'any' type.",
@@ -7505,7 +7817,7 @@
             "code": 7006
           },
           {
-            "file": "../../lib/vector3.js",
+            "file": "../../lib/vector3.ts",
             "start": 51,
             "length": 1,
             "messageText": "Parameter 'z' implicitly has an 'any' type.",
@@ -7513,7 +7825,23 @@
             "code": 7006
           },
           {
-            "file": "../../lib/vector3.js",
+            "file": "../../lib/vector3.ts",
+            "start": 79,
+            "length": 2,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'fn' does not exist on type '(x: any, y: any, z: any) => any'."
+          },
+          {
+            "file": "../../lib/vector3.ts",
+            "start": 113,
+            "length": 2,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'fn' does not exist on type '(x: any, y: any, z: any) => any'."
+          },
+          {
+            "file": "../../lib/vector3.ts",
             "start": 186,
             "length": 1,
             "messageText": "Parameter 'x' implicitly has an 'any' type.",
@@ -7521,7 +7849,7 @@
             "code": 7006
           },
           {
-            "file": "../../lib/vector3.js",
+            "file": "../../lib/vector3.ts",
             "start": 189,
             "length": 1,
             "messageText": "Parameter 'y' implicitly has an 'any' type.",
@@ -7529,7 +7857,7 @@
             "code": 7006
           },
           {
-            "file": "../../lib/vector3.js",
+            "file": "../../lib/vector3.ts",
             "start": 192,
             "length": 1,
             "messageText": "Parameter 'z' implicitly has an 'any' type.",
@@ -7537,31 +7865,7 @@
             "code": 7006
           },
           {
-            "file": "../../lib/vector3.js",
-            "start": 282,
-            "length": 1,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property 'x' does not exist on type 'Vector3'."
-          },
-          {
-            "file": "../../lib/vector3.js",
-            "start": 307,
-            "length": 1,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property 'y' does not exist on type 'Vector3'."
-          },
-          {
-            "file": "../../lib/vector3.js",
-            "start": 332,
-            "length": 1,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property 'z' does not exist on type 'Vector3'."
-          },
-          {
-            "file": "../../lib/vector3.js",
+            "file": "../../lib/vector3.ts",
             "start": 398,
             "length": 1,
             "messageText": "Parameter 'x' implicitly has an 'any' type.",
@@ -7569,7 +7873,7 @@
             "code": 7006
           },
           {
-            "file": "../../lib/vector3.js",
+            "file": "../../lib/vector3.ts",
             "start": 401,
             "length": 1,
             "messageText": "Parameter 'y' implicitly has an 'any' type.",
@@ -7577,7 +7881,7 @@
             "code": 7006
           },
           {
-            "file": "../../lib/vector3.js",
+            "file": "../../lib/vector3.ts",
             "start": 404,
             "length": 1,
             "messageText": "Parameter 'z' implicitly has an 'any' type.",
@@ -7585,79 +7889,31 @@
             "code": 7006
           },
           {
-            "file": "../../lib/vector3.js",
-            "start": 456,
-            "length": 1,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property 'x' does not exist on type 'Vector3'."
-          },
-          {
-            "file": "../../lib/vector3.js",
+            "file": "../../lib/vector3.ts",
             "start": 463,
             "length": 1,
             "code": 2339,
             "category": 1,
-            "messageText": "Property 'x' does not exist on type '{ constructor: typeof Vector3; init: typeof init; add: (x: any, y: any, z: any) => this; substract: (x: any, y: any, z: any) => this; multiply: (x: any, y: any, z: any) => this; multiplyBy: (number: any) => this; ... 9 more ...; clone: typeof clone; }'."
+            "messageText": "Property 'x' does not exist on type '{}'."
           },
           {
-            "file": "../../lib/vector3.js",
-            "start": 479,
-            "length": 1,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property 'y' does not exist on type 'Vector3'."
-          },
-          {
-            "file": "../../lib/vector3.js",
+            "file": "../../lib/vector3.ts",
             "start": 486,
             "length": 1,
             "code": 2339,
             "category": 1,
-            "messageText": "Property 'y' does not exist on type '{ constructor: typeof Vector3; init: typeof init; add: (x: any, y: any, z: any) => this; substract: (x: any, y: any, z: any) => this; multiply: (x: any, y: any, z: any) => this; multiplyBy: (number: any) => this; ... 9 more ...; clone: typeof clone; }'."
+            "messageText": "Property 'y' does not exist on type '{}'."
           },
           {
-            "file": "../../lib/vector3.js",
-            "start": 502,
-            "length": 1,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property 'z' does not exist on type 'Vector3'."
-          },
-          {
-            "file": "../../lib/vector3.js",
+            "file": "../../lib/vector3.ts",
             "start": 509,
             "length": 1,
             "code": 2339,
             "category": 1,
-            "messageText": "Property 'z' does not exist on type '{ constructor: typeof Vector3; init: typeof init; add: (x: any, y: any, z: any) => this; substract: (x: any, y: any, z: any) => this; multiply: (x: any, y: any, z: any) => this; multiplyBy: (number: any) => this; ... 9 more ...; clone: typeof clone; }'."
+            "messageText": "Property 'z' does not exist on type '{}'."
           },
           {
-            "file": "../../lib/vector3.js",
-            "start": 540,
-            "length": 1,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property 'x' does not exist on type 'Vector3'."
-          },
-          {
-            "file": "../../lib/vector3.js",
-            "start": 561,
-            "length": 1,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property 'y' does not exist on type 'Vector3'."
-          },
-          {
-            "file": "../../lib/vector3.js",
-            "start": 582,
-            "length": 1,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property 'z' does not exist on type 'Vector3'."
-          },
-          {
-            "file": "../../lib/vector3.js",
+            "file": "../../lib/vector3.ts",
             "start": 650,
             "length": 1,
             "messageText": "Parameter 'x' implicitly has an 'any' type.",
@@ -7665,7 +7921,7 @@
             "code": 7006
           },
           {
-            "file": "../../lib/vector3.js",
+            "file": "../../lib/vector3.ts",
             "start": 653,
             "length": 1,
             "messageText": "Parameter 'y' implicitly has an 'any' type.",
@@ -7673,7 +7929,7 @@
             "code": 7006
           },
           {
-            "file": "../../lib/vector3.js",
+            "file": "../../lib/vector3.ts",
             "start": 656,
             "length": 1,
             "messageText": "Parameter 'z' implicitly has an 'any' type.",
@@ -7681,79 +7937,31 @@
             "code": 7006
           },
           {
-            "file": "../../lib/vector3.js",
-            "start": 708,
-            "length": 1,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property 'x' does not exist on type 'Vector3'."
-          },
-          {
-            "file": "../../lib/vector3.js",
+            "file": "../../lib/vector3.ts",
             "start": 715,
             "length": 1,
             "code": 2339,
             "category": 1,
-            "messageText": "Property 'x' does not exist on type '{ constructor: typeof Vector3; init: typeof init; add: (x: any, y: any, z: any) => this; substract: (x: any, y: any, z: any) => this; multiply: (x: any, y: any, z: any) => this; multiplyBy: (number: any) => this; ... 9 more ...; clone: typeof clone; }'."
+            "messageText": "Property 'x' does not exist on type '{}'."
           },
           {
-            "file": "../../lib/vector3.js",
-            "start": 731,
-            "length": 1,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property 'y' does not exist on type 'Vector3'."
-          },
-          {
-            "file": "../../lib/vector3.js",
+            "file": "../../lib/vector3.ts",
             "start": 738,
             "length": 1,
             "code": 2339,
             "category": 1,
-            "messageText": "Property 'y' does not exist on type '{ constructor: typeof Vector3; init: typeof init; add: (x: any, y: any, z: any) => this; substract: (x: any, y: any, z: any) => this; multiply: (x: any, y: any, z: any) => this; multiplyBy: (number: any) => this; ... 9 more ...; clone: typeof clone; }'."
+            "messageText": "Property 'y' does not exist on type '{}'."
           },
           {
-            "file": "../../lib/vector3.js",
-            "start": 754,
-            "length": 1,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property 'z' does not exist on type 'Vector3'."
-          },
-          {
-            "file": "../../lib/vector3.js",
+            "file": "../../lib/vector3.ts",
             "start": 761,
             "length": 1,
             "code": 2339,
             "category": 1,
-            "messageText": "Property 'z' does not exist on type '{ constructor: typeof Vector3; init: typeof init; add: (x: any, y: any, z: any) => this; substract: (x: any, y: any, z: any) => this; multiply: (x: any, y: any, z: any) => this; multiplyBy: (number: any) => this; ... 9 more ...; clone: typeof clone; }'."
+            "messageText": "Property 'z' does not exist on type '{}'."
           },
           {
-            "file": "../../lib/vector3.js",
-            "start": 792,
-            "length": 1,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property 'x' does not exist on type 'Vector3'."
-          },
-          {
-            "file": "../../lib/vector3.js",
-            "start": 813,
-            "length": 1,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property 'y' does not exist on type 'Vector3'."
-          },
-          {
-            "file": "../../lib/vector3.js",
-            "start": 834,
-            "length": 1,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property 'z' does not exist on type 'Vector3'."
-          },
-          {
-            "file": "../../lib/vector3.js",
+            "file": "../../lib/vector3.ts",
             "start": 901,
             "length": 1,
             "messageText": "Parameter 'x' implicitly has an 'any' type.",
@@ -7761,7 +7969,7 @@
             "code": 7006
           },
           {
-            "file": "../../lib/vector3.js",
+            "file": "../../lib/vector3.ts",
             "start": 904,
             "length": 1,
             "messageText": "Parameter 'y' implicitly has an 'any' type.",
@@ -7769,7 +7977,7 @@
             "code": 7006
           },
           {
-            "file": "../../lib/vector3.js",
+            "file": "../../lib/vector3.ts",
             "start": 907,
             "length": 1,
             "messageText": "Parameter 'z' implicitly has an 'any' type.",
@@ -7777,79 +7985,31 @@
             "code": 7006
           },
           {
-            "file": "../../lib/vector3.js",
-            "start": 959,
-            "length": 1,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property 'x' does not exist on type 'Vector3'."
-          },
-          {
-            "file": "../../lib/vector3.js",
+            "file": "../../lib/vector3.ts",
             "start": 966,
             "length": 1,
             "code": 2339,
             "category": 1,
-            "messageText": "Property 'x' does not exist on type '{ constructor: typeof Vector3; init: typeof init; add: (x: any, y: any, z: any) => this; substract: (x: any, y: any, z: any) => this; multiply: (x: any, y: any, z: any) => this; multiplyBy: (number: any) => this; ... 9 more ...; clone: typeof clone; }'."
+            "messageText": "Property 'x' does not exist on type '{}'."
           },
           {
-            "file": "../../lib/vector3.js",
-            "start": 982,
-            "length": 1,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property 'y' does not exist on type 'Vector3'."
-          },
-          {
-            "file": "../../lib/vector3.js",
+            "file": "../../lib/vector3.ts",
             "start": 989,
             "length": 1,
             "code": 2339,
             "category": 1,
-            "messageText": "Property 'y' does not exist on type '{ constructor: typeof Vector3; init: typeof init; add: (x: any, y: any, z: any) => this; substract: (x: any, y: any, z: any) => this; multiply: (x: any, y: any, z: any) => this; multiplyBy: (number: any) => this; ... 9 more ...; clone: typeof clone; }'."
+            "messageText": "Property 'y' does not exist on type '{}'."
           },
           {
-            "file": "../../lib/vector3.js",
-            "start": 1005,
-            "length": 1,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property 'z' does not exist on type 'Vector3'."
-          },
-          {
-            "file": "../../lib/vector3.js",
+            "file": "../../lib/vector3.ts",
             "start": 1012,
             "length": 1,
             "code": 2339,
             "category": 1,
-            "messageText": "Property 'z' does not exist on type '{ constructor: typeof Vector3; init: typeof init; add: (x: any, y: any, z: any) => this; substract: (x: any, y: any, z: any) => this; multiply: (x: any, y: any, z: any) => this; multiplyBy: (number: any) => this; ... 9 more ...; clone: typeof clone; }'."
+            "messageText": "Property 'z' does not exist on type '{}'."
           },
           {
-            "file": "../../lib/vector3.js",
-            "start": 1043,
-            "length": 1,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property 'x' does not exist on type 'Vector3'."
-          },
-          {
-            "file": "../../lib/vector3.js",
-            "start": 1064,
-            "length": 1,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property 'y' does not exist on type 'Vector3'."
-          },
-          {
-            "file": "../../lib/vector3.js",
-            "start": 1085,
-            "length": 1,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property 'z' does not exist on type 'Vector3'."
-          },
-          {
-            "file": "../../lib/vector3.js",
+            "file": "../../lib/vector3.ts",
             "start": 1154,
             "length": 6,
             "messageText": "Parameter 'number' implicitly has an 'any' type.",
@@ -7857,31 +8017,7 @@
             "code": 7006
           },
           {
-            "file": "../../lib/vector3.js",
-            "start": 1175,
-            "length": 1,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property 'x' does not exist on type 'Vector3'."
-          },
-          {
-            "file": "../../lib/vector3.js",
-            "start": 1199,
-            "length": 1,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property 'y' does not exist on type 'Vector3'."
-          },
-          {
-            "file": "../../lib/vector3.js",
-            "start": 1223,
-            "length": 1,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property 'z' does not exist on type 'Vector3'."
-          },
-          {
-            "file": "../../lib/vector3.js",
+            "file": "../../lib/vector3.ts",
             "start": 1285,
             "length": 1,
             "messageText": "Parameter 'x' implicitly has an 'any' type.",
@@ -7889,7 +8025,7 @@
             "code": 7006
           },
           {
-            "file": "../../lib/vector3.js",
+            "file": "../../lib/vector3.ts",
             "start": 1288,
             "length": 1,
             "messageText": "Parameter 'y' implicitly has an 'any' type.",
@@ -7897,7 +8033,7 @@
             "code": 7006
           },
           {
-            "file": "../../lib/vector3.js",
+            "file": "../../lib/vector3.ts",
             "start": 1291,
             "length": 1,
             "messageText": "Parameter 'z' implicitly has an 'any' type.",
@@ -7905,79 +8041,31 @@
             "code": 7006
           },
           {
-            "file": "../../lib/vector3.js",
-            "start": 1343,
-            "length": 1,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property 'x' does not exist on type 'Vector3'."
-          },
-          {
-            "file": "../../lib/vector3.js",
+            "file": "../../lib/vector3.ts",
             "start": 1350,
             "length": 1,
             "code": 2339,
             "category": 1,
-            "messageText": "Property 'x' does not exist on type '{ constructor: typeof Vector3; init: typeof init; add: (x: any, y: any, z: any) => this; substract: (x: any, y: any, z: any) => this; multiply: (x: any, y: any, z: any) => this; multiplyBy: (number: any) => this; ... 9 more ...; clone: typeof clone; }'."
+            "messageText": "Property 'x' does not exist on type '{}'."
           },
           {
-            "file": "../../lib/vector3.js",
-            "start": 1366,
-            "length": 1,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property 'y' does not exist on type 'Vector3'."
-          },
-          {
-            "file": "../../lib/vector3.js",
+            "file": "../../lib/vector3.ts",
             "start": 1373,
             "length": 1,
             "code": 2339,
             "category": 1,
-            "messageText": "Property 'y' does not exist on type '{ constructor: typeof Vector3; init: typeof init; add: (x: any, y: any, z: any) => this; substract: (x: any, y: any, z: any) => this; multiply: (x: any, y: any, z: any) => this; multiplyBy: (number: any) => this; ... 9 more ...; clone: typeof clone; }'."
+            "messageText": "Property 'y' does not exist on type '{}'."
           },
           {
-            "file": "../../lib/vector3.js",
-            "start": 1389,
-            "length": 1,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property 'z' does not exist on type 'Vector3'."
-          },
-          {
-            "file": "../../lib/vector3.js",
+            "file": "../../lib/vector3.ts",
             "start": 1396,
             "length": 1,
             "code": 2339,
             "category": 1,
-            "messageText": "Property 'z' does not exist on type '{ constructor: typeof Vector3; init: typeof init; add: (x: any, y: any, z: any) => this; substract: (x: any, y: any, z: any) => this; multiply: (x: any, y: any, z: any) => this; multiplyBy: (number: any) => this; ... 9 more ...; clone: typeof clone; }'."
+            "messageText": "Property 'z' does not exist on type '{}'."
           },
           {
-            "file": "../../lib/vector3.js",
-            "start": 1427,
-            "length": 1,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property 'x' does not exist on type 'Vector3'."
-          },
-          {
-            "file": "../../lib/vector3.js",
-            "start": 1448,
-            "length": 1,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property 'y' does not exist on type 'Vector3'."
-          },
-          {
-            "file": "../../lib/vector3.js",
-            "start": 1469,
-            "length": 1,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property 'z' does not exist on type 'Vector3'."
-          },
-          {
-            "file": "../../lib/vector3.js",
+            "file": "../../lib/vector3.ts",
             "start": 1536,
             "length": 6,
             "messageText": "Parameter 'number' implicitly has an 'any' type.",
@@ -7985,79 +8073,7 @@
             "code": 7006
           },
           {
-            "file": "../../lib/vector3.js",
-            "start": 1557,
-            "length": 1,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property 'x' does not exist on type 'Vector3'."
-          },
-          {
-            "file": "../../lib/vector3.js",
-            "start": 1581,
-            "length": 1,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property 'y' does not exist on type 'Vector3'."
-          },
-          {
-            "file": "../../lib/vector3.js",
-            "start": 1605,
-            "length": 1,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property 'z' does not exist on type 'Vector3'."
-          },
-          {
-            "file": "../../lib/vector3.js",
-            "start": 1699,
-            "length": 1,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property 'x' does not exist on type 'Vector3'."
-          },
-          {
-            "file": "../../lib/vector3.js",
-            "start": 1708,
-            "length": 1,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property 'x' does not exist on type 'Vector3'."
-          },
-          {
-            "file": "../../lib/vector3.js",
-            "start": 1717,
-            "length": 1,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property 'y' does not exist on type 'Vector3'."
-          },
-          {
-            "file": "../../lib/vector3.js",
-            "start": 1726,
-            "length": 1,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property 'y' does not exist on type 'Vector3'."
-          },
-          {
-            "file": "../../lib/vector3.js",
-            "start": 1735,
-            "length": 1,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property 'z' does not exist on type 'Vector3'."
-          },
-          {
-            "file": "../../lib/vector3.js",
-            "start": 1744,
-            "length": 1,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property 'z' does not exist on type 'Vector3'."
-          },
-          {
-            "file": "../../lib/vector3.js",
+            "file": "../../lib/vector3.ts",
             "start": 1774,
             "length": 6,
             "messageText": "Parameter 'vector' implicitly has an 'any' type.",
@@ -8065,31 +8081,7 @@
             "code": 7006
           },
           {
-            "file": "../../lib/vector3.js",
-            "start": 1802,
-            "length": 1,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property 'x' does not exist on type 'Vector3'."
-          },
-          {
-            "file": "../../lib/vector3.js",
-            "start": 1822,
-            "length": 1,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property 'y' does not exist on type 'Vector3'."
-          },
-          {
-            "file": "../../lib/vector3.js",
-            "start": 1842,
-            "length": 1,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property 'z' does not exist on type 'Vector3'."
-          },
-          {
-            "file": "../../lib/vector3.js",
+            "file": "../../lib/vector3.ts",
             "start": 1884,
             "length": 6,
             "messageText": "Parameter 'vector' implicitly has an 'any' type.",
@@ -8097,63 +8089,25 @@
             "code": 7006
           },
           {
-            "file": "../../lib/vector3.js",
-            "start": 1913,
-            "length": 1,
-            "code": 2339,
+            "file": "../../lib/vector3.ts",
+            "start": 2162,
+            "length": 13,
+            "messageText": "Expected 3 arguments, but got 1.",
             "category": 1,
-            "messageText": "Property 'x' does not exist on type 'Vector3'."
+            "code": 2554,
+            "relatedInformation": [
+              {
+                "file": "../../lib/vector3.ts",
+                "start": 48,
+                "length": 1,
+                "messageText": "An argument for 'y' was not provided.",
+                "category": 3,
+                "code": 6210
+              }
+            ]
           },
           {
-            "file": "../../lib/vector3.js",
-            "start": 1935,
-            "length": 1,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property 'y' does not exist on type 'Vector3'."
-          },
-          {
-            "file": "../../lib/vector3.js",
-            "start": 1957,
-            "length": 1,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property 'z' does not exist on type 'Vector3'."
-          },
-          {
-            "file": "../../lib/vector3.js",
-            "start": 1972,
-            "length": 1,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property 'x' does not exist on type 'Vector3'."
-          },
-          {
-            "file": "../../lib/vector3.js",
-            "start": 2016,
-            "length": 1,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property 'y' does not exist on type 'Vector3'."
-          },
-          {
-            "file": "../../lib/vector3.js",
-            "start": 2060,
-            "length": 1,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property 'z' does not exist on type 'Vector3'."
-          },
-          {
-            "file": "../../lib/vector3.js",
-            "start": 2176,
-            "length": 8,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property 'divideBy' does not exist on type 'init'."
-          },
-          {
-            "file": "../../lib/vector3.js",
+            "file": "../../lib/vector3.ts",
             "start": 2229,
             "length": 6,
             "messageText": "Parameter 'vector' implicitly has an 'any' type.",
@@ -8161,31 +8115,61 @@
             "code": 7006
           },
           {
-            "file": "../../lib/vector3.js",
-            "start": 2285,
-            "length": 3,
-            "code": 2339,
+            "file": "../../lib/vector3.ts",
+            "start": 2271,
+            "length": 13,
+            "messageText": "Expected 3 arguments, but got 1.",
             "category": 1,
-            "messageText": "Property 'dot' does not exist on type 'init'."
+            "code": 2554,
+            "relatedInformation": [
+              {
+                "file": "../../lib/vector3.ts",
+                "start": 48,
+                "length": 1,
+                "messageText": "An argument for 'y' was not provided.",
+                "category": 3,
+                "code": 6210
+              }
+            ]
           },
           {
-            "file": "../../lib/vector3.js",
-            "start": 2324,
-            "length": 6,
-            "code": 2339,
+            "file": "../../lib/vector3.ts",
+            "start": 2310,
+            "length": 13,
+            "messageText": "Expected 3 arguments, but got 1.",
             "category": 1,
-            "messageText": "Property 'length' does not exist on type 'init'."
+            "code": 2554,
+            "relatedInformation": [
+              {
+                "file": "../../lib/vector3.ts",
+                "start": 48,
+                "length": 1,
+                "messageText": "An argument for 'y' was not provided.",
+                "category": 3,
+                "code": 6210
+              }
+            ]
           },
           {
-            "file": "../../lib/vector3.js",
-            "start": 2351,
-            "length": 6,
-            "code": 2339,
+            "file": "../../lib/vector3.ts",
+            "start": 2335,
+            "length": 15,
+            "messageText": "Expected 3 arguments, but got 1.",
             "category": 1,
-            "messageText": "Property 'length' does not exist on type 'init'."
+            "code": 2554,
+            "relatedInformation": [
+              {
+                "file": "../../lib/vector3.ts",
+                "start": 48,
+                "length": 1,
+                "messageText": "An argument for 'y' was not provided.",
+                "category": 3,
+                "code": 6210
+              }
+            ]
           },
           {
-            "file": "../../lib/vector3.js",
+            "file": "../../lib/vector3.ts",
             "start": 2398,
             "length": 6,
             "messageText": "Parameter 'vector' implicitly has an 'any' type.",
@@ -8193,31 +8177,7 @@
             "code": 7006
           },
           {
-            "file": "../../lib/vector3.js",
-            "start": 2426,
-            "length": 1,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property 'x' does not exist on type 'Vector3'."
-          },
-          {
-            "file": "../../lib/vector3.js",
-            "start": 2449,
-            "length": 1,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property 'y' does not exist on type 'Vector3'."
-          },
-          {
-            "file": "../../lib/vector3.js",
-            "start": 2472,
-            "length": 1,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property 'z' does not exist on type 'Vector3'."
-          },
-          {
-            "file": "../../lib/vector3.js",
+            "file": "../../lib/vector3.ts",
             "start": 2517,
             "length": 1,
             "messageText": "Parameter 'x' implicitly has an 'any' type.",
@@ -8225,7 +8185,7 @@
             "code": 7006
           },
           {
-            "file": "../../lib/vector3.js",
+            "file": "../../lib/vector3.ts",
             "start": 2520,
             "length": 1,
             "messageText": "Parameter 'y' implicitly has an 'any' type.",
@@ -8233,7 +8193,7 @@
             "code": 7006
           },
           {
-            "file": "../../lib/vector3.js",
+            "file": "../../lib/vector3.ts",
             "start": 2523,
             "length": 1,
             "messageText": "Parameter 'z' implicitly has an 'any' type.",
@@ -8241,7 +8201,7 @@
             "code": 7006
           },
           {
-            "file": "../../lib/vector3.js",
+            "file": "../../lib/vector3.ts",
             "start": 2538,
             "length": 2,
             "messageText": "The left-hand side of an 'instanceof' expression must be of type 'any', an object type or a type parameter.",
@@ -8249,31 +8209,15 @@
             "code": 2358
           },
           {
-            "file": "../../lib/vector3.js",
-            "start": 2626,
-            "length": 1,
-            "code": 2339,
+            "file": "../../lib/vector3.ts",
+            "start": 2575,
+            "length": 20,
+            "messageText": "'new' expression, whose target lacks a construct signature, implicitly has an 'any' type.",
             "category": 1,
-            "messageText": "Property 'x' does not exist on type 'Vector3'."
+            "code": 7009
           },
           {
-            "file": "../../lib/vector3.js",
-            "start": 2649,
-            "length": 1,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property 'y' does not exist on type 'Vector3'."
-          },
-          {
-            "file": "../../lib/vector3.js",
-            "start": 2672,
-            "length": 1,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property 'z' does not exist on type 'Vector3'."
-          },
-          {
-            "file": "../../lib/vector3.js",
+            "file": "../../lib/vector3.ts",
             "start": 3013,
             "length": 1,
             "messageText": "Subsequent variable declarations must have the same type.  Variable 'x' must be of type 'any', but here has type 'number'.",
@@ -8281,7 +8225,7 @@
             "code": 2403,
             "relatedInformation": [
               {
-                "file": "../../lib/vector3.js",
+                "file": "../../lib/vector3.ts",
                 "start": 2517,
                 "length": 1,
                 "messageText": "'x' was also declared here.",
@@ -8291,7 +8235,7 @@
             ]
           },
           {
-            "file": "../../lib/vector3.js",
+            "file": "../../lib/vector3.ts",
             "start": 3057,
             "length": 1,
             "messageText": "Subsequent variable declarations must have the same type.  Variable 'y' must be of type 'any', but here has type 'number'.",
@@ -8299,7 +8243,7 @@
             "code": 2403,
             "relatedInformation": [
               {
-                "file": "../../lib/vector3.js",
+                "file": "../../lib/vector3.ts",
                 "start": 2520,
                 "length": 1,
                 "messageText": "'y' was also declared here.",
@@ -8309,7 +8253,7 @@
             ]
           },
           {
-            "file": "../../lib/vector3.js",
+            "file": "../../lib/vector3.ts",
             "start": 3101,
             "length": 1,
             "messageText": "Subsequent variable declarations must have the same type.  Variable 'z' must be of type 'any', but here has type 'number'.",
@@ -8317,7 +8261,7 @@
             "code": 2403,
             "relatedInformation": [
               {
-                "file": "../../lib/vector3.js",
+                "file": "../../lib/vector3.ts",
                 "start": 2523,
                 "length": 1,
                 "messageText": "'z' was also declared here.",
@@ -8327,31 +8271,7 @@
             ]
           },
           {
-            "file": "../../lib/vector3.js",
-            "start": 3487,
-            "length": 1,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property 'x' does not exist on type 'Vector3'."
-          },
-          {
-            "file": "../../lib/vector3.js",
-            "start": 3531,
-            "length": 1,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property 'y' does not exist on type 'Vector3'."
-          },
-          {
-            "file": "../../lib/vector3.js",
-            "start": 3575,
-            "length": 1,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property 'z' does not exist on type 'Vector3'."
-          },
-          {
-            "file": "../../lib/vector3.js",
+            "file": "../../lib/vector3.ts",
             "start": 3657,
             "length": 6,
             "messageText": "Parameter 'vector' implicitly has an 'any' type.",
@@ -8359,31 +8279,23 @@
             "code": 7006
           },
           {
-            "file": "../../lib/vector3.js",
-            "start": 3678,
-            "length": 1,
+            "file": "../../lib/vector3.ts",
+            "start": 3785,
+            "length": 2,
             "code": 2339,
             "category": 1,
-            "messageText": "Property 'x' does not exist on type 'Vector3'."
+            "messageText": "Property 'fn' does not exist on type '(x: any, y: any, z: any) => any'."
           },
           {
-            "file": "../../lib/vector3.js",
-            "start": 3703,
-            "length": 1,
+            "file": "../../lib/vector3.ts",
+            "start": 3813,
+            "length": 2,
             "code": 2339,
             "category": 1,
-            "messageText": "Property 'y' does not exist on type 'Vector3'."
+            "messageText": "Property 'fn' does not exist on type '(x: any, y: any, z: any) => any'."
           },
           {
-            "file": "../../lib/vector3.js",
-            "start": 3728,
-            "length": 1,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property 'z' does not exist on type 'Vector3'."
-          },
-          {
-            "file": "../../lib/vector3.js",
+            "file": "../../lib/vector3.ts",
             "start": 3836,
             "length": 6,
             "messageText": "Cannot find name 'define'.",
@@ -8391,7 +8303,7 @@
             "code": 2304
           },
           {
-            "file": "../../lib/vector3.js",
+            "file": "../../lib/vector3.ts",
             "start": 3866,
             "length": 6,
             "messageText": "Cannot find name 'define'.",
@@ -8399,7 +8311,7 @@
             "code": 2304
           },
           {
-            "file": "../../lib/vector3.js",
+            "file": "../../lib/vector3.ts",
             "start": 3900,
             "length": 6,
             "messageText": "Cannot find name 'define'.",
@@ -8407,7 +8319,7 @@
             "code": 2304
           },
           {
-            "file": "../../lib/vector3.js",
+            "file": "../../lib/vector3.ts",
             "start": 3934,
             "length": 6,
             "messageText": "Cannot find name 'define'.",
@@ -8415,15 +8327,62 @@
             "code": 2304
           },
           {
-            "file": "../../lib/vector3.js",
+            "file": "../../lib/vector3.ts",
             "start": 4122,
             "length": 7,
-            "code": 2339,
+            "messageText": "Element implicitly has an 'any' type because type 'typeof globalThis' has no index signature.",
             "category": 1,
-            "messageText": "Property 'Vector3' does not exist on type 'typeof Vector3'."
+            "code": 7017
           }
         ]
-      ]
+      ],
+      "../../node_modules/@types/node/assert.d.ts",
+      "../../node_modules/@types/node/async_hooks.d.ts",
+      "../../node_modules/@types/node/base.d.ts",
+      "../../node_modules/@types/node/buffer.d.ts",
+      "../../node_modules/@types/node/child_process.d.ts",
+      "../../node_modules/@types/node/cluster.d.ts",
+      "../../node_modules/@types/node/console.d.ts",
+      "../../node_modules/@types/node/constants.d.ts",
+      "../../node_modules/@types/node/crypto.d.ts",
+      "../../node_modules/@types/node/dgram.d.ts",
+      "../../node_modules/@types/node/dns.d.ts",
+      "../../node_modules/@types/node/domain.d.ts",
+      "../../node_modules/@types/node/events.d.ts",
+      "../../node_modules/@types/node/fs.d.ts",
+      "../../node_modules/@types/node/fs/promises.d.ts",
+      "../../node_modules/@types/node/globals.d.ts",
+      "../../node_modules/@types/node/globals.global.d.ts",
+      "../../node_modules/@types/node/http.d.ts",
+      "../../node_modules/@types/node/http2.d.ts",
+      "../../node_modules/@types/node/https.d.ts",
+      "../../node_modules/@types/node/index.d.ts",
+      "../../node_modules/@types/node/inspector.d.ts",
+      "../../node_modules/@types/node/module.d.ts",
+      "../../node_modules/@types/node/net.d.ts",
+      "../../node_modules/@types/node/os.d.ts",
+      "../../node_modules/@types/node/path.d.ts",
+      "../../node_modules/@types/node/perf_hooks.d.ts",
+      "../../node_modules/@types/node/process.d.ts",
+      "../../node_modules/@types/node/punycode.d.ts",
+      "../../node_modules/@types/node/querystring.d.ts",
+      "../../node_modules/@types/node/readline.d.ts",
+      "../../node_modules/@types/node/repl.d.ts",
+      "../../node_modules/@types/node/stream.d.ts",
+      "../../node_modules/@types/node/string_decoder.d.ts",
+      "../../node_modules/@types/node/timers.d.ts",
+      "../../node_modules/@types/node/tls.d.ts",
+      "../../node_modules/@types/node/trace_events.d.ts",
+      "../../node_modules/@types/node/ts3.4/base.d.ts",
+      "../../node_modules/@types/node/ts3.6/base.d.ts",
+      "../../node_modules/@types/node/tty.d.ts",
+      "../../node_modules/@types/node/url.d.ts",
+      "../../node_modules/@types/node/util.d.ts",
+      "../../node_modules/@types/node/v8.d.ts",
+      "../../node_modules/@types/node/vm.d.ts",
+      "../../node_modules/@types/node/wasi.d.ts",
+      "../../node_modules/@types/node/worker_threads.d.ts",
+      "../../node_modules/@types/node/zlib.d.ts"
     ]
   },
   "version": "4.1.3"

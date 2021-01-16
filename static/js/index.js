@@ -24,9 +24,14 @@ fs.readFile('data/spells.json', (err, data) => {
     //console.log(spells);
     //console.log('* DEBUG: ✅');
     console.log('* DEBUG: Running sanity check on spell database.');
-    Object.keys(spells).forEach(key => {
-        console.log(key);
-        //console.log(spells[key]);
+    Object.keys(spells).forEach(id => {
+        if ('active' in spells[id]) {
+            //console.log(spells[id]);
+            console.log('boolean' == typeof (spells[id]['active']));
+        }
+        else {
+            console.log(id);
+        }
     });
 });
 fs.readFile('data/player.json', (err, data) => {

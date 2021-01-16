@@ -54,6 +54,7 @@
     src: "static/emoji/people_animals/creatures/other_mammals/ram.svg"
     width: 200
     height: 200 
+
 #?:
 #  name: "racoon"
 #  racial-trait-name: "Resist Shadow +10%"

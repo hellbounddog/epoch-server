@@ -1,4 +1,3 @@
-let adjectives = '';
+const adjectives = '';
 
-let nouns = '';
-
+const nouns = '';

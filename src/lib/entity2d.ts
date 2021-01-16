@@ -1,11 +1,10 @@
-
 /**
  * Entities are generated objects.
  *
  * @todo coords: All entities must have an x,y or x,y,z Vector for coords.
  * @todo rotation: All entities must have an x,y,z Vector3
  */
-const Entity2D = function() {
+const Entity2D = function () {
   /**
    * .
    */
@@ -36,7 +35,7 @@ const Entity2D = function() {
     } else {
       //
     }
-  };
+  }
 
   /**
    *
@@ -47,6 +46,5 @@ const Entity2D = function() {
    */
   function createEntity(type, faction) {
     //
-  };
-}
-
+  }
+};

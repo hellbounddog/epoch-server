@@ -1,2 +1,2 @@
-declare var q: any;
+declare let q: any;
 //# sourceMappingURL=prettify.d.ts.map

@@ -1,4 +1,4 @@
-"use strict";
-let adjectives = '';
-let nouns = '';
+'use strict';
+const adjectives = '';
+const nouns = '';
 //# sourceMappingURL=test-randomizer.js.map

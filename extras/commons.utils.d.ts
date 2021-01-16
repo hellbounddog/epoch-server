@@ -1,44 +1,44 @@
 declare class ValidationsUtils {
-    static isValidEmail: (email: string) => boolean;
-    static isValidUrl: (value: string) => boolean;
-    static isValidImage: (value: string) => boolean;
-    static isValidUSA_SSN(value: string): boolean;
-    static isValidDate: (value: any, userFormat?: string) => any;
-    static validateCreditCard: (cardnumber: string, cardtype?: string) => boolean;
-    static isValidCreditCard: (type: string, ccnum: string) => boolean;
-    static isValidCitizenId: (id: string, country: string) => boolean;
+  static isValidEmail: (email: string) => boolean;
+  static isValidUrl: (value: string) => boolean;
+  static isValidImage: (value: string) => boolean;
+  static isValidUSA_SSN(value: string): boolean;
+  static isValidDate: (value: any, userFormat?: string) => any;
+  static validateCreditCard: (cardnumber: string, cardtype?: string) => boolean;
+  static isValidCreditCard: (type: string, ccnum: string) => boolean;
+  static isValidCitizenId: (id: string, country: string) => boolean;
 }
 export declare class PromiseUtil {
-    /**
-     * const delay = promisify((d, cb) => setTimeout(cb, d));
-     * delay(2000).then(() => console.log('Hi!')); // // Promise resolves after 2s
-     *
-     * @param func
-     */
-    static promisify: (func: any) => (...args: any[]) => any;
+  /**
+   * const delay = promisify((d, cb) => setTimeout(cb, d));
+   * delay(2000).then(() => console.log('Hi!')); // // Promise resolves after 2s
+   *
+   * @param func
+   */
+  static promisify: (func: any) => (...args: any[]) => any;
 }
 export declare class Queue {
-    dataholder: never[];
-    constructor();
-    peek(): null;
-    add(data: any): void;
-    size(): number;
-    poll(): null;
-    print(): void;
+  dataholder: never[];
+  constructor();
+  peek(): null;
+  add(data: any): void;
+  size(): number;
+  poll(): null;
+  print(): void;
 }
 export declare class LimitedQueue extends Queue {
-    private limit;
-    constructor(limit: any);
-    add(data: any): void;
+  private limit;
+  constructor(limit: any);
+  add(data: any): void;
 }
 export declare class LRUCache {
-    max: number;
-    cache: any;
-    constructor(max?: number);
-    get(key: any): any;
-    put(key: any, val: any): void;
-    first(): any;
-    print(): void;
+  max: number;
+  cache: any;
+  constructor(max?: number);
+  get(key: any): any;
+  put(key: any, val: any): void;
+  first(): any;
+  print(): void;
 }
 export declare const clone: (input: any) => any;
 export declare const remove: (key: any, input: any) => any;
@@ -66,15 +66,19 @@ export declare const kebabCase: (text: any) => any;
 export declare const snakeCase: (text: any) => any;
 export declare const truncateString: (str: any, num: any) => any;
 export declare const random: {
-    default: (min?: number, max?: number) => number;
-    alphabetical: (length: number) => string;
-    numerical: (length: number) => number;
-    alphanumeric: (length: number) => string;
-    color: (text: string, s?: number, l?: number) => string;
+  default: (min?: number, max?: number) => number;
+  alphabetical: (length: number) => string;
+  numerical: (length: number) => number;
+  alphanumeric: (length: number) => string;
+  color: (text: string, s?: number, l?: number) => string;
 };
 export declare const guid: (hyphen?: boolean) => string;
 export declare const formatCurrency: (value: number) => string;
-export declare const toCurrency: (n: any, curr: any, LanguageFormat?: undefined) => string;
+export declare const toCurrency: (
+  n: any,
+  curr: any,
+  LanguageFormat?: undefined,
+) => string;
 export declare const isEmpty: (val: any) => boolean;
 export declare const isInteger: (number: any) => boolean;
 export declare const isNumber: (n: any) => boolean;
@@ -101,7 +105,11 @@ export declare const extractHyphenated: (text: string) => string[];
 export declare const extractTime: (text: string) => string[];
 export declare const extractDotted: (text: string) => string[];
 export declare const extractQuoted: (text: string) => string[];
-export declare const replaceAt: (text: string, char: string, index: number) => string;
+export declare const replaceAt: (
+  text: string,
+  char: string,
+  index: number,
+) => string;
 export declare const removeAt: (text: string, index: number) => string;
 export declare const size: (val: any) => any;
 export declare const queryStringToObject: (query?: string) => {};
@@ -120,10 +128,16 @@ export declare const sumBy: (arr: any, fn: any) => any;
 export declare const median: (arr: any) => any;
 export declare const percentile: (arr: any, val: any) => number;
 export declare const toSafeInteger: (num: any) => number;
-export declare const removeObject: (key: any, { [key]: remove, ...rest }: {
+export declare const removeObject: (
+  key: any,
+  {
+    [key]: remove,
+    ...rest
+  }: {
     [x: string]: any;
-}) => {
-    [x: string]: any;
+  },
+) => {
+  [x: string]: any;
 };
 export declare const safeparse: (item: any, defaultReturn?: any) => any;
 export declare const isObject: (obj: any) => boolean;
@@ -137,7 +151,10 @@ export declare const isValidUrl: (value: string) => boolean;
 export declare const isValidImage: (value: string) => boolean;
 export declare const isValidUSA_SSN: typeof ValidationsUtils.isValidUSA_SSN;
 export declare const isValidDate: (value: any, userFormat?: string) => any;
-export declare const isValidCreditCard: (type: string, ccnum: string) => boolean;
+export declare const isValidCreditCard: (
+  type: string,
+  ccnum: string,
+) => boolean;
 export declare const isValidCitizenId: (id: string, country: string) => boolean;
 export declare const promisify: (func: any) => (...args: any[]) => any;
 export {};

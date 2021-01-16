@@ -89,9 +89,9 @@
       return this.x * vector.x + this.y * vector.y + this.z * vector.z;
     },
     cross: function (vector) {
-      var x = this.x;
-      var y = this.y;
-      var z = this.z;
+      const x = this.x;
+      const y = this.y;
+      const z = this.z;
 
       this.x = y * vector.z - z * vector.y;
       this.y = z * vector.x - x * vector.z;
@@ -105,7 +105,7 @@
     angle: function (vector) {
       return Math.acos(
         Vector3(this).dot(vector) /
-          (Vector3(this).length() * Vector3(vector).length())
+          (Vector3(this).length() * Vector3(vector).length()),
       );
     },
     equal: function (vector) {
@@ -116,36 +116,36 @@
         x = new Vector3(x, y, z);
       }
 
-      var x1 = this.x;
-      var y1 = this.y;
-      var z1 = this.z;
-      var angleX = x.x / 2;
-      var angleY = x.y / 2;
-      var angleZ = x.z / 2;
+      const x1 = this.x;
+      const y1 = this.y;
+      const z1 = this.z;
+      const angleX = x.x / 2;
+      const angleY = x.y / 2;
+      const angleZ = x.z / 2;
 
-      var cx = Math.cos(angleX);
-      var cy = Math.cos(angleY);
-      var cz = Math.cos(angleZ);
-      var sx = Math.sin(angleX);
-      var sy = Math.sin(angleY);
-      var sz = Math.sin(angleZ);
+      const cx = Math.cos(angleX);
+      const cy = Math.cos(angleY);
+      const cz = Math.cos(angleZ);
+      const sx = Math.sin(angleX);
+      const sy = Math.sin(angleY);
+      const sz = Math.sin(angleZ);
 
-      var w = cx * cy * cz + -sx * sy * sz;
+      const w = cx * cy * cz + -sx * sy * sz;
       var x = sx * cy * cz - -cx * sy * sz;
       var y = cx * sy * cz + sx * cy * -sz;
       var z = cx * cy * sz - -sx * sy * cz;
 
-      var m0 = 1 - 2 * (y * y + z * z);
-      var m1 = 2 * (x * y + z * w);
-      var m2 = 2 * (x * z - y * w);
+      const m0 = 1 - 2 * (y * y + z * z);
+      const m1 = 2 * (x * y + z * w);
+      const m2 = 2 * (x * z - y * w);
 
-      var m4 = 2 * (x * y - z * w);
-      var m5 = 1 - 2 * (x * x + z * z);
-      var m6 = 2 * (z * y + x * w);
+      const m4 = 2 * (x * y - z * w);
+      const m5 = 1 - 2 * (x * x + z * z);
+      const m6 = 2 * (z * y + x * w);
 
-      var m8 = 2 * (x * z + y * w);
-      var m9 = 2 * (y * z - x * w);
-      var m10 = 1 - 2 * (x * x + y * y);
+      const m8 = 2 * (x * z + y * w);
+      const m9 = 2 * (y * z - x * w);
+      const m10 = 1 - 2 * (x * x + y * y);
 
       this.x = x1 * m0 + y1 * m4 + z1 * m8;
       this.y = x1 * m1 + y1 * m5 + z1 * m9;
@@ -165,14 +165,14 @@
   Vector3.fn.init.prototype = Vector3.fn;
 
   if (
-    typeof define !== "undefined" &&
+    typeof define !== 'undefined' &&
     define instanceof Function &&
     define.amd != undefined
   ) {
-    define(function () {
+    define(() => {
       return Vector3;
     });
-  } else if (typeof module !== "undefined" && module.exports) {
+  } else if (typeof module !== 'undefined' && module.exports) {
     module.exports = Vector3;
   } else if (self != undefined) {
     self.Vector3 = Vector3;

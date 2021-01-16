@@ -1,45 +1,11 @@
 {
+  "extends": "./node_modules/gts/tsconfig-google.json",
   "compilerOptions": {
-    "incremental": true,
-    "target": "es6",
-    "module": "commonjs",
-    "lib": ["es2015", "dom"],
-    "allowJs": true,
-    "checkJs": true,
-    // "jsx": "preserve",
-    "declaration": true,                   /* Generates corresponding '.d.ts' file. */
-    "declarationMap": true,                /* Generates a sourcemap for each corresponding '.d.ts' file. */
-    "sourceMap": true,
-    // "outFile": "./",                       /* Concatenate and emit output to single file. */
-    "outDir": "./static/js/",                        /* Redirect output structure to the directory. */
-    "rootDir": "./",
-    "composite": true,                     /* Enable project compilation */
-    // "tsBuildInfoFile": "./",               /* Specify file to store incremental compilation information */
-    // "removeComments": true,                /* Do not emit comments to output. */
-    // "noEmit": true,                        /* Do not emit outputs. */
-    //"importHelpers": true,
-    //"downlevelIteration": true,
-    "strict": true,
-    // "noImplicitAny": true,                 /* Raise error on expressions and declarations with an implied 'any' type. */
-    // "strictNullChecks": true,              /* Enable strict null checks. */
-    // "strictFunctionTypes": true,           /* Enable strict checking of function types. */
-    // "strictBindCallApply": true,           /* Enable strict 'bind', 'call', and 'apply' methods on functions. */
-    // "strictPropertyInitialization": true,  /* Enable strict checking of property initialization in classes. */
-    // "noImplicitThis": true,                /* Raise error on 'this' expressions with an implied 'any' type. */
-    // "alwaysStrict": true,                  /* Parse in strict mode and emit "use strict" for each source file. */
-
-    /* Additional Checks */
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
-    "noImplicitReturns": true,
-    "noFallthroughCasesInSwitch": true,
-    //"noUncheckedIndexedAccess": true,
-    "moduleResolution": "node", 
-    "esModuleInterop": true,
-    "mapRoot": "static/js",
-    "experimentalDecorators": true,
-    "emitDecoratorMetadata": true,
-    "skipLibCheck": true,
-    "forceConsistentCasingInFileNames": true
-  }
+    "rootDir": ".",
+    "outDir": "build"
+  },
+  "include": [
+    "src/**/*.ts",
+    "test/**/*.ts"
+  ]
 }

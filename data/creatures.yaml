@@ -1,0 +1,62 @@
+0:
+  name: "opossum"
+  playable: false
+  racial-trait-name: "Resist Nature +10%"
+  racial-trait: 0
+  icon:
+    src: "static/emoji/people_animals/creatures/other_mammals/opossum.svg"
+    width: 32
+    height: 32
+  avatar:
+    src: "static/emoji/people_animals/creatures/other_mammals/opossum.svg"
+    width: 200
+    height: 200
+#1:
+#2:
+#3:
+#4:
+#5:
+#6:
+7:
+  name: "bear"
+  playable: true
+  racial-trait-name: "Frenzied Protector"
+  racial-trait-decription: "Your max HP increases by (level * 1.25)"
+  racial-trait: 36 # TODO
+  racial-ability-name: "Ironfur"
+  racial-ability-description: "Your armor is increased by 25% for the next 1 minute."
+  racial-ability-duration: 60
+  racial-ability-cooldown: 120
+  racial-ability: 23 # TODO
+  icon:
+    src: "static/emoji/people_animals/creatures/other_mammals/bear.svg"
+    width: 32
+    height: 32
+  avatar:
+    src: "static/emoji/people_animals/creatures/other_mammals/bear.svg"
+    width: 200
+    height: 200
+#8:
+9:
+  name: "ram"
+  playable: true
+    racial-trait-name: "Resist Frost +10%"
+    racial-trait: 4 # TODO
+    racial-ability: "Leap"
+    racial-ability-description: "Leap towards the selected enemy up to 3 units."
+    racial-ability-duration: 60
+    racial-ability-cooldown: 120
+    icon:
+      src: "static/emoji/people_animals/creatures/other_mammals/ram.svg"
+      width: 32
+      height: 32
+    avatar:
+      src: "static/emoji/people_animals/creatures/other_mammals/ram.svg"
+      width: 200
+      height: 200 
+#?:
+#  name: "racoon"
+#  racial-trait-name: "Resist Shadow +10%"
+
+# Humans
+  

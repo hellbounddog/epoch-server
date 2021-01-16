@@ -9,16 +9,16 @@ doc:
 
 .PHONY: creature-data
 creature-data:
-	@yaml2json < creatures.yaml > data/creatures.min.json
-	@jsonpp < data/creatures.min.json > data/creatures.json
+	@yaml2json < data/creatures.yaml > data/json/creatures.min.json
+	@jsonpp < data/json/creatures.min.json > data/json/creatures.json
 
 .PHONY: spell-data
 spell-data:
-	@yaml2json < spells.yaml > data/spells.min.json
-	@jsonpp < data/spells.min.json > data/spells.json
+	@yaml2json < data/spells.yaml > data/json/spells.min.json
+	@jsonpp < data/json/spells.min.json > data/json/spells.json
 
 .PHONY: player-data
 player-data:
-	@yaml2json < player.yaml > data/player.min.json
-	@jsonpp < data/player.min.json > data/player.json
+	@yaml2json < data/player.yaml > data/json/player.min.json
+	@jsonpp < data/json/player.min.json > data/json/player.json
 

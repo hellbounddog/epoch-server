@@ -12,6 +12,7 @@
         "width": 32
       },
       "name": "opossum",
+      "playable": false,
       "racial-trait": 0,
       "racial-trait-name": "Resist Nature +10%"
     },
@@ -27,6 +28,7 @@
         "width": 32
       },
       "name": "bear",
+      "playable": true,
       "racial-ability": 23,
       "racial-ability-cooldown": 120,
       "racial-ability-description": "Your armor is increased by 25% for the next 1 minute.",
@@ -35,6 +37,26 @@
       "racial-trait": 36,
       "racial-trait-decription": "Your max HP increases by (level * 1.25)",
       "racial-trait-name": "Frenzied Protector"
+    },
+    "9": {
+      "avatar": {
+        "height": 200,
+        "src": "static/emoji/people_animals/creatures/other_mammals/ram.svg",
+        "width": 200
+      },
+      "icon": {
+        "height": 32,
+        "src": "static/emoji/people_animals/creatures/other_mammals/ram.svg",
+        "width": 32
+      },
+      "name": "ram",
+      "playable": true,
+      "racial-ability": "Leap",
+      "racial-ability-cooldown": 120,
+      "racial-ability-description": "Leap towards the selected enemy up to 3 units.",
+      "racial-ability-duration": 60,
+      "racial-trait": 4,
+      "racial-trait-name": "Resist Frost +10%"
     }
   }
 }

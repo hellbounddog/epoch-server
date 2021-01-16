@@ -13,7 +13,7 @@ fs.readFile('data/creatures.json', (err, data) => {
     if (err)
         throw err;
     const creatures = JSON.parse(data);
-    console.log(creatures);
+    //console.log(creatures);
     //console.log('* DEBUG: ✅');
 });
 fs.readFile('data/spells.json', (err, data) => {
@@ -21,8 +21,13 @@ fs.readFile('data/spells.json', (err, data) => {
     if (err)
         throw err;
     const spells = JSON.parse(data);
-    console.log(spells);
+    //console.log(spells);
     //console.log('* DEBUG: ✅');
+    console.log('* DEBUG: Running sanity check on spell database.');
+    Object.keys(spells).forEach(key => {
+        console.log(key);
+        //console.log(spells[key]);
+    });
 });
 fs.readFile('data/player.json', (err, data) => {
     //console.log('* DEBUG: Initializing player from template.');

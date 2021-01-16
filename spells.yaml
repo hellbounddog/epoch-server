@@ -1,13 +1,26 @@
-spells:
-  0:
-    name: "Resist Nature +10%"
-    type: "passive"
-    castTime: 0
-    whileActive: "creature.attribute.natureResistance = creature.attribute.natureResistance * 0.10"
-  1:
-    name: "Resist Fire +10%"
-    type: "passive"
-    castTime: 0
-    whileActive: "creature.attribute.fireResistance = creature.attribute.fireResistance * 0.10"
-  2:
-    name: ""
+# Spell values:
+#
+# Common:
+# name - The spell name (required)
+# description - The description shown in spell tooltips. (optional)
+# active -  (required)
+0:
+  name: "Resist Nature +10%"
+  description: ""
+  active: false
+  modifyAttribute: 0 # TODO
+  percent: 10
+1:
+  name: "Resist Fire +10%"
+  description: ""
+  active: false
+  modifyAttribute: 1 # TODO
+  value: 0
+  percent: 10
+2:
+  name: ""
+36:
+  name: "Frenzied Protector"
+  active: false
+  modifyAttribute: 7 # TODO
+  value: 0

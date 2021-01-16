@@ -15,7 +15,7 @@ fs.readFile('data/creatures.json', (err, data) => {
   //console.log('* DEBUG: Loading creatures database.');
   if (err) throw err;
   const creatures = JSON.parse(data);
-  console.log(creatures);
+  //console.log(creatures);
   //console.log('* DEBUG: ✅');
 });
 
@@ -23,8 +23,18 @@ fs.readFile('data/spells.json', (err, data) => {
   //console.log('* DEBUG: Loading spell database.');
   if (err) throw err;
   const spells = JSON.parse(data);
-  console.log(spells);
+  //console.log(spells);
   //console.log('* DEBUG: ✅');
+
+  console.log('* DEBUG: Running sanity check on spell database.');
+  Object.keys(spells).forEach(id => {
+    if ('active' in spells[id]) {
+      //console.log(spells[id]);
+      console.log('boolean' == typeof(spells[id]['active']));
+    } else {
+      console.log(id);
+    }
+  });
 });
 
 fs.readFile('data/player.json', (err, data) => {

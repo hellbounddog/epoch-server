@@ -23,7 +23,7 @@ fs.readFile('data/spells.json', (err, data) => {
   //console.log('* DEBUG: Loading spell database.');
   if (err) throw err;
   const spells = JSON.parse(data);
-  //console.log(spells);
+  console.log(spells);
   //console.log('* DEBUG: ✅');
 });
 

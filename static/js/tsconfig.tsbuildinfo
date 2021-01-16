@@ -82,7 +82,7 @@
         "affectsGlobalScope": true
       },
       "../../index.js": {
-        "version": "cf4ce9b1067bc0c222e0502d48d4c1b38c59b626606a0b467045d5ad2bf374fe",
+        "version": "8ed5b35f2e397675d454f6c7a2c1556e52ec3f0e60633a5963ce047ef5c528b6",
         "signature": "f667f6b1d66ba55f0dcd27f5ff050063fecfe289bad00e8c5d48344a775c1439",
         "affectsGlobalScope": true
       },
@@ -2242,16 +2242,7 @@
           },
           {
             "file": "../../index.js",
-            "start": 654,
-            "length": 6,
-            "messageText": "'spells' is declared but its value is never read.",
-            "category": 1,
-            "code": 6133,
-            "reportsUnnecessary": true
-          },
-          {
-            "file": "../../index.js",
-            "start": 775,
+            "start": 773,
             "length": 3,
             "messageText": "Parameter 'err' implicitly has an 'any' type.",
             "category": 1,
@@ -2259,7 +2250,7 @@
           },
           {
             "file": "../../index.js",
-            "start": 780,
+            "start": 778,
             "length": 4,
             "messageText": "Parameter 'data' implicitly has an 'any' type.",
             "category": 1,
@@ -2267,7 +2258,7 @@
           },
           {
             "file": "../../index.js",
-            "start": 885,
+            "start": 883,
             "length": 6,
             "messageText": "'player' is declared but its value is never read.",
             "category": 1,

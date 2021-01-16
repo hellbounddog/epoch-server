@@ -1,10 +1,14 @@
-JS = $(shell find . -name "*.js" -not -path "./node_modules/*" -not -path "./doc/*")
+JS = $(shell find ./build -name "*.js")
 
-all: creature-data spell-data player-data doc
+all: creature-data spell-data player-data tsc
+
+.PHONY: tsc
+tsc:
 	@tsc
 
 .PHONY: doc
 doc:
+	@rm -rf ./doc
 	@jsdoc $(JS) -d doc
 
 .PHONY: creature-data

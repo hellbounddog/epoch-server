@@ -1,24 +1,46 @@
-console.log('Try npm run lint/fix!');
+'use strict';
 
-const longString =
-  'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ut aliquet diam.';
+const fs = require('fs');
+// vector tests
+const Vec3 = require('./lib/vector3.js');
+const Vec2 = require('./lib/vector2.js');
+const Entity = require('./lib/entity2d.js');
 
-const trailing = 'Semicolon';
+const testv2 = new Vec2(0, 1);
+console.log(testv2);
+const testv3 = new Vec3(0, 1, 5);
+console.log(testv3);
 
-const why = 'am I tabbed?';
+fs.readFile('data/creatures.json', (err, data) => {
+  //console.log('* DEBUG: Loading creatures database.');
+  if (err) throw err;
+  const creatures = JSON.parse(data);
+  //console.log(creatures);
+  //console.log('* DEBUG: ✅');
+});
 
-export function doSomeStuff(
-  withThis: string,
-  andThat: string,
-  andThose: string[]
-) {
-  //function on one line
-  if (!andThose.length) {
-    return false;
-  }
-  console.log(withThis);
-  console.log(andThat);
-  console.dir(andThose);
-  return;
-}
-// TODO: more examples
+fs.readFile('data/spells.json', (err, data) => {
+  //console.log('* DEBUG: Loading spell database.');
+  if (err) throw err;
+  const spells = JSON.parse(data);
+  //console.log(spells);
+  //console.log('* DEBUG: ✅');
+
+  console.log('* DEBUG: Running sanity check on spell database.');
+  Object.keys(spells).forEach((id) => {
+    if ('active' in spells[id]) {
+      //console.log(spells[id]);
+      console.log('boolean' === typeof spells[id]['active']);
+    } else {
+      console.log(id);
+    }
+  });
+});
+
+fs.readFile('data/player.json', (err, data) => {
+  //console.log('* DEBUG: Initializing player from template.');
+  if (err) throw err;
+  const player = JSON.parse(data);
+  //console.log(player);
+  //console.log('* DEBUG: ✅');
+});

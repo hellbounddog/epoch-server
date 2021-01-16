@@ -26,104 +26,146 @@
     
     <section>
         <article>
-            <pre class="prettyprint source linenums"><code>"use strict";
-var __assign = (this &amp;&amp; this.__assign) || function () {
-    __assign = Object.assign || function(t) {
+            <pre class="prettyprint source linenums"><code>'use strict';
+var __assign =
+  (this &amp;&amp; this.__assign) ||
+  function () {
+    __assign =
+      Object.assign ||
+      function (t) {
         for (var s, i = 1, n = arguments.length; i &lt; n; i++) {
-            s = arguments[i];
-            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
-                t[p] = s[p];
+          s = arguments[i];
+          for (const p in s)
+            if (Object.prototype.hasOwnProperty.call(s, p)) t[p] = s[p];
         }
         return t;
-    };
+      };
     return __assign.apply(this, arguments);
-};
-var __spreadArrays = (this &amp;&amp; this.__spreadArrays) || function () {
-    for (var s = 0, i = 0, il = arguments.length; i &lt; il; i++) s += arguments[i].length;
+  };
+const __spreadArrays =
+  (this &amp;&amp; this.__spreadArrays) ||
+  function () {
+    for (var s = 0, i = 0, il = arguments.length; i &lt; il; i++)
+      s += arguments[i].length;
     for (var r = Array(s), k = 0, i = 0; i &lt; il; i++)
-        for (var a = arguments[i], j = 0, jl = a.length; j &lt; jl; j++, k++)
-            r[k] = a[j];
+      for (let a = arguments[i], j = 0, jl = a.length; j &lt; jl; j++, k++)
+        r[k] = a[j];
     return r;
-};
-var ArrayUtil = /** @class */ (function () {
-    function ArrayUtil() {
+  };
+const ArrayUtil = /** @class */ (function () {
+  function ArrayUtil() {}
+  ArrayUtil.clone = function (input) {
+    if (input instanceof Array) {
+      return __spreadArrays(input);
     }
-    ArrayUtil.clone = function (input) {
-        if (input instanceof Array) {
-            return __spreadArrays(input);
-        }
-        return __assign({}, input);
-    };
-    ArrayUtil.shuffle = function (arr) {
-        var _a;
-        for (var i = arr.length; i > 0; i--) {
-            var j = Math.floor(Math.random() * i);
-            _a = [arr[j], arr[i - 1]], arr[i - 1] = _a[0], arr[j] = _a[1];
-        }
-        return arr;
-    };
-    ArrayUtil.sample = function (arr) {
-        return arr[Math.floor(Math.random() * (arr.length - 1))];
-    };
-    ArrayUtil.uniq = function (arr) { return Array.from(new Set(__spreadArrays(arr))); };
-    // Removes null, empty, undefined, falsy values from list
-    ArrayUtil.compact = function (arr) { return arr.filter(Boolean); };
-    ArrayUtil.reverse = function (arr) { return arr.reverse(); };
-    ArrayUtil.union = function (arr1, arr2) { return __spreadArrays(new Set(__spreadArrays(arr1, arr2))); };
-    ArrayUtil.intersection = function (arr1, arr2) { return Array.from(new Set(__spreadArrays(arr1).filter(function (x) { return arr2.indexOf(x) >= 0; }))); };
-    ArrayUtil.diff = function (arr1, arr2) {
-        var a = new Set(arr1);
-        var b = new Set(arr2);
-        return Array.from(new Set(__spreadArrays(a).filter(function (x) { return !b.has(x); })));
-    };
-    ArrayUtil.flattenDeep = function (array) {
-        var flattenedArray = [].concat.apply([], array);
-        return flattenedArray.some(Array.isArray) ? ArrayUtil.flattenDeep(flattenedArray) : flattenedArray;
-    };
-    ArrayUtil.flattenByDepth = function (arr, depth) {
-        if (depth === void 0) { depth = 1; }
-        return arr.reduce(function (a, v) { return a.concat(depth > 1 &amp;&amp; Array.isArray(v) ? ArrayUtil.flattenByDepth(v, depth - 1) : v); }, []);
-    };
-    ArrayUtil.last = function (arr) { return arr[arr.length - 1]; };
-    ArrayUtil.findIndices = function (arr, item) {
-        var ret = [];
-        for (var i in arr) {
-            if (arr[i] === item)
-                ret.push(+i);
-        }
-        return ret;
-    };
-    ArrayUtil.remove = function (key, input) {
-        if (input instanceof Array) {
-            input.splice(input.indexOf(key), 1);
-            return input.indexOf(key) &lt; 0 ? input : ArrayUtil.remove(key, input);
-        }
-        else
-            return ObjectUtil.remove(key, input);
-    };
-    /**
-     * chunk([1, 2, 3, 4, 5], 2); // [[1,2],[3,4],[5]]
-     *
-     * @param arr
-     * @param size
-     */
-    ArrayUtil.chunk = function (arr, size) { return Array.from({ length: Math.ceil(arr.length / size) }, function (v, i) {
-        return arr.slice(i * size, i * size + size);
-    }); };
-    /**
-     * nthElement(['a', 'b', 'c'], 1); // 'b'
-     * nthElement(['a', 'b', 'b'], -3); // 'a'
-     *
-     * @param arr
-     * @param n
-     */
-    ArrayUtil.nthElement = function (arr, n) {
-        if (n === void 0) { n = 0; }
-        return (n === -1 ? arr.slice(n) : arr.slice(n, n + 1))[0];
-    };
-    return ArrayUtil;
-}());
-//# sourceMappingURL=a.js.map</code></pre>
+    return __assign({}, input);
+  };
+  ArrayUtil.shuffle = function (arr) {
+    let _a;
+    for (let i = arr.length; i > 0; i--) {
+      const j = Math.floor(Math.random() * i);
+      (_a = [arr[j], arr[i - 1]]), (arr[i - 1] = _a[0]), (arr[j] = _a[1]);
+    }
+    return arr;
+  };
+  ArrayUtil.sample = function (arr) {
+    return arr[Math.floor(Math.random() * (arr.length - 1))];
+  };
+  ArrayUtil.uniq = function (arr) {
+    return Array.from(new Set(__spreadArrays(arr)));
+  };
+  // Removes null, empty, undefined, falsy values from list
+  ArrayUtil.compact = function (arr) {
+    return arr.filter(Boolean);
+  };
+  ArrayUtil.reverse = function (arr) {
+    return arr.reverse();
+  };
+  ArrayUtil.union = function (arr1, arr2) {
+    return __spreadArrays(new Set(__spreadArrays(arr1, arr2)));
+  };
+  ArrayUtil.intersection = function (arr1, arr2) {
+    return Array.from(
+      new Set(
+        __spreadArrays(arr1).filter((x) => {
+          return arr2.indexOf(x) >= 0;
+        }),
+      ),
+    );
+  };
+  ArrayUtil.diff = function (arr1, arr2) {
+    const a = new Set(arr1);
+    const b = new Set(arr2);
+    return Array.from(
+      new Set(
+        __spreadArrays(a).filter((x) => {
+          return !b.has(x);
+        }),
+      ),
+    );
+  };
+  ArrayUtil.flattenDeep = function (array) {
+    const flattenedArray = [].concat.apply([], array);
+    return flattenedArray.some(Array.isArray)
+      ? ArrayUtil.flattenDeep(flattenedArray)
+      : flattenedArray;
+  };
+  ArrayUtil.flattenByDepth = function (arr, depth) {
+    if (depth === void 0) {
+      depth = 1;
+    }
+    return arr.reduce((a, v) => {
+      return a.concat(
+        depth > 1 &amp;&amp; Array.isArray(v)
+          ? ArrayUtil.flattenByDepth(v, depth - 1)
+          : v,
+      );
+    }, []);
+  };
+  ArrayUtil.last = function (arr) {
+    return arr[arr.length - 1];
+  };
+  ArrayUtil.findIndices = function (arr, item) {
+    const ret = [];
+    for (const i in arr) {
+      if (arr[i] === item) ret.push(+i);
+    }
+    return ret;
+  };
+  ArrayUtil.remove = function (key, input) {
+    if (input instanceof Array) {
+      input.splice(input.indexOf(key), 1);
+      return input.indexOf(key) &lt; 0 ? input : ArrayUtil.remove(key, input);
+    } else return ObjectUtil.remove(key, input);
+  };
+  /**
+   * chunk([1, 2, 3, 4, 5], 2); // [[1,2],[3,4],[5]]
+   *
+   * @param arr
+   * @param size
+   */
+  ArrayUtil.chunk = function (arr, size) {
+    return Array.from({length: Math.ceil(arr.length / size)}, (v, i) => {
+      return arr.slice(i * size, i * size + size);
+    });
+  };
+  /**
+   * nthElement(['a', 'b', 'c'], 1); // 'b'
+   * nthElement(['a', 'b', 'b'], -3); // 'a'
+   *
+   * @param arr
+   * @param n
+   */
+  ArrayUtil.nthElement = function (arr, n) {
+    if (n === void 0) {
+      n = 0;
+    }
+    return (n === -1 ? arr.slice(n) : arr.slice(n, n + 1))[0];
+  };
+  return ArrayUtil;
+})();
+//# sourceMappingURL=a.js.map
+</code></pre>
         </article>
     </section>
 
@@ -139,7 +181,7 @@ var ArrayUtil = /** @class */ (function () {
 <br class="clear">
 
 <footer>
-    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 3.6.6</a> on Sat Jan 16 2021 10:04:39 GMT+0100 (Central European Standard Time)
+    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 3.6.6</a> on Sat Jan 16 2021 12:48:21 GMT+0100 (Central European Standard Time)
 </footer>
 
 <script> prettyPrint(); </script>

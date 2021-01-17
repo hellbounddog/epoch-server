@@ -5,9 +5,12 @@ const diceRoller = require('rpg-dice-roller');
 const dice = new diceRoller.DiceRoller();
 
 const nameStart = [
+  'Mal',
   'So',
   'Na',
   'Xil',
+  'El',
+  'Une',
   'Moth',
   'Akil',
   //'Xin',
@@ -15,9 +18,13 @@ const nameStart = [
   'Ad',
   'Mok',
   'Mokh',
+  'Lokh',
+  'Ul',
 ];
 
 const nameEnd = [
+  'Abim',
+  'Hoth',
   'Rhin',
   'Zhul',
   'Ara',
@@ -33,6 +40,8 @@ const nameEnd = [
 
 const prefixes = [
   'Yawning',
+  'Blooddrenched',
+  'Bloodstained',
   'Wild',
   'Malformed',
   //'Horrific',
@@ -74,6 +83,7 @@ const titles = [
   'Lord',
   'Dreamer',
   'Watcher',
+  'Beast',
 ];
 
 const numbers = [
@@ -100,9 +110,11 @@ const adjectives = [
   'Maddening',
   'Forgotten',
   'Eldritch',
+  'Divine',
 ];
 
 const things = [
+  'Planes',
   'Depths',
   'Mouths',
   'Horrors',
@@ -134,8 +146,19 @@ function generatePrimordialName() {
 }
 
 function generatePrimordialTitle() {
-  const prefix = prefixes.random();
-  const title = titles.random();
+  let prefix = 'Missing';
+  let title = 'Abomination';
+
+  const d100 = dice.roll('d100').total;
+  console.log(d100);
+  if (d100 === 100) {
+    prefix = 'Suicide';
+    title = 'King';
+  } else {
+    prefix = prefixes.random();
+    title = titles.random();
+  }
+
   const thing = things.random();
 
   const d6 = 1;
@@ -154,6 +177,10 @@ function generatePrimordialTitle() {
       }
       if (thing === 'Shadows') {
         adjective = 'Lurking';
+      }
+    } else if (adjective === 'Eyeless') {
+      if (thing === 'Grief') {
+        adjective = 'Endless';
       }
     }
 

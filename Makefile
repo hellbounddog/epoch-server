@@ -1,6 +1,7 @@
-JS = $(shell find ./build -name "*.js")
+JS = $(shell find ./src -name "*.js")
+DATA = $(shell find ./data -name "*.yaml")
 
-all: creature-data spell-data player-data tsc
+all: attributes-data creature-data spell-data itemtypes-data item-data player-data data tsc doc
 
 .PHONY: tsc
 tsc:
@@ -10,6 +11,26 @@ tsc:
 doc:
 	@rm -rf ./doc
 	@jsdoc $(JS) -d doc
+
+.PHONY: data
+data: $(DATA)
+	@echo $(DATA)
+	@#TODO
+
+.PHONY: attributes-data
+attributes-data:
+	@yaml2json < data/attributes.yaml > data/json/attributes.min.json
+	@jsonpp < data/json/attributes.min.json > data/json/attributes.json
+
+.PHONY: itemtypes-data
+itemtypes-data:
+	@yaml2json < data/itemtypes.yaml > data/json/itemtypes.min.json
+	@jsonpp < data/json/itemtypes.min.json > data/json/itemtypes.json
+
+.PHONY: item-data
+item-data:
+	@yaml2json < data/items.yaml > data/json/items.min.json
+	@jsonpp < data/json/items.min.json > data/json/items.json
 
 .PHONY: creature-data
 creature-data:

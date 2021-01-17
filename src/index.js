@@ -14,7 +14,7 @@ console.log(testv3);
 fs.readFile('data/creatures.json', (err, data) => {
   //console.log('* DEBUG: Loading creatures database.');
   if (err) throw err;
-  const creatures = JSON.parse(data);
+  let creatures = JSON.parse(data);
   //console.log(creatures);
   //console.log('* DEBUG: ✅');
 });
@@ -22,8 +22,7 @@ fs.readFile('data/creatures.json', (err, data) => {
 fs.readFile('data/spells.json', (err, data) => {
   //console.log('* DEBUG: Loading spell database.');
   if (err) throw err;
-  const spells = JSON.parse(data);
-  //console.log(spells);
+  let spells = JSON.parse(data);
   //console.log('* DEBUG: ✅');
 
   console.log('* DEBUG: Running sanity check on spell database.');
@@ -40,7 +39,7 @@ fs.readFile('data/spells.json', (err, data) => {
 fs.readFile('data/player.json', (err, data) => {
   //console.log('* DEBUG: Initializing player from template.');
   if (err) throw err;
-  const player = JSON.parse(data);
+  let player = JSON.parse(data);
   //console.log(player);
   //console.log('* DEBUG: ✅');
 });

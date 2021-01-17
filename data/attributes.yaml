@@ -1,0 +1,17 @@
+attributes: [
+  level: 1,
+  # One point of `stamina` increases the `Entity`'s health by 10.
+  # `maxHealth = stamina * 10`
+  stamina: 1,
+  # The attributes `defense` and `armor` are used to calculate the damage reduction
+  # from incoming attacks.
+  # In addition, `defense` also reduces the chance for incoming attacks to be
+  # critical hits.
+  defense: 0,
+  armor: 0,
+  # Allows casting spells and increases `mana`.
+  # Having an `intelligence` level below 10 severly limits your options in dialogues.
+  # Below 5, experience gained is reduced by 80%.
+  intelligence: 10
+]
+

@@ -1,0 +1,19 @@
+ itemtypes: [
+   gold: false,
+   quest: false,
+   junk: false,
+   reagent: false,
+   consumable: false,
+   scroll: false,
+   book: false,
+   weapon: [
+     twohanded: false,
+     mainhand: false,
+     offhand: false,
+     shield: false
+   ],
+   armor: [
+     helmet: false
+   ]
+ ]
+

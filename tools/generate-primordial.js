@@ -69,6 +69,7 @@ const titles = [
   //'Green',
   'Ruler',
   'Serpent',
+  'Butcher',
   'Guardian',
   'Prince',
   'Child',
@@ -179,6 +180,9 @@ function generatePrimordialTitle() {
         adjective = 'Lurking';
       }
     } else if (adjective === 'Eyeless') {
+      if (thing === 'Mouths') {
+        thing = 'Servants';
+      }
       if (thing === 'Grief') {
         adjective = 'Endless';
       }

@@ -1,30 +1,42 @@
 'use strict';
 
 const fs = require('fs');
+const process = require('process'); 
+  
+console.log("Current working directory: ", process.cwd()); 
+
+const datadir = process.cwd() + '/data/json';
+
 // vector tests
 const Vec3 = require('./lib/vector3.js');
 const Vec2 = require('./lib/vector2.js');
-const Entity = require('./lib/entity2d.js');
+//const Entity = require('./lib/entity2d.js');
+
+let creatures = {};
+let spells = {};
+let player = {};
 
 const testv2 = new Vec2(0, 1);
 console.log(testv2);
 const testv3 = new Vec3(0, 1, 5);
 console.log(testv3);
 
-fs.readFile('data/creatures.json', (err, data) => {
-  //console.log('* DEBUG: Loading creatures database.');
-  if (err) throw err;
-  let creatures = JSON.parse(data);
-  //console.log(creatures);
-  //console.log('* DEBUG: ✅');
-});
+/**
+ *
+ * @todo
+ */
+function checkCreatures() {
+  console.log('* DEBUG: Running sanity check on creatures database.');
+  Object.keys(creatures).forEach((id) => {
+    console.log(creatures[id]);
+  });
+}
 
-fs.readFile('data/spells.json', (err, data) => {
-  //console.log('* DEBUG: Loading spell database.');
-  if (err) throw err;
-  let spells = JSON.parse(data);
-  //console.log('* DEBUG: ✅');
-
+/**
+ *
+ * @todo
+ */
+function checkSpells() {
   console.log('* DEBUG: Running sanity check on spell database.');
   Object.keys(spells).forEach((id) => {
     if ('active' in spells[id]) {
@@ -34,12 +46,29 @@ fs.readFile('data/spells.json', (err, data) => {
       console.log(id);
     }
   });
+}
+
+fs.readFile(datadir + '/creatures.json', (err, data) => {
+  //console.log('* DEBUG: Loading creatures database.');
+  if (err) throw err;
+  creatures = JSON.parse(data);
+  //console.log(creatures);
+  //console.log('* DEBUG: ✅');
+  checkCreatures();
+});
+
+fs.readFile(datadir + '/spells.json', (err, data) => {
+  //console.log('* DEBUG: Loading spell database.');
+  if (err) throw err;
+  spells = JSON.parse(data);
+  //console.log('* DEBUG: ✅');
+  checkSpells();
 });
 
 fs.readFile('data/player.json', (err, data) => {
   //console.log('* DEBUG: Initializing player from template.');
   if (err) throw err;
-  let player = JSON.parse(data);
+  player = JSON.parse(data);
   //console.log(player);
   //console.log('* DEBUG: ✅');
 });

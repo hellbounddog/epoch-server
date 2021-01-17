@@ -16,7 +16,13 @@
   text-decoration: underline;
 }
 
+.uppercase {
+  text-transform: capitalize;
+}
 
+.capitalize {
+  text-transform: capitalize;
+}
 
 .responses {
   text-align: center;

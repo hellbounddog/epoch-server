@@ -1,7 +1,11 @@
 JS = $(shell find ./src -name "*.js")
 DATA = $(shell find ./data -name "*.yaml")
 
-all: attributes-data creature-data spell-data itemtypes-data item-data player-data data tsc doc
+all: attributes-data creature-data spell-data itemtypes-data item-data player-data data tsc doc sass
+
+.PHONY: sass
+sass:
+	@sass sass/main.sass > static/epoch.css
 
 .PHONY: tsc
 tsc:

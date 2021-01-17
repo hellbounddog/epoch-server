@@ -27,6 +27,8 @@
   },
   "dependencies": {
     "@types/mustache": "^4.1.0",
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "pug": "^3.0.0",
+    "rpg-dice-roller": "^4.5.2"
   }
 }

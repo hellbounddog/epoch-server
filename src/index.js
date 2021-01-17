@@ -3,12 +3,15 @@
 const fs = require('fs');
 const process = require('process');
 
-const express = require('express')
-const app = express()
-const port = 3600
+const express = require('express');
+const app = express();
+const port = 3600;
 
-app.get('/', (req, res) => {
-  res.send('Hello World!')
+app.set('view engine', 'pug')
+app.use(express.static('public'))
+
+app.get('/', function (req, res) {
+  res.render('index', { title: 'Hey', message: 'Hello there!' })
 })
 
 app.listen(port, () => {

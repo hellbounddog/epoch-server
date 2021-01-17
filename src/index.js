@@ -3,6 +3,18 @@
 const fs = require('fs');
 const process = require('process');
 
+const express = require('express')
+const app = express()
+const port = 3600
+
+app.get('/', (req, res) => {
+  res.send('Hello World!')
+})
+
+app.listen(port, () => {
+  console.log(`Example app listening at http://localhost:${port}`)
+})
+
 console.log('Current working directory: ', process.cwd());
 
 const datadir = process.cwd() + '/data/json';

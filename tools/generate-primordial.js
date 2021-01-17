@@ -4,11 +4,43 @@ require('../src/lib/array.random.js');
 const diceRoller = require('rpg-dice-roller');
 const dice = new diceRoller.DiceRoller();
 
+const nameStart = [
+  'So',
+  'Na',
+  'Xil',
+  'Moth',
+  'Akil',
+  //'Xin',
+  //'Xi',
+  'Ad',
+  'Mok',
+  'Mokh',
+];
+
+const nameEnd = [
+  'Rhin',
+  'Zhul',
+  'Ara',
+  'Atul',
+  'Tra',
+  'Thra',
+  'Azon',
+  'Azoth',
+  'Toth',
+  'Nur',
+  'Ilith',
+];
+
 const prefixes = [
   'Yawning',
+  'Wild',
   'Malformed',
-  'Horrific',
+  //'Horrific',
   'Horrible',
+  'Devout',
+  'Instatiable',
+  'Lonely',
+  'False',
   'Chaotic',
   'Bored',
   'Laughing',
@@ -20,11 +52,14 @@ const prefixes = [
   //'Nuclear',
   'Primordial',
   'Immortal',
+  'Rotting',
+  'Hulking',
 ];
 
 const titles = [
   //'Green',
   'Ruler',
+  'Serpent',
   'Guardian',
   'Prince',
   'Child',
@@ -44,7 +79,7 @@ const titles = [
 const numbers = [
   'Infinite',
   'a Thousand',
-  'a Million',
+  //'a Million',
   'The Seven',
   'The Six',
   'The One',
@@ -52,21 +87,30 @@ const numbers = [
 
 const adjectives = [
   //'Virgin',
+  'True',
   'Sealed',
   'Sacred',
+  'Twisting',
+  'Wicked',
+  'Deathly',
+  'Eyeless',
+  'Open',
+  'Gaping',
   'Hidden',
+  'Forgotten',
   'Eldritch',
 ];
 
 const things = [
   'Depths',
+  'Mouths',
   'Horrors',
   'Pathways',
   'Chaos',
   'Below',
   'Worlds',
   //'Apathy',
-  'Crows',
+  'Ruins',
   'Dreams',
   'Grief',
   'Emptiness',
@@ -75,32 +119,48 @@ const things = [
   'Light',
   'Dark',
   'Forever',
-  'The Black Cat',
+  //'The Black Cat',
   'Ways',
   'Thruths',
-  'Deadly Omen',
+  //'Deadly Omens',
   'Stars',
   'Darkness',
-  'Deathly Shadows',
+  'Shadows',
 ];
 
-function generatePrimordial() {
+function generatePrimordialName() {
+  return nameStart.random() + "'" + nameEnd.random();
+}
+
+function generatePrimordialTitle() {
   const prefix = prefixes.random();
   const title = titles.random();
   const thing = things.random();
 
-  const d6 = dice.roll('d6').total;
+  const d6 = 1;
+  //const d6 = dice.roll('d6').total;
   console.log(d6);
 
   if (d6 === 6) {
     const number = numbers.random();
     return prefix + ' ' + title + ' of ' + number + ' ' + thing;
   } else if (d6 === 1) {
-    const adjective = adjectives.random();
+    let adjective = adjectives.random();
 
+    if (adjective === 'Open') {
+      if (thing === 'Grief') {
+        adjective = 'Absolute';
+      }
+      if (thing === 'Shadows') {
+        adjective = 'Lurking';
+      }
+    }
+
+    return prefix + ' ' + title + ' of the ' + adjective + ' ' + thing;
   }
 
   return prefix + ' ' + title + ' of ' + thing;
 }
 
-console.log(generatePrimordial());
+console.log('Name:' + generatePrimordialName());
+console.log('Title:' + generatePrimordialTitle());

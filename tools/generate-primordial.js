@@ -97,6 +97,7 @@ const adjectives = [
   'Open',
   'Gaping',
   'Hidden',
+  'Maddening',
   'Forgotten',
   'Eldritch',
 ];

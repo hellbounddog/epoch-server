@@ -10,7 +10,7 @@ attributes: [
   defense: 0,
   armor: 0,
   # Allows casting spells and increases `mana`.
-  # Having an `intelligence` level below 10 severly limits your options in dialogues.
+  # Having an `intelligence` level below 10 severely limits your options in dialogues.
   # Below 5, experience gained is reduced by 80%.
   intelligence: 10
 ]

@@ -133,7 +133,6 @@ const things = [
   'Light',
   'Dark',
   'Forever',
-  //'The Black Cat',
   'Ways',
   'Thruths',
   //'Deadly Omens',
@@ -160,7 +159,17 @@ function generatePrimordialTitle() {
     title = titles.random();
   }
 
-  const thing = things.random();
+  if (prefix === 'Idiot') {
+    if (title === 'Watcher') {
+      prefix = 'Blind';
+    }
+  } else if (prefix === 'Instatiable') {
+    if (title === 'Watcher') {
+      title = 'Fiend';
+    }
+  }
+
+  let thing = things.random();
 
   const d6 = 1;
   //const d6 = dice.roll('d6').total;
@@ -173,18 +182,28 @@ function generatePrimordialTitle() {
     let adjective = adjectives.random();
 
     if (adjective === 'Open') {
-      if (thing === 'Grief') {
+      if (thing === 'Dreams') {
+        adjective = 'Dreamless';
+        thing = 'Sleep';
+      } else if (thing === 'Grief') {
         adjective = 'Absolute';
-      }
-      if (thing === 'Shadows') {
+      } else if (thing === 'Shadows') {
         adjective = 'Lurking';
       }
     } else if (adjective === 'Eyeless') {
       if (thing === 'Mouths') {
         thing = 'Servants';
-      }
-      if (thing === 'Grief') {
+      } else if (thing === 'Grief') {
         adjective = 'Endless';
+      }
+    } else if (adjective === 'Twisting') {
+      if (thing === 'Forever') {
+        thing = 'Infinity';
+      }
+    } else if (adjective === 'Eldritch') {
+      if (thing === 'Below') {
+        adjective = 'Black';
+        thing = 'Cat';
       }
     }
 

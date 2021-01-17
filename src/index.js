@@ -1,9 +1,9 @@
 'use strict';
 
 const fs = require('fs');
-const process = require('process'); 
-  
-console.log("Current working directory: ", process.cwd()); 
+const process = require('process');
+
+console.log('Current working directory: ', process.cwd());
 
 const datadir = process.cwd() + '/data/json';
 
@@ -49,11 +49,10 @@ function checkSpells() {
 }
 
 fs.readFile(datadir + '/creatures.json', (err, data) => {
-  //console.log('* DEBUG: Loading creatures database.');
+  console.log('* creatures: Loading database.');
   if (err) throw err;
   creatures = JSON.parse(data);
-  //console.log(creatures);
-  //console.log('* DEBUG: ✅');
+  console.log('* creatures: Database loaded.');
   checkCreatures();
 });
 
@@ -65,7 +64,7 @@ fs.readFile(datadir + '/spells.json', (err, data) => {
   checkSpells();
 });
 
-fs.readFile('data/player.json', (err, data) => {
+fs.readFile(datadir + '/player.json', (err, data) => {
   //console.log('* DEBUG: Initializing player from template.');
   if (err) throw err;
   player = JSON.parse(data);

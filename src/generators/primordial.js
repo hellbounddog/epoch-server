@@ -1,6 +1,6 @@
 'use strict';
 
-require('../src/lib/array.random.js');
+require('../lib/array.random.js');
 const diceRoller = require('rpg-dice-roller');
 const dice = new diceRoller.DiceRoller();
 

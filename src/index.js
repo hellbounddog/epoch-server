@@ -15,7 +15,7 @@ app.get('/', function (req, res) {
 })
 
 app.listen(port, () => {
-  console.log(`Example app listening at http://localhost:${port}`)
+  console.log(`* http: Listening at http://localhost:${port}`)
 })
 
 console.log('Current working directory: ', process.cwd());
@@ -38,13 +38,14 @@ console.log(testv3);
 
 /**
  *
- * @todo
+ * @todo sanity checks
  */
 function checkCreatures() {
-  console.log('* DEBUG: Running sanity check on creatures database.');
+  console.log('* creatures: Running sanity check on database.');
   Object.keys(creatures).forEach((id) => {
-    console.log(creatures[id]);
+    //console.log(creatures[id]);
   });
+  console.log('* creatures: Sanity check finished.');
 }
 
 /**
@@ -52,15 +53,30 @@ function checkCreatures() {
  * @todo
  */
 function checkSpells() {
-  console.log('* DEBUG: Running sanity check on spell database.');
+  console.log('* spells: Running sanity check on database.');
   Object.keys(spells).forEach((id) => {
-    if ('active' in spells[id]) {
-      //console.log(spells[id]);
-      console.log('boolean' === typeof spells[id]['active']);
+    if (typeof spells[id]['name'] === 'string') {
+      // @todo empty
     } else {
-      console.log(id);
+      // @todo warning
+    }
+
+    if (typeof spells[id]['active'] === 'boolean') {
+      if ('active' in spells[id]) {
+        // @todo check if passive spell modifies anything.
+      } else {
+        // @todo active spell checks.
+      }
+    } else {
+      console.log(
+        '* spells: WARNING: Spell with id ' +
+          id +
+          " has invalid type or isn't defined! Expected boolean, got " +
+          typeof spells[id]['active'],
+      );
     }
   });
+  console.log('* spells: Sanity check finished.');
 }
 
 fs.readFile(datadir + '/creatures.json', (err, data) => {
@@ -72,10 +88,10 @@ fs.readFile(datadir + '/creatures.json', (err, data) => {
 });
 
 fs.readFile(datadir + '/spells.json', (err, data) => {
-  //console.log('* DEBUG: Loading spell database.');
+  console.log('* spells: Loading database.');
   if (err) throw err;
   spells = JSON.parse(data);
-  //console.log('* DEBUG: ✅');
+  console.log('* spells: Database loaded.');
   checkSpells();
 });
 

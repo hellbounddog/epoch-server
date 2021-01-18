@@ -5,7 +5,7 @@ all: attributes-data creature-data spell-data itemtypes-data item-data player-da
 
 .PHONY: sass
 sass:
-	@sass sass/main.sass > static/epoch.css
+	@sass sass/main.sass > public/epoch.css
 
 .PHONY: tsc
 tsc:

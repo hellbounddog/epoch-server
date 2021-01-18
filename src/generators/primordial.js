@@ -4,6 +4,29 @@ require('../lib/array.random.js');
 const diceRoller = require('rpg-dice-roller');
 const dice = new diceRoller.DiceRoller();
 
+/**
+ * Affects certain cosmic events during world generation.
+ * chaotic:
+ *   An unfathomable evil.
+ *   @todo expand!
+ *   His blood provides great benefits but quickly corrupts and
+ *   kills the player.
+ * neutral:
+ *   This God never cared for any mortal worlds,
+ *   every race evolved naturally and left ro do whatever they pleased.
+ *   If dead only very few rumors about the existence of a cult
+ *   following it remains in the world.
+ *   When alive, a few followers can be found around the world.
+ *   They affect nothing, his blood has no effects on the player.
+ * good:
+ *   The world's history is pretty boring.
+ *   not a lot of calamities or wars have happened, until recently
+ *   when, the God was killed, imprisoned or went insane.
+ *   His blood grants the imbiber a very short stat boosting buff.
+ * @todo Actually implement this in storyteller!
+ */
+const alignments = ['chaotic', 'neutral', 'good'];
+
 const nameStart = [
   'Mal',
   'So',
@@ -213,5 +236,10 @@ function generatePrimordialTitle() {
   return prefix + ' ' + title + ' of ' + thing;
 }
 
+function generatePrimordialAlignment() {
+  return alignments.random():
+}
+
+console.log('Alignment: ' + generatePrimordialAlignment());
 console.log('Name:' + generatePrimordialName());
 console.log('Title:' + generatePrimordialTitle());

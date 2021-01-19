@@ -7,10 +7,16 @@ const dice = new diceRoller.DiceRoller();
 /**
  * Affects certain cosmic events during world generation.
  * chaotic:
- *   An unfathomable evil.
- *   @todo expand!
+ *   DEAD:
+ *   He liked to toy with feeble mortals. Several creatures evolution
+ *   was influenced by it. Those who covet it and it's minions start
+ *   resembling it.
+ *   An unfathomable evil was lurking once in the far corners
+ *   of the universe.
  *   His blood provides great benefits but quickly corrupts and
  *   kills the player.
+ *   ALIVE:
+ *   @todo write
  * neutral:
  *   This God never cared for any mortal worlds,
  *   every race evolved naturally and left ro do whatever they pleased.
@@ -196,7 +202,7 @@ function generatePrimordialTitle() {
 
   const d6 = 1;
   //const d6 = dice.roll('d6').total;
-  console.log(d6);
+  //console.log(d6);
 
   if (d6 === 6) {
     const number = numbers.random();
@@ -237,9 +243,18 @@ function generatePrimordialTitle() {
 }
 
 function generatePrimordialAlignment() {
-  return alignments.random():
+  return alignments.random();
 }
 
+function generatePrimordialAlive() {
+  if (Math.random() < 0.5) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
+console.log('Alive: ' + generatePrimordialAlive());
 console.log('Alignment: ' + generatePrimordialAlignment());
 console.log('Name:' + generatePrimordialName());
 console.log('Title:' + generatePrimordialTitle());

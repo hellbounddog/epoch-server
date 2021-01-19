@@ -9,29 +9,30 @@ require('dotenv').config();
 
 // express modules and settings
 const express = require('express');
-const hash = require('pbkdf2-password')()
+const hash = require('pbkdf2-password')();
 const session = require('express-session');
 const app = express();
 const port = process.env.EPOCH_HTTP_PORT;
 
 app.use(express.urlencoded({extended: false}));
-app.use(session({
+app.use(
+  session({
     resave: false, // don't save session if unmodified
     saveUninitialized: false, // don't create session until something stored
     secret: process.env.EPOCH_AUTH_SECRET,
   }),
 );
 
-app.set('view engine', 'pug')
-app.use(express.static('public'))
+app.set('view engine', 'pug');
+app.use(express.static('public'));
 
-app.get('/', function (req, res) {
+app.get('/', (req, res) => {
   res.render('index', {title: 'Hey', message: 'Hello there!'});
 });
 
 app.listen(port, () => {
-  console.log(`* http: Listening at http://localhost:${port}`)
-})
+  console.log(`* http: Listening at http://localhost:${port}`);
+});
 
 console.log('Current working directory: ', process.cwd());
 

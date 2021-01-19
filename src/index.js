@@ -4,19 +4,21 @@ const fs = require('fs');
 const process = require('process');
 const path = require('path');
 
+// dotenv
+require('dotenv').config();
+
 // express modules and settings
 const express = require('express');
 const hash = require('pbkdf2-password')()
 const session = require('express-session');
 const app = express();
-const port = 3600;
+const port = process.env.EPOCH_HTTP_PORT;
 
 app.use(express.urlencoded({extended: false}));
 app.use(session({
     resave: false, // don't save session if unmodified
     saveUninitialized: false, // don't create session until something stored
-    // @todo move to .env and change
-    secret: 'oHIWJKAztLDkcW0asnJtI0DT', // generate one with `openssl rand -base64 1`
+    secret: process.env.EPOCH_AUTH_SECRET,
   }),
 );
 

@@ -15,7 +15,7 @@ const aggressiveAdjecives = [
   'Unruly',
   'Feral',
   'Defiant',
-  //'Neglected',
+  'Bloodthirsty',
 ];
 
 const peacefulAdjectives = [
@@ -24,6 +24,7 @@ const peacefulAdjectives = [
   'Tame',
   'Frightened',
   'Defenseless',
+  'Startled',
 ];
 
 const canineAdjectives = [
@@ -31,6 +32,7 @@ const canineAdjectives = [
   'Barking',
   'Disobedient',
   'Wayward',
+  'Neglected',
 ];
 
 function generateAnimalName(name, type, aggressive) {
@@ -59,5 +61,7 @@ function generateAnimalName(name, type, aggressive) {
   }
 }
 
-console.log('Aggressive Name: ' + generateAnimalName('Dog', null, true));
-console.log('Peaceful Name: ' + generateAnimalName('Dog', null, false));
+//console.log('Aggressive Name: ' + generateAnimalName('Dog', null, true));
+//console.log('Peaceful Name: ' + generateAnimalName('Dog', null, false));
+
+export {generateAnimalName};

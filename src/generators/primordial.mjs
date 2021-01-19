@@ -1,6 +1,7 @@
 'use strict';
 
 require('../lib/array.random.js');
+
 const diceRoller = require('rpg-dice-roller');
 const dice = new diceRoller.DiceRoller();
 
@@ -170,10 +171,16 @@ const things = [
   'Shadows',
 ];
 
+/*
+ * @todo document
+ */
 function generatePrimordialName() {
   return nameStart.random() + "'" + nameEnd.random();
 }
 
+/*
+ * @todo document
+ */
 function generatePrimordialTitle() {
   let prefix = 'Missing';
   let title = 'Abomination';
@@ -270,10 +277,16 @@ function generatePrimordialTitle() {
   return prefix + ' ' + title + ' of ' + thing;
 }
 
+/*
+ * @todo document
+ */
 function generatePrimordialAlignment() {
   return alignments.random();
 }
 
+/*
+ * @todo document
+ */
 function generatePrimordialAlive() {
   if (Math.random() < 0.5) {
     return true;
@@ -282,7 +295,17 @@ function generatePrimordialAlive() {
   }
 }
 
-console.log('Alive: ' + generatePrimordialAlive());
-console.log('Alignment: ' + generatePrimordialAlignment());
-console.log('Name:' + generatePrimordialName());
-console.log('Title:' + generatePrimordialTitle());
+/**
+ * @todo document
+ */
+function generatePrimordial() {
+  let primordial = [];
+
+  return primordial;
+}
+
+//console.log('Alive: ' + generatePrimordialAlive());
+//console.log('Alignment: ' + generatePrimordialAlignment());
+//console.log('Name:' + generatePrimordialName());
+//console.log('Title:' + generatePrimordialTitle());
+export { generatePrimordial };

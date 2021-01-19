@@ -152,7 +152,7 @@ const things = [
   'Chaos',
   'Below',
   'Worlds',
-  //'Apathy',
+  'Despair',
   'Ruins',
   'Dreams',
   'Grief',
@@ -200,8 +200,7 @@ function generatePrimordialTitle() {
 
   let thing = things.random();
 
-  const d6 = 1;
-  //const d6 = dice.roll('d6').total;
+  const d6 = dice.roll('d6').total;
   //console.log(d6);
 
   if (d6 === 6) {
@@ -218,10 +217,39 @@ function generatePrimordialTitle() {
         adjective = 'Absolute';
       } else if (thing === 'Shadows') {
         adjective = 'Lurking';
+      } else if (thing === 'Ruins') {
+        adjective = 'Buried';
+      }
+    } else if (adjective === 'Forgotten') {
+      if (thing === 'Forever') {
+        thing = 'Path';
+      }
+    } else if (adjective === 'Sacred') {
+      if (thing === 'Mouths') {
+        adjective = 'Chanting';
+      }
+    } else if (adjective === 'Deathly') {
+      if (thing === 'Forever') {
+        thing = 'Spirits';
+      } else if (thing === 'Worlds') {
+        adjective = 'Burning';
+      }
+    } else if (adjective === 'Gaping') {
+      if (thing === 'Grief') {
+        adjective = 'Disorder and';
+      } else if (thing === 'Knowledge') {
+        adjective = 'Missing';
+      } else if (thing === 'Worlds') {
+        adjective = 'Shattered';
+      } else if (thing === 'Forever') {
+        adjective = 'Eternal';
+        thing = 'Suffering';
       }
     } else if (adjective === 'Eyeless') {
       if (thing === 'Mouths') {
         thing = 'Servants';
+      } else if (thing === 'Ruins') {
+        adjective = 'Forgotten';
       } else if (thing === 'Grief') {
         adjective = 'Endless';
       }

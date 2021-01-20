@@ -12,7 +12,9 @@ const express = require('express');
 const hash = require('pbkdf2-password')();
 const session = require('express-session');
 const app = express();
-const port = process.env.EPOCH_HTTP_PORT;
+const port = process.env.EPOCH_HTTP_PORT || 3000;
+// @todo implement in app.listen
+const addr = process.env.EPOCH_HTTP_ADDRESS || '127.0.0.1';
 
 app.use(express.urlencoded({extended: false}));
 app.use(
@@ -22,7 +24,7 @@ app.use(
     secret: process.env.EPOCH_AUTH_SECRET,
   }),
 );
-
+app.disable('x-powered-by');
 app.set('view engine', 'pug');
 app.use(express.static('public'));
 
@@ -31,7 +33,7 @@ app.get('/', (req, res) => {
 });
 
 app.listen(port, () => {
-  console.log(`* http: Listening at http://localhost:${port}`);
+  console.log(`* http: Listening at http://${addr}:${port}`);
 });
 
 console.log('Current working directory: ', process.cwd());
@@ -39,6 +41,7 @@ console.log('Current working directory: ', process.cwd());
 const datadir = process.cwd() + '/data/json';
 
 // vector tests
+// @todo convert vectors to modules
 const Vec3 = require('./lib/vector3.js');
 const Vec2 = require('./lib/vector2.js');
 //const Entity = require('./lib/entity2d.js');
@@ -66,7 +69,7 @@ function checkCreatures() {
 
 /**
  *
- * @todo
+ * @todo document
  */
 function checkSpells() {
   console.log('* spells: Running sanity check on database.');
@@ -95,26 +98,33 @@ function checkSpells() {
   console.log('* spells: Sanity check finished.');
 }
 
-fs.readFile(datadir + '/creatures.json', (err, data) => {
-  console.log('* creatures: Loading database.');
-  if (err) throw err;
-  creatures = JSON.parse(data);
-  console.log('* creatures: Database loaded.');
-  checkCreatures();
-});
+/**
+ * Loads and checks the databases.
+ */
+function loadDatabase() {
+  fs.readFile(datadir + '/creatures.json', (err, data) => {
+    console.log('* creatures: Loading database.');
+    if (err) throw err;
+    creatures = JSON.parse(data);
+    console.log('* creatures: Database loaded.');
+    checkCreatures();
+  });
 
-fs.readFile(datadir + '/spells.json', (err, data) => {
-  console.log('* spells: Loading database.');
-  if (err) throw err;
-  spells = JSON.parse(data);
-  console.log('* spells: Database loaded.');
-  checkSpells();
-});
+  fs.readFile(datadir + '/spells.json', (err, data) => {
+    console.log('* spells: Loading database.');
+    if (err) throw err;
+    spells = JSON.parse(data);
+    console.log('* spells: Database loaded.');
+    checkSpells();
+  });
 
-fs.readFile(datadir + '/player.json', (err, data) => {
-  //console.log('* DEBUG: Initializing player from template.');
-  if (err) throw err;
-  player = JSON.parse(data);
-  //console.log(player);
-  //console.log('* DEBUG: ✅');
-});
+  fs.readFile(datadir + '/player.json', (err, data) => {
+    //console.log('* DEBUG: Initializing player from template.');
+    if (err) throw err;
+    player = JSON.parse(data);
+    //console.log(player);
+    //console.log('* DEBUG: ✅');
+  });
+}
+
+loadDatabase();

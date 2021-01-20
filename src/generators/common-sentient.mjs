@@ -15,6 +15,8 @@ const normalThingsToLike = [
   'Chicken',
   'Turkey',
   'Apple Juice',
+  'Dogs',
+  'Cats',
 ];
 
 const oddThingsToLike = [
@@ -27,18 +29,30 @@ const twistedThingsToLike = [
   'Tentacles',
 ];
 
+/**
+ * @todo document
+ * @todo move to its own module
+ */
+function randomUniqueFromArray(needles, haystack) {
+}
+
+/**
+ * @todo document
+ */
 function generateIQ(entity) {
   const iqFromInt = entity.attributes.intellect * 16.5;
 
   return baseIQ + iqFromInt;
 }
 
-function generateLikes(normal = 1, odd = 0, twisted = 0) {
+/**
+ * @todo document
+ */
+function generateLikes(normal = 2, odd = 1, twisted = 0) {
   let likes = [];
 
   for (let i = 0; i === normal; i++) {
-    console.log(i);
-    likes += normalThingsToLike.random();
+    likes += randomUniqueFromArray(likes, normalThingsToLike);
   }
 
   return likes;

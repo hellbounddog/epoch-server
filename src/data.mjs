@@ -1,24 +1,11 @@
 'use strict';
 
-const fs = require('fs');
-const process = require('process');
+import * as fs from 'fs';
+import * as process from 'process';
 const datadir = process.cwd() + '/data/json';
-require('./http-server.js');
 
-// vector tests
-// @todo convert vectors to modules
-const Vec3 = require('./lib/vector3.js');
-const Vec2 = require('./lib/vector2.js');
-//const Entity = require('./lib/entity2d.js');
-
-let creatures = {};
-let spells = {};
-let player = {};
-
-const testv2 = new Vec2(0, 1);
-console.log(testv2);
-const testv3 = new Vec3(0, 1, 5);
-console.log(testv3);
+let creatures = null;
+let spells = null;
 
 /**
  *
@@ -40,9 +27,19 @@ function checkSpells() {
   console.log('* spells: Running sanity check on database.');
   Object.keys(spells).forEach((id) => {
     if (typeof spells[id]['name'] === 'string') {
-      // @todo empty
+      console.log(spells[id]['name']);
+      if (typeof spells[id]['description'] === 'string') {
+        //
+      } else {
+        console.log(
+          '* spells: WARNING: Spell with id ' +
+            id +
+            " on field 'description' invalid type or isn't defined! Expected string, got " +
+            typeof spells[id]['description'],
+        );
+      }
     } else {
-      // @todo warning
+      console.log('* spells: WARNING');
     }
 
     if (typeof spells[id]['active'] === 'boolean') {
@@ -55,7 +52,7 @@ function checkSpells() {
       console.log(
         '* spells: WARNING: Spell with id ' +
           id +
-          " has invalid type or isn't defined! Expected boolean, got " +
+          " on field 'active' has invalid type or isn't defined! Expected boolean, got " +
           typeof spells[id]['active'],
       );
     }
@@ -67,7 +64,7 @@ function checkSpells() {
  * Loads and checks the databases.
  */
 function loadDatabases() {
-  console.log('* core: Loading data from ' + datadir);
+  console.log('* data: Loading data from ' + datadir);
   fs.readFile(datadir + '/creatures.json', (err, data) => {
     console.log('* creatures: Loading database.');
     if (err) throw err;
@@ -83,14 +80,6 @@ function loadDatabases() {
     console.log('* spells: Database loaded.');
     checkSpells();
   });
-
-  fs.readFile(datadir + '/player.json', (err, data) => {
-    //console.log('* DEBUG: Initializing player from template.');
-    if (err) throw err;
-    player = JSON.parse(data);
-    //console.log(player);
-    //console.log('* DEBUG: ✅');
-  });
 }
 
-loadDatabases();
+export {loadDatabases};

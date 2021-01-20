@@ -1,0 +1,5 @@
+const Faction = {
+  //
+};
+
+export {Faction};

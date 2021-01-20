@@ -7,20 +7,24 @@
 0:
   name: "Resist Nature +10%"
   description: ""
+  racial: true
   active: false
-  modifyAttribute: 0 # TODO
+  modifyAttribute: 0 # @todo unassigned attribute
   percent: 10
-1:
+1: # @todo unassigned
   name: "Resist Fire +10%"
   description: ""
   active: false
-  modifyAttribute: 1 # TODO
+  racial: true
+  modifyAttribute: 1 # @todo unassigned attribute
   value: 0
   percent: 10
 2:
   name: ""
 36:
   name: "Frenzied Protector"
+  description: "Your max HP increases by (level * 1.25)"
+  racial: true
   active: false
-  modifyAttribute: 7 # TODO
+  modifyAttribute: 7 # @todo unassigned attribute
   value: 0

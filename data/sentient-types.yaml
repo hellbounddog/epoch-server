@@ -1,5 +1,21 @@
-humanoid:
+unknown:
   id: 0
+  tooltipName: 'Unknown'
+humanoid:
+  id: 1
   tooltipName: 'Humanoid'
-
-
+undead:
+  id: 2
+  tooltipName: 'Undead'
+beast:
+  id: 3
+  tooltipName: 'Beast'
+insectoid:
+  id: 4
+  tooltipName: 'Insectoid'
+servant:
+  id: 5
+  tooltipName: '???'
+primordial:
+  id: 6
+  tooltipName: 'Ancient God'

@@ -1,9 +1,6 @@
 'use strict';
 
-const process = require('process');
-
-// dotenv
-require('dotenv').config();
+import * as process from 'process';
 
 if (process.env.EPOCH_HTTP_SERVER) {
   // express modules and settings

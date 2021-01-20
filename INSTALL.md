@@ -29,3 +29,8 @@ node src/index.js
 
 ## Tell your friends to connect to you!
 
+Make sure you have the following UDP ports open in your firewall:
+```
+41506 
+```
+

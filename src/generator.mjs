@@ -1,26 +1,14 @@
 import {generateIQ} from './generators/common-sentient.mjs';
 
-const sentientTypes = [
-  'Unknown',
-  'Humanoid',
-  'Beast',
-  'Insectoid'
-];
-
-/**
- * 
- */
-const races = [
-  '',
-];
-
 /**
  * @todo document
  */
-function isPlayable(race) {
-  //
+function isPlayableById(race) {
+  if (race.indexOf(playableRaces)) {
+    return true;
+  }
 
-  return 0;
+  return false;
 }
 
-export {isPlayable};
+export {isPlayableById};

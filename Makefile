@@ -1,4 +1,5 @@
 JS = $(shell find ./src -name "*.js")
+MJS = $(shell find ./src -name "*.mjs")
 DATA = $(shell find ./data -name "*.yaml")
 
 all: sentient-types-data attributes-data creature-data spell-data itemtypes-data item-data player-data data tsc doc sass
@@ -14,7 +15,7 @@ tsc:
 .PHONY: doc
 doc:
 	@rm -rf ./doc
-	@jsdoc $(JS) -d doc
+	@jsdoc $(JS) $(MJS) -d doc
 
 .PHONY: data
 data: $(DATA)

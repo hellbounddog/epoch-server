@@ -2,12 +2,8 @@
 
 const fs = require('fs');
 const process = require('process');
-
-require('./http-server.js');
-
-console.log('Current working directory: ', process.cwd());
-
 const datadir = process.cwd() + '/data/json';
+require('./http-server.js');
 
 // vector tests
 // @todo convert vectors to modules
@@ -31,7 +27,7 @@ console.log(testv3);
 function checkCreatures() {
   console.log('* creatures: Running sanity check on database.');
   Object.keys(creatures).forEach((id) => {
-    //console.log(creatures[id]);
+    console.log(typeof id);
   });
   console.log('* creatures: Sanity check finished.');
 }
@@ -70,7 +66,8 @@ function checkSpells() {
 /**
  * Loads and checks the databases.
  */
-function loadDatabase() {
+function loadDatabases() {
+  console.log('* core: Loading data from ' + datadir);
   fs.readFile(datadir + '/creatures.json', (err, data) => {
     console.log('* creatures: Loading database.');
     if (err) throw err;
@@ -96,4 +93,4 @@ function loadDatabase() {
   });
 }
 
-loadDatabase();
+loadDatabases();

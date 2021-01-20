@@ -16,13 +16,13 @@
   "author": "hellbounddog",
   "license": "MIT",
   "devDependencies": {
-    "@types/node": "^14.14.21",
+    "@types/node": "^14.14.22",
     "eslint": "^7.18.0",
     "eslint-config-google": "^0.14.0",
     "eslint-plugin-prettier": "^3.3.1",
     "gts": "^3.1.0",
     "prettier": "^2.2.1",
-    "sass": "^1.32.4",
+    "sass": "^1.32.5",
     "typescript": "^4.0.3"
   },
   "dependencies": {

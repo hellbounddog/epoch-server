@@ -1,7 +1,7 @@
 JS = $(shell find ./src -name "*.js")
 DATA = $(shell find ./data -name "*.yaml")
 
-all: attributes-data creature-data spell-data itemtypes-data item-data player-data data tsc doc sass
+all: sentient-types-data attributes-data creature-data spell-data itemtypes-data item-data player-data data tsc doc sass
 
 .PHONY: sass
 sass:
@@ -20,6 +20,11 @@ doc:
 data: $(DATA)
 	@echo $(DATA)
 	@#TODO
+
+.PHONY: sentient-types-data
+sentient-types-data:
+	@yaml2json < data/sentient-types.yaml > data/json/sentient-types.min.json
+	@jsonpp < data/json/sentient-types.min.json > data/json/sentient-types.json
 
 .PHONY: attributes-data
 attributes-data:

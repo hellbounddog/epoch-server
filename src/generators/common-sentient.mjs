@@ -32,8 +32,21 @@ const twistedThingsToLike = [
 /**
  * @todo document
  * @todo move to its own module
+ * @param maxAttempts {number} The amount of tries we try to get a unique needle from the haystack.
  */
-function randomUniqueFromArray(needles, haystack) {
+function randomUniqueFromArray(needles, haystack, maxAttempts = 5) {
+  let attempts = 0;
+
+  while (attempts <= maxAttempts) {
+    let needle = 
+    if (haystack.indexOf(needles.random())) {
+      needles += 
+    }
+
+    attempts++;
+  }
+
+  return needles;
 }
 
 /**

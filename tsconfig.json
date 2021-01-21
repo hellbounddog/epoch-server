@@ -4,6 +4,7 @@
     "allowJs": true,
     "checkJs": true,
     "noImplicitAny": false,
+    "esModuleInterop": true,
     "rootDir": ".",
     "outDir": "build",
     "types": [

@@ -1,7 +1,7 @@
 'use strict';
 
 import {loadDatabases} from './data.mjs';
-import * as HTTPServer from './http-server.mjs';
+import {startHttpServer, startHttpsServer} from './http-server.mjs';
 
 // vector tests
 // @todo convert vectors to modules
@@ -11,4 +11,12 @@ import * as HTTPServer from './http-server.mjs';
 import * as Entity2D from './entity2d.mjs';
 
 loadDatabases();
+
+if (process.env.EPOCH_HTTP_SERVER) {
+  startHttpServer();
+}
+
+if (process.env.EPOCH_HTTPS_SERVER) {
+  startHttpsServer();
+}
 

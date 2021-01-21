@@ -57,7 +57,7 @@ function startHttpsServer() {
   configure();
 
   https.createServer(app).listen(ssl_port, () => {
-    console.log(`* http: Listening at http://${addr}:${port}`);
+    console.log(`* https: Listening at http://${addr}:${port}`);
   });
 }
 

@@ -20,11 +20,38 @@
   value: 0
   percent: 10
 2:
-  name: ""
+  name: "Resist Frost +10%"
+  description: ""
+  active: false
+  racial: true
+  modifyAttribute: 2 # @todo unassigned attribute
+  percent: 10
 36:
   name: "Frenzied Protector"
   description: "Your max HP increases by (level * 1.25)"
   racial: true
   active: false
   modifyAttribute: 7 # @todo unassigned attribute
-  value: 0
+  levelScaleMultiplier: 1.25
+
+#######################
+# Active spells.
+#######################
+500:
+  name: "Ironfur"
+  description: "Your armor is increased by 25% for the next 1 minute."
+  racial: true
+  active: true
+  duration: 60
+  cooldown: 120
+  modifyAttribute: 99 # @todo unassigned attribute
+  percent: 25
+501:
+  name: "Leap"
+  description: "Leap towards the selected enemy up to 3 units."
+  racial: true
+  active: true
+  duration: 0
+  cooldown: 120
+  script: "leap"
+

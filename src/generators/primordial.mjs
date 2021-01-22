@@ -80,21 +80,19 @@ const prefixes = [
   'Bloodstained',
   'Wild',
   'Malformed',
-  //'Horrific',
   'Horrible',
   'Devout',
   'Instatiable',
   'Lonely',
   'False',
-  'Chaotic',
+  // @todo: add chaotic only with alignment
+  //'Chaotic',
   'Bored',
   'Laughing',
   'Abyssal',
   'Deathless',
   'Idiot',
-  //'Galactic',
   'Blind',
-  //'Nuclear',
   'Primordial',
   'Immortal',
   'Rotting',
@@ -102,7 +100,6 @@ const prefixes = [
 ];
 
 const titles = [
-  //'Green',
   'Ruler',
   'Serpent',
   'Butcher',
@@ -112,7 +109,6 @@ const titles = [
   'King',
   'Behemoth',
   'Devourer',
-  //'Destroyer',
   'Speaker',
   'Singer',
   'God',
@@ -126,14 +122,12 @@ const titles = [
 const numbers = [
   'Infinite',
   'a Thousand',
-  //'a Million',
   'The Seven',
   'The Six',
   'The One',
 ];
 
 const adjectives = [
-  //'Virgin',
   'True',
   'Sealed',
   'Sacred',
@@ -171,7 +165,6 @@ const things = [
   'Forever',
   'Ways',
   'Thruths',
-  //'Deadly Omens',
   'Stars',
   'Darkness',
   'Shadows',

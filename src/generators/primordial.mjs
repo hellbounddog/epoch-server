@@ -185,9 +185,13 @@ function generatePrimordialTitle() {
   let prefix = 'Missing';
   let title = 'Abomination';
 
+  const d1000 = dice.roll('10d100').total;
   const d100 = dice.roll('d100').total;
   console.log(d100);
-  if (d100 === 100) {
+  if (d1000 === 1000) {
+    prefix = 'Prototype';
+    title = 'Nightmare';
+  } else if (d100 === 100) {
     prefix = 'Suicide';
     title = 'King';
   } else {

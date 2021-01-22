@@ -1,9 +1,15 @@
 'use strict';
 
-require('../lib/array.random.js');
+import {ArrayRandom} from '../lib/ArrayRandom.mjs';
+Array.prototype.random = ArrayRandom;
 
-const diceRoller = require('rpg-dice-roller');
-const dice = new diceRoller.DiceRoller();
+import {DiceRoller} from 'rpg-dice-roller';
+const dice = new DiceRoller();
+const d1000 = dice.roll('10d100').total;
+const d100 = dice.roll('d100').total;
+const d6 = dice.roll('d6').total;
+
+import {v4 as uuid4} from 'uuid';
 
 /**
  * Affects certain cosmic events during world generation.
@@ -172,22 +178,21 @@ const things = [
 ];
 
 /*
+ * @private
  * @todo document
  */
-function generatePrimordialName() {
+function generateName() {
   return nameStart.random() + "'" + nameEnd.random();
 }
 
 /*
+ * @private
  * @todo document
  */
-function generatePrimordialTitle() {
+function generateTitle() {
   let prefix = 'Missing';
   let title = 'Abomination';
 
-  const d1000 = dice.roll('10d100').total;
-  const d100 = dice.roll('d100').total;
-  console.log(d100);
   if (d1000 === 1000) {
     prefix = 'Prototype';
     title = 'Nightmare';
@@ -210,9 +215,6 @@ function generatePrimordialTitle() {
   }
 
   let thing = things.random();
-
-  const d6 = dice.roll('d6').total;
-  //console.log(d6);
 
   if (d6 === 6) {
     const number = numbers.random();
@@ -284,14 +286,15 @@ function generatePrimordialTitle() {
 /*
  * @todo document
  */
-function generatePrimordialAlignment() {
+function generateAlignment() {
   return alignments.random();
 }
 
 /*
+ * @private
  * @todo document
  */
-function generatePrimordialAlive() {
+function generateAlive() {
   if (Math.random() < 0.5) {
     return true;
   } else {
@@ -303,13 +306,26 @@ function generatePrimordialAlive() {
  * @todo document
  */
 function generatePrimordial() {
-  let primordial = [];
+  let primordial = {
+    id: '',
+    name: "Mal'nur",
+    title: 'Keeper of Secrets',
+    alignment: 'chaotic',
+    alive: false,
+    d1000: d1000,
+    d100: d100,
+    d6: d6,
+  };
+
+  primordial.id = uuid4();
+  primordial.name = generateName();
+  primordial.title = generateTitle();
+  primordial.alignment = generateAlignment();
+  primordial.alive = generateAlive();
 
   return primordial;
 }
 
-//console.log('Alive: ' + generatePrimordialAlive());
-//console.log('Alignment: ' + generatePrimordialAlignment());
-//console.log('Name:' + generatePrimordialName());
-//console.log('Title:' + generatePrimordialTitle());
-export { generatePrimordial };
+console.log(JSON.stringify(generatePrimordial(), null, 2));
+
+export {generatePrimordial};

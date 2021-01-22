@@ -306,22 +306,16 @@ function generateAlive() {
  * @todo document
  */
 function generatePrimordial() {
-  let primordial = {
-    id: '',
-    name: "Mal'nur",
-    title: 'Keeper of Secrets',
-    alignment: 'chaotic',
-    alive: false,
+  const primordial = {
+    id: uuid4(),
+    name: generateName(),
+    title: generateTitle(),
+    alignment: generateAlignment(),
+    alive: generateAlive(),
     d1000: d1000,
     d100: d100,
     d6: d6,
   };
-
-  primordial.id = uuid4();
-  primordial.name = generateName();
-  primordial.title = generateTitle();
-  primordial.alignment = generateAlignment();
-  primordial.alive = generateAlive();
 
   return primordial;
 }

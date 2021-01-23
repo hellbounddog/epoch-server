@@ -3,6 +3,7 @@
 import * as process from 'process';
 import * as http from 'http';
 import * as https from 'https';
+import * as compress from 'compression';
 import express from 'express';
 import session from 'express-session';
 
@@ -58,7 +59,7 @@ function startHttpsServer() {
   configure();
 
   https.createServer(app).listen(ssl_port, () => {
-    console.log(`* https: Listening at http://${addr}:${port}`);
+    console.log(`* https: Listening at https://${addr}:${port}`);
   });
 }
 

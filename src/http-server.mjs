@@ -4,6 +4,7 @@ import * as process from 'process';
 import * as http from 'http';
 import * as https from 'https';
 import * as compress from 'compression';
+import * as helmet from 'helmet';
 import express from 'express';
 import session from 'express-session';
 
@@ -43,10 +44,13 @@ function configure() {
         saveUninitialized: false,
         secret: process.env.EPOCH_AUTH_SECRET,
       }),
-      express.urlencoded({extended: true}),
+      express.urlencoded({limit: '3mb', extended: true}),
       express.static('public'),
+      helmet.noCache(),
+      helmet.hidePoweredBy(),
+      helmet.frameguard(),
+      bodyParser.json({limit: '3mb'}),
     );
-    app.disable('x-powered-by');
     app.set('view engine', 'pug');
 
     routes();

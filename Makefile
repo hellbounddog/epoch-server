@@ -14,7 +14,7 @@ sass:
 
 .PHONY: tsc
 tsc:
-	@tsc
+	@#tsc
 
 .PHONY: doc
 doc:

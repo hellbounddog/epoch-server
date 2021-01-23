@@ -4,7 +4,10 @@ import * as bodyParser from 'body-parser';
 import * as process from 'process';
 import * as http from 'http';
 import * as https from 'https';
-import * as compress from 'compression';
+//import * as compression from 'compression';
+import * as methodOverride from 'method-override';
+import * as morgan from 'morgan';
+import * as cors from 'cors';
 import * as helmet from 'helmet';
 import express from 'express';
 import session from 'express-session';
@@ -38,11 +41,11 @@ function routes() {
 function configure() {
   if (configured === false) {
     server.use(
-      compress({
-        filter: (_, res) =>
-          /json|text|javascript|css/.test(res.getHeader('Content-Type')),
-        level: 9,
-      }),
+      //compression({
+      //  filter: (_, res) =>
+      //    /json|text|javascript|css/.test(res.getHeader('Content-Type')),
+      //  level: 9,
+      //}),
       session({
         // don't save session if unmodified
         resave: false,
@@ -51,21 +54,24 @@ function configure() {
         secret: process.env.EPOCH_AUTH_SECRET,
       }),
       express.static('public'),
-      helmet.noCache(),
-      helmet.hidePoweredBy(),
-      helmet.frameguard(),
-      bodyParser.json({limit: '3mb'}),
-      bodyParser.urlencoded({limit: '3mb', extended: true}),
-      methodOverride(),
+      //helmet.noCache(),
+      //helmet.hidePoweredBy(),
+      //helmet.frameguard(),
+      //bodyParser.json({limit: '3mb'}),
+      //bodyParser.urlencoded({limit: '3mb', extended: true}),
+      //methodOverride(),
     );
+
     if (process.env.NODE_ENV === 'development') {
-            server.use(morgan('dev'));
-            server.set('view cache', false);
-          } else if (process.env.NODE_ENV === 'production') {
-          server.locals.cache = 'memory';
-            server.use(morgan('combined'));
-          }
+      server.use(morgan('dev'));
+      server.set('view cache', false);
+    } else if (process.env.NODE_ENV === 'production') {
+      server.locals.cache = 'memory';
+      server.use(morgan('combined'));
+    }
+
     server.enable('jsonp callback');
+
     server.set(
       'view engine', 'pug',
       'showStackError', false,

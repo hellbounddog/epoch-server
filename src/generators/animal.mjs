@@ -1,6 +1,7 @@
 'use strict';
 
-require('../lib/array.random.js');
+import {ArrayRandom} from '../lib/ArrayRandom.mjs';
+Array.prototype.random = ArrayRandom;
 //const diceRoller = require('rpg-dice-roller');
 //const dice = new diceRoller.DiceRoller();
 

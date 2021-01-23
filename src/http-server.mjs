@@ -5,6 +5,7 @@ import * as http from 'http';
 import * as https from 'https';
 import * as compress from 'compression';
 import * as helmet from 'helmet';
+import * as bodyParser from 'body-parser';
 import express from 'express';
 import session from 'express-session';
 
@@ -44,13 +45,16 @@ function configure() {
         saveUninitialized: false,
         secret: process.env.EPOCH_AUTH_SECRET,
       }),
-      express.urlencoded({limit: '3mb', extended: true}),
       express.static('public'),
       helmet.noCache(),
       helmet.hidePoweredBy(),
       helmet.frameguard(),
       bodyParser.json({limit: '3mb'}),
+      bodyParser.urlencoded({limit: '3mb', extended: true}),
+      methodOverride(),
     );
+
+    app.enable('jsonp callback');
     app.set('view engine', 'pug');
 
     routes();
@@ -63,7 +67,7 @@ function startHttpsServer() {
   configure();
 
   https.createServer(app).listen(ssl_port, () => {
-    console.log(`* https: Listening at https://${addr}:${port}`);
+    console.log(`* https: Listening at https://${addr}:${ssl_port}`);
   });
 }
 

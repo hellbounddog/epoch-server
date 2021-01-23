@@ -36,12 +36,14 @@ const twistedThingsToLike = [
  */
 function randomUniqueFromArray(needles, haystack, maxAttempts = 5) {
   let attempts = 0;
+  let needle = needles.random();
 
   while (attempts <= maxAttempts) {
-    let needle = 
-    if (haystack.indexOf(needles.random())) {
-      needles += 
+    // @todo needles.forEach
+    if (haystack.indexOf(needle)) {
+      needles += needle;
     }
+    needle = needles.random();
 
     attempts++;
   }

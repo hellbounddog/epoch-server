@@ -19,15 +19,9 @@ const normalThingsToLike = [
   'Cats',
 ];
 
-const oddThingsToLike = [
-  'Energy Drinks',
-  'Rum',
-  '',
-];
+const oddThingsToLike = ['Energy Drinks', 'Rum', ''];
 
-const twistedThingsToLike = [
-  'Tentacles',
-];
+const twistedThingsToLike = ['Tentacles'];
 
 /**
  * @todo document

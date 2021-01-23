@@ -119,13 +119,7 @@ const titles = [
   'Beast',
 ];
 
-const numbers = [
-  'Infinite',
-  'a Thousand',
-  'The Seven',
-  'The Six',
-  'The One',
-];
+const numbers = ['Infinite', 'a Thousand', 'The Seven', 'The Six', 'The One'];
 
 const adjectives = [
   'True',

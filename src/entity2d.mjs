@@ -8,7 +8,7 @@
 import {EntityType} from './entity-type.mjs';
 import {Faction} from './faction.mjs';
 
-let Entity2D = {};
+const Entity2D = {};
 
 /**
  * Validates the provided Entity2D.

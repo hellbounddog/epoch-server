@@ -19,4 +19,3 @@ if (process.env.EPOCH_HTTP_SERVER) {
 if (process.env.EPOCH_HTTPS_SERVER) {
   startHttpsServer();
 }
-

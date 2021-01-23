@@ -1,4 +1,4 @@
-import {generateIQ} from './generators/common-sentient.mjs';
+import {playableRaces} from './playableRaces.mjs';
 
 /**
  * @todo document

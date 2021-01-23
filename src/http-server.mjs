@@ -34,18 +34,19 @@ function routes() {
  */
 function configure() {
   if (configured === false) {
-    app.use(express.urlencoded({extended: false}));
-
     app.use(
       session({
-        resave: false, // don't save session if unmodified
-        saveUninitialized: false, // don't create session until something stored
+        // don't save session if unmodified
+        resave: false,
+        // don't create session until something stored
+        saveUninitialized: false,
         secret: process.env.EPOCH_AUTH_SECRET,
       }),
+      express.urlencoded({extended: true}),
+      express.static('public'),
     );
     app.disable('x-powered-by');
     app.set('view engine', 'pug');
-    app.use(express.static('public'));
 
     routes();
 

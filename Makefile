@@ -19,7 +19,7 @@ tsc:
 .PHONY: doc
 doc:
 	@rm -rf ./doc
-	#@jsdoc $(JS) $(MJS) -d doc
+	@#jsdoc $(JS) $(MJS) -d doc
 
 .PHONY: data
 data: $(DATA)

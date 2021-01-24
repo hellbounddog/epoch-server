@@ -4,7 +4,7 @@
 import * as process from 'process';
 import * as http from 'http';
 import * as https from 'https';
-//import * as compression from 'compression';
+import compression from 'compression';
 //import * as methodOverride from 'method-override';
 import morgan from 'morgan';
 //import * as cors from 'cors';
@@ -36,13 +36,13 @@ function routes() {
     });
   });
 
-//  server.post('/login', urlencodedParser, function (req, res) {
-//    res.send('welcome, ' + req.body.username);
-//  });
+  //server.post('/login', urlencodedParser, function (req, res) {
+  //  res.send('welcome, ' + req.body.username);
+  //});
 
-//  server.post('/api', jsonParser, function (req, res) {
-//    // @todo implement
-//  });
+  //server.post('/api', jsonParser, function (req, res) {
+  //  // @todo implement
+  //});
 }
 
 /**
@@ -52,11 +52,11 @@ function routes() {
 function configure() {
   if (configured === false) {
     server.use(
-      //compression({
-      //  filter: (_, res) =>
-      //    /json|text|javascript|css/.test(res.getHeader('Content-Type')),
-      //  level: 9,
-      //}),
+      compression({
+        filter: (_, res) =>
+          /json|text|javascript|css/.test(res.getHeader('Content-Type')),
+        level: 9,
+      }),
       session({
         // don't save session if unmodified
         resave: false,
@@ -81,10 +81,7 @@ function configure() {
 
     server.enable('jsonp callback');
 
-    server.set(
-      'view engine', 'pug',
-      'showStackError', false,
-    );
+    server.set('view engine', 'pug', 'showStackError', false);
 
     routes();
 

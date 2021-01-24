@@ -6,7 +6,7 @@ import * as http from 'http';
 import * as https from 'https';
 //import * as compression from 'compression';
 //import * as methodOverride from 'method-override';
-import * as morgan from 'morgan';
+import morgan from 'morgan';
 //import * as cors from 'cors';
 import helmet from 'helmet';
 import nocache from 'nocache';

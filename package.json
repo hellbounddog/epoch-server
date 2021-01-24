@@ -1,6 +1,6 @@
 {
   "name": "hellhound.games",
-  "version": "0.1.75",
+  "version": "0.1.100",
   "description": "",
   "main": "src/index.mjs",
   "scripts": {

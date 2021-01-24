@@ -1,17 +1,20 @@
 'use strict';
 
-import * as bodyParser from 'body-parser';
+//import * as bodyParser from 'body-parser';
 import * as process from 'process';
 import * as http from 'http';
 import * as https from 'https';
 //import * as compression from 'compression';
-import * as methodOverride from 'method-override';
+//import * as methodOverride from 'method-override';
 import * as morgan from 'morgan';
-import * as cors from 'cors';
-import * as helmet from 'helmet';
+//import * as cors from 'cors';
+import helmet from 'helmet';
+import nocache from 'nocache';
 import express from 'express';
 import session from 'express-session';
 
+//const jsonParser = json({limit: '3m'});
+//const urlencodedParser = urlencoded({limit: '3m', extended: false});
 const server = express();
 const port = process.env.EPOCH_HTTP_PORT || 3000;
 const ssl_port = process.env.EPOCH_HTTPS_PORT || 443;
@@ -32,6 +35,14 @@ function routes() {
       message: 'Hello there!',
     });
   });
+
+//  server.post('/login', urlencodedParser, function (req, res) {
+//    res.send('welcome, ' + req.body.username);
+//  });
+
+//  server.post('/api', jsonParser, function (req, res) {
+//    // @todo implement
+//  });
 }
 
 /**
@@ -54,11 +65,9 @@ function configure() {
         secret: process.env.EPOCH_AUTH_SECRET,
       }),
       express.static('public'),
-      //helmet.noCache(),
-      //helmet.hidePoweredBy(),
-      //helmet.frameguard(),
-      //bodyParser.json({limit: '3mb'}),
-      //bodyParser.urlencoded({limit: '3mb', extended: true}),
+      nocache(),
+      helmet.hidePoweredBy(),
+      helmet.frameguard(),
       //methodOverride(),
     );
 

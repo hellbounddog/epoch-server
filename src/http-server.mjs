@@ -4,6 +4,7 @@
 import * as process from 'process';
 import * as http from 'http';
 import * as https from 'https';
+import passport from 'passport';
 import compression from 'compression';
 //import * as methodOverride from 'method-override';
 import morgan from 'morgan';
@@ -35,6 +36,14 @@ function routes() {
       message: 'Hello there!',
     });
   });
+
+  server.post(
+    '/login',
+    passport.authenticate('local', {failureRedirect: '/login'}),
+    (_, res) => {
+      res.redirect('/');
+    },
+  );
 
   //server.post('/login', urlencodedParser, function (req, res) {
   //  res.send('welcome, ' + req.body.username);

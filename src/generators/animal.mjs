@@ -1,6 +1,8 @@
 'use strict';
 
+// @ts-expect-error
 import {ArrayRandom} from '../lib/ArrayRandom.mjs';
+// @ts-expect-error
 Array.prototype.random = ArrayRandom;
 //const diceRoller = require('rpg-dice-roller');
 //const dice = new diceRoller.DiceRoller();
@@ -43,20 +45,25 @@ function generateAnimalName(name, type, aggressive) {
 
   if (aggressive) {
     if (type === 'canine') {
-      return (
-        aggressiveAdjecives.random() +
-        ' ' +
-        canineAdjectives.random() +
-        ' ' +
-        name
-      );
+      // @ts-expect-error
+      const adjective = canineAdjectives.random();
+      if (name === 'Dog') {
+        const names = ['Dog', 'Doggie', 'Hound', 'Canine'];
+        // @ts-expect-error
+        return adjective + ' ' + names.random();
+      } else {
+        return adjective + ' ' + name;
+      }
     } else {
+      // @ts-expect-error
       return aggressiveAdjecives.random() + ' ' + name;
     }
   } else {
     if (type === 'something') {
+      // @todo implement
       return 'TODO';
     } else {
+      // @ts-expect-error
       return peacefulAdjectives.random() + ' ' + name;
     }
   }

@@ -1,0 +1,49 @@
+aggressive:
+  - Rabid
+  - Runaway
+  - Stray
+  - Rambunctious
+  - Wild
+  - Ferocious
+  - Untameable
+  - Unruly
+  - Feral
+  - Defiant
+  - Bloodthirsty
+  - Large
+  - Unwanted
+  - Enormous
+  - Gigantic
+
+peaceful:
+  - Adorable
+  - Cowardly
+  - Innocent
+  - Tame
+  - Frightened
+  - Defenseless
+  - Startled
+
+names:
+  dog:
+    - Dog
+    - Doggy
+    - Doggie
+    - Hound
+    - Canine
+
+  snake:
+    - Serpent
+    - Snake
+    - Slither
+
+crow:
+  - Thieving
+  - Jealous
+
+canine:
+  - Howling
+  - Barking
+  - Disobedient
+  - Wayward
+  - Neglected

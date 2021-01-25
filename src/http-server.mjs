@@ -4,14 +4,21 @@
 import * as process from 'process';
 import * as http from 'http';
 import * as https from 'https';
+// @ts-expect-error
 import passport from 'passport';
+// @ts-expect-error
 import compression from 'compression';
 //import * as methodOverride from 'method-override';
+// @ts-expect-error
 import morgan from 'morgan';
 //import * as cors from 'cors';
+// @ts-expect-error
 import helmet from 'helmet';
+// @ts-expect-error
 import nocache from 'nocache';
+// @ts-expect-error
 import express from 'express';
+// @ts-expect-error
 import session from 'express-session';
 
 //const jsonParser = json({limit: '3m'});
@@ -29,7 +36,7 @@ let configured = false;
  * @todo document
  */
 function routes() {
-  server.get('/', (req, res) => {
+  server.get('/', (_, res) => {
     res.render('index', {
       header: 'Epoch',
       title: 'Hey',
@@ -77,6 +84,8 @@ function configure() {
       nocache(),
       helmet.hidePoweredBy(),
       helmet.frameguard(),
+      passport.initialize(),
+      passport.session(),
       //methodOverride(),
     );
 

@@ -19,9 +19,14 @@ const aggressiveAdjecives = [
   'Feral',
   'Defiant',
   'Bloodthirsty',
+  'Large',
+  'Unwanted',
+  'Enormous',
+  'Gigantic',
 ];
 
 const peacefulAdjectives = [
+  'Adorable',
   'Cowardly',
   'Innocent',
   'Tame',
@@ -29,6 +34,10 @@ const peacefulAdjectives = [
   'Defenseless',
   'Startled',
 ];
+
+const dogNames = ['Dog', 'Doggy', 'Doggie', 'Hound', 'Canine'];
+const snakeNames = ['Serpent', 'Snake', 'Slither'];
+const crowAdjectives = ['Thieving', 'Jealous'];
 
 const canineAdjectives = [
   'Howling',
@@ -48,9 +57,8 @@ function generateAnimalName(name, type, aggressive) {
       // @ts-expect-error
       const adjective = canineAdjectives.random();
       if (name === 'Dog') {
-        const names = ['Dog', 'Doggie', 'Hound', 'Canine'];
         // @ts-expect-error
-        return adjective + ' ' + names.random();
+        return adjective + ' ' + dogNames.random();
       } else {
         return adjective + ' ' + name;
       }
@@ -69,7 +77,7 @@ function generateAnimalName(name, type, aggressive) {
   }
 }
 
-//console.log('Aggressive Name: ' + generateAnimalName('Dog', null, true));
-//console.log('Peaceful Name: ' + generateAnimalName('Dog', null, false));
+console.log('Aggressive Name: ' + generateAnimalName('Dog', 'canine', true));
+console.log('Peaceful Name: ' + generateAnimalName('Dog', 'canine', false));
 
 export {generateAnimalName};

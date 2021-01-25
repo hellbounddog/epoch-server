@@ -1,6 +1,7 @@
 {
   "extends": "./node_modules/gts/tsconfig-google.json",
   "compilerOptions": {
+    "strict": true,
     "allowJs": true,
     "checkJs": true,
     "noImplicitAny": false,
@@ -9,6 +10,10 @@
     "outDir": "build",
     "types": [
       "node"
+    ],
+    "lib": [
+      "es2015",
+      "dom"
     ]
   },
   "include": [

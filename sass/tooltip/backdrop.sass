@@ -1,0 +1,47 @@
+@import '../_mixins.sass'
+@import '../_vars.sass'
+
+.tooltip-box
+  @each $placement in $tooltip-placements
+    &[data-placement^='#{$placement}']
+      > .tooltip-backdrop
+        transform-origin: nth($tooltip-backdrop-origins, index($tooltip-placements, $placement))
+        border-radius: nth($tooltip-backdrop-border-radii, index($tooltip-placements, $placement))
+
+        &[data-state='visible']
+          @include tooltip-backdrop-transform-enter($placement)
+
+        &[data-state='hidden']
+          @include tooltip-backdrop-transform-leave($placement)
+
+.tooltip-box
+  &[data-animatefill]
+    // Declared with !important so that custom themes don't need to specify
+    // this property.
+    background-color: transparent !important
+
+.tooltip-backdrop
+  position: absolute
+  background-color: #333
+  border-radius: 50%
+  width: calc(110% + 32px)
+  left: 50%
+  top: 50%
+  z-index: -1
+  transition: all cubic-bezier(0.46, 0.1, 0.52, 0.98)
+  backface-visibility: hidden
+
+  &[data-state='hidden']
+    opacity: 0
+
+  &::after
+    content: ''
+    float: left
+    padding-top: 100%
+
+.tooltip-backdrop + .tooltip-content
+  transition-property: opacity
+  will-change: opacity
+
+  &[data-state='hidden']
+    opacity: 0

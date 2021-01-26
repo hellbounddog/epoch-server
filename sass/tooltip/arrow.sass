@@ -1,0 +1,45 @@
+@use '../_vars.sass'
+
+.tooltip-box
+  &[data-placement^='top'] > .tooltip-svg-arrow
+    bottom: 0
+
+    &::after,
+    > svg
+      top: 16px
+      transform: rotate(180deg)
+
+  &[data-placement^='bottom'] > .tooltip-svg-arrow
+    top: 0
+
+    > svg
+      bottom: 16px
+
+  &[data-placement^='left'] > .tooltip-svg-arrow
+    right: 0
+
+    &::after,
+    > svg
+      transform: rotate(90deg)
+      top: calc(50% - 3px)
+      left: 11px
+
+  &[data-placement^='right'] > .tooltip-svg-arrow
+    left: 0
+
+    &::after,
+    > svg
+      transform: rotate(-90deg)
+      top: calc(50% - 3px)
+      right: 11px
+
+.tooltip-svg-arrow
+  position: absolute
+  width: $tooltip-arrow-size
+  height: $tooltip-arrow-size
+  fill: #333
+  text-align: initial
+
+  > svg
+    position: absolute
+

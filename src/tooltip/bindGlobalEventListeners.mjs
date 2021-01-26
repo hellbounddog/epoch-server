@@ -52,7 +52,7 @@ export function onWindowBlur() {
   const activeElement = document.activeElement;
 
   if (isReferenceElement(activeElement)) {
-    const instance = activeElement.tooltip!;
+    const instance = activeElement.tooltip;
 
     if (activeElement.blur && !instance.state.isVisible) {
       activeElement.blur();

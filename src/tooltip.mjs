@@ -8,5 +8,3 @@ export const ARROW_CLASS = 'tooltip-arrow';
 export const SVG_ARROW_CLASS = 'tooltip-svg-arrow';
 
 export const TOUCH_OPTIONS = {passive: true, capture: true};
-
-

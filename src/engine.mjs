@@ -7,13 +7,13 @@ let frameId = -1;
 
 export default class Engine {
   constructor(layers = [], opts) {
-    this.layers = layers
-    this.fps = opts.fps
-    this.aspectRatio = opts.aspectRatio
-    this.frameSkip = opts.frameSkip
-    this.alpha = opts.alpha
-    this.canvas = opts.canvas
-    this.tick = 0
+    this.layers = layers;
+    this.fps = opts.fps;
+    this.aspectRatio = opts.aspectRatio;
+    this.frameSkip = opts.frameSkip;
+    this.alpha = opts.alpha;
+    this.canvas = opts.canvas;
+    this.tick = 0;
   }
   animate(debug) {
     let then = Date.now();
@@ -44,13 +44,19 @@ export default class Engine {
           if (debug) {
             console.log(canvas.toDataURL());
           }
-          bitmap = this.layers[i].overlayFrame(image.data, this.aspectRatio, this.tick, this.alpha[i], i === 0);
+          bitmap = this.layers[i].overlayFrame(
+            image.data,
+            this.aspectRatio,
+            this.tick,
+            this.alpha[i],
+            i === 0,
+          );
         }
         this.tick += this.frameSkip;
         image.data.set(bitmap);
         context.putImageData(image, 0, 0);
       }
-    }
+    };
     if (frameId > 0) {
       global.cancelAnimationFrame(frameId);
     }

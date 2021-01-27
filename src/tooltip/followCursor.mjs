@@ -112,7 +112,7 @@ const followCursor = {
     // @return void
     function destroy() {
       activeInstances = activeInstances.filter(
-        (data) => data.instance !== instance
+        (data) => data.instance !== instance,
       );
 
       if (activeInstances.filter((data) => data.doc === doc).length === 0) {
@@ -123,10 +123,12 @@ const followCursor = {
     return {
       onCreate: create,
       onDestroy: destroy,
+
       // @return void
       onBeforeUpdate() {
         prevProps = instance.props;
       },
+
       // @return void
       onAfterUpdate(_, followCursor) {
         if (isInternalUpdate) {
@@ -155,6 +157,7 @@ const followCursor = {
           }
         }
       },
+
       // @return void
       onMount() {
         if (instance.props.followCursor && !wasFocusEvent) {
@@ -168,6 +171,7 @@ const followCursor = {
           }
         }
       },
+
       // @return void
       onTrigger(_, event) {
         if (isMouseEvent(event)) {
@@ -175,6 +179,7 @@ const followCursor = {
         }
         wasFocusEvent = event.type === 'focus';
       },
+
       // @return void
       onHidden() {
         if (instance.props.followCursor) {

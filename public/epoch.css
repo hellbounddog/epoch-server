@@ -118,17 +118,91 @@ quote {
     opacity: 1;
   }
 }
+.tooltip-box[data-animation=fade][data-state=hidden] {
+  opacity: 0;
+}
+
+[data-tooltip-root] {
+  max-width: calc(100vw - 10px);
+}
+
+.tooltip-box {
+  position: relative;
+  background-color: #333;
+  color: white;
+  border-radius: 4px;
+  font-size: 14px;
+  line-height: 1.4;
+  outline: 0;
+  transition-property: transform, visibility, opacity;
+}
+.tooltip-box[data-placement^=top] > .tooltip-arrow {
+  bottom: 0;
+}
+.tooltip-box[data-placement^=top] > .tooltip-arrow::before {
+  bottom: -7px;
+  left: 0;
+  border-width: 8px 8px 0;
+  border-top-color: initial;
+  transform-origin: center top;
+}
+.tooltip-box[data-placement^=bottom] > .tooltip-arrow {
+  top: 0;
+}
+.tooltip-box[data-placement^=bottom] > .tooltip-arrow::before {
+  top: -7px;
+  left: 0;
+  border-width: 0 8px 8px;
+  border-bottom-color: initial;
+  transform-origin: center bottom;
+}
+.tooltip-box[data-placement^=left] > .tooltip-arrow {
+  right: 0;
+}
+.tooltip-box[data-placement^=left] > .tooltip-arrow::before {
+  border-width: 8px 0 8px 8px;
+  border-left-color: initial;
+  right: -7px;
+  transform-origin: center left;
+}
+.tooltip-box[data-placement^=right] > .tooltip-arrow {
+  left: 0;
+}
+.tooltip-box[data-placement^=right] > .tooltip-arrow::before {
+  left: -7px;
+  border-width: 8px 8px 8px 0;
+  border-right-color: initial;
+  transform-origin: center right;
+}
+.tooltip-box[data-inertia][data-state=visible] {
+  transition-timing-function: cubic-bezier(0.54, 1.5, 0.38, 1.11);
+}
+
+.tooltip-arrow {
+  width: 16px;
+  height: 16px;
+  color: #333;
+}
+.tooltip-arrow::before {
+  content: "";
+  position: absolute;
+  border-color: transparent;
+  border-style: solid;
+}
+
+.tooltip-content {
+  position: relative;
+  padding: 5px 9px;
+  z-index: 1;
+}
+
 * {
   background: #222;
   color: #999;
   border: 0;
-  /*  margin: 0 */
   padding: 10px;
 }
 
-/* .container */
-/*  display: flex */
-/*  justify-content: center */
 .responses {
   text-align: center;
   margin: 0;

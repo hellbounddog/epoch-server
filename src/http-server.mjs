@@ -44,6 +44,14 @@ function routes() {
     });
   });
 
+  server.get('/tooltip', (_, res) => {
+    res.render('tooltip', {
+      header: 'Epoch Tooltip Test',
+      title: 'Hi',
+      message: 'Hello there!',
+    });
+  });
+
   server.post(
     '/login',
     passport.authenticate('local', {failureRedirect: '/login'}),

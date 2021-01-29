@@ -1,46 +1,24 @@
-html
+html(lang='en')
   head
+    meta(charset='utf-8')
+    meta(name='viewport' content='width=device-width initial-scale=1')
+    link(
+      rel='preconnect'
+      href='https://fonts.gstatic.com'
+    )
+    link(
+      href='https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:ital,wght@0,300;0,700;1,300&display=swap'
+      rel='stylesheet'
+    )
+    link(
+      href='/static/epoch.css'
+      rel='stylesheet'
+    )
     title= title
   body
     h1= header
     p= message
-    <a class="tooltip" href="#">Crown of Cowardly Kings</a>
-    <script src="https://unpkg.com/@popperjs/core@2"></script>
-    <script src="https://unpkg.com/tippy.js@6"></script>
-    script.
-      const item = {
-        name: 'Crown of Cowardly Kings',
-        rarity: 'rare',
-        modifiers: {
-          stamina: 'd6 + 3',
-          intellect: 'd6 + 12',
-          agility: 'd4 + 2',
-        },
-        equipEffects: [2, 15], // @todo implement
-        description: '"A crown should befit a king. For you cowardly lot, it shall be from thorns and blood!"',
-
-        tooltip: function() {
-          function modifiers() {
-            return (
-              '<ul>' +
-                this.modifiers.forEach(modifier => '<li>' + modifier + '</li>') +
-              '</ul>'
-            );
-          },
-
-          return (
-            `<h3>${this.name}</h3>` +
-            `<quote>${this.description}</quote>`
-          );
-        },
-      };
-
-      tippy.setDefaultProps({
-        allowHTML: true,
-        arrow: false,
-        duration: 0,
-      });
-
-      tippy('.tooltip', {
-          content: item.tooltip(),
-      });
+    a(class="tooltip" href="#")= 'Crown of Cowardly Kings'
+    script(src='https://unpkg.com/@popperjs/core@2')
+    script(src='https://unpkg.com/tippy.js@6')
+    script(src='/public/tooltip-test.js')

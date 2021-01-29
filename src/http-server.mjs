@@ -73,7 +73,6 @@ function routes() {
  * @todo document
  */
 function configure() {
-  console.log(path.join(process.cwd(), 'public'));
   if (configured === false) {
     server.use(
       session({

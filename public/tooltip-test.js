@@ -9,19 +9,35 @@ const item = {
   equipEffects: [2, 15], // @todo implement
   description:
     '"A crown should befit a king. For you cowardly lot, it shall be from thorns and blood!"',
-
   tooltip: function () {
-    function modifiers() {
-      return (
-        '<ul>' +
-        this.modifiers.forEach((modifier) => '<li>' + modifier + '</li>') +
-        '</ul>'
-      );
+    function displayName(name, rarity) {
+      return `<h3 style='color: #71CDFF;'>${name}</h3>`;
+    }
+
+    function displayModifiers(modifiers) {
+      let stats = '';
+
+      if (modifiers) {
+        stats += '<ul>';
+
+        if (modifiers.stamina) {
+          stats += '<li><strong>Stamina: </strong>' + modifiers.stamina + '</li>';
+        }
+
+        if (modifiers.intellect) {
+          stats +=
+            '<li><strong>Intellect: </strong>' + modifiers.intellect + '</li>';
+        }
+
+        stats += '</ul>';
+      }
+
+      return stats;
     }
 
     return (
-      `<h3 class='item-${this.rarity}'>${this.name}</h3>` +
-      modifiers() +
+      displayName(this.name, this.rarity) +
+      displayModifiers(this.modifiers) +
       `<quote>${this.description}</quote>`
     );
   },
@@ -31,6 +47,7 @@ tippy.setDefaultProps({
   allowHTML: true,
   arrow: false,
   duration: 0,
+  followCursor: true,
 });
 
 tippy('.tooltip', {

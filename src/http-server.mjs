@@ -1,13 +1,12 @@
 'use strict';
 
 //import * as bodyParser from 'body-parser';
+import * as path from 'path';
 import * as process from 'process';
 import * as http from 'http';
 import * as https from 'https';
 // @ts-expect-error
 import passport from 'passport';
-// @ts-expect-error
-import compression from 'compression';
 //import * as methodOverride from 'method-override';
 // @ts-expect-error
 import morgan from 'morgan';
@@ -74,13 +73,9 @@ function routes() {
  * @todo document
  */
 function configure() {
+  console.log(path.join(process.cwd(), 'public'));
   if (configured === false) {
     server.use(
-      compression({
-        filter: (_, res) =>
-          /json|text|javascript|css/.test(res.getHeader('Content-Type')),
-        level: 9,
-      }),
       session({
         // don't save session if unmodified
         resave: false,
@@ -88,7 +83,6 @@ function configure() {
         saveUninitialized: false,
         secret: process.env.EPOCH_AUTH_SECRET,
       }),
-      express.static('public'),
       nocache(),
       helmet.hidePoweredBy(),
       helmet.frameguard(),

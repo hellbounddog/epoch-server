@@ -4,6 +4,9 @@
 import * as process from 'process';
 import * as http from 'http';
 import * as https from 'https';
+
+import {generatePrimordial} from './generators/primordial.mjs';
+
 // @ts-expect-error
 import passport from 'passport';
 //import * as methodOverride from 'method-override';
@@ -39,6 +42,12 @@ function routes() {
       header: 'Epoch',
       title: 'Hey',
       message: 'Hello there!',
+    });
+  });
+
+  server.get('/primordial', (_, res) => {
+    res.render('primordial', {
+      message: JSON.stringify(generatePrimordial(), null, 2),
     });
   });
 

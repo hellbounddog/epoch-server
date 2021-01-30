@@ -1,7 +1,6 @@
 'use strict';
 
 //import * as bodyParser from 'body-parser';
-import * as path from 'path';
 import * as process from 'process';
 import * as http from 'http';
 import * as https from 'https';
@@ -124,4 +123,14 @@ function startHttpServer() {
   });
 }
 
-export {startHttpServer, startHttpsServer};
+function startWebServer() {
+  if (process.env.EPOCH_HTTP_SERVER) {
+    startHttpServer();
+  }
+
+  if (process.env.EPOCH_HTTPS_SERVER) {
+    startHttpsServer();
+  }
+}
+
+export {startHttpServer, startHttpsServer, startWebServer};

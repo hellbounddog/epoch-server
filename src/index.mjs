@@ -3,24 +3,12 @@
 const start = new Date();
 
 import {loadDatabases} from './data.mjs';
-import {startHttpServer, startHttpsServer} from './http-server.mjs';
-
-// vector tests
-// @todo convert vectors to modules
-//const Vec3 = require('./lib/vector3.js');
-//const Vec2 = require('./lib/vector2.js');
-
-//import * as Entity2D from './entity2d.mjs';
+import {startWebServer} from './http-server.mjs';
+import {pgConnect} from './pg.mjs';
 
 loadDatabases();
-
-if (process.env.EPOCH_HTTP_SERVER) {
-  startHttpServer();
-}
-
-if (process.env.EPOCH_HTTPS_SERVER) {
-  startHttpsServer();
-}
+pgConnect();
+startWebServer();
 
 process.on('exit', (code) => {
   const end = new Date();

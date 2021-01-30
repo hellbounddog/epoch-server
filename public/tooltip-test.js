@@ -71,21 +71,21 @@ const item = {
       /**
        * Armor and weapons gets bold, quest items and triggers get semi-bold.
        */
-      if (types.indexOf(10) || types.indexOf(30)) {
+      if (types.includes(10) || types.includes(30)) {
         type += "<h5 style='font-weight: 700;'>";
-      } else if (types.indexOf(2) || types.indexOf(3)) {
+      } else if (types.includes(2) || types.includes(3)) {
         type += "<h5 style='font-weight: 600;'>";
       } else {
         type += "<h5 style='font-weight: 500;'>";
       }
 
-      if (types.indexOf(0)) {
+      if (types.includes(0)) {
         type += 'Currency';
-      } else if (types.indexOf(2)) {
+      } else if (types.includes(2)) {
         type += 'Quest Item';
-      } else if (types.indexOf(3)) {
+      } else if (types.includes(3)) {
         type += 'Begins a quest';
-      } else if (types.indexOf(11)) {
+      } else if (types.includes(11)) {
         type += 'Head';
       }
 
@@ -94,7 +94,7 @@ const item = {
     }
 
     function displayUnique(types) {
-      if (types.indexOf(1)) {
+      if (types.includes(1)) {
         return '<h6>Unique</h6>';
       } else {
         return '';

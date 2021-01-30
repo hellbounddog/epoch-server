@@ -455,10 +455,6 @@ quote {
   opacity: 0;
 }
 
-.item-rare {
-  color: #C0FF33;
-}
-
 [data-tooltip-root] {
   max-width: calc(100vw - 10px);
 }

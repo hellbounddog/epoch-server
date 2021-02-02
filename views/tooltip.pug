@@ -2,23 +2,12 @@ html(lang='en')
   head
     meta(charset='utf-8')
     meta(name='viewport' content='width=device-width initial-scale=1')
-    link(
-      rel='preconnect'
-      href='https://fonts.gstatic.com'
-    )
-    link(
-      href='https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:ital,wght@0,300;0,700;1,300&display=swap'
-      rel='stylesheet'
-    )
-    link(
-      href='/static/epoch.css'
-      rel='stylesheet'
-    )
+    link(rel='preconnect' href='https://fonts.gstatic.com')
+    link(href='/static/epoch.css' rel='stylesheet')
     title= title
   body
-    h1= header
-    p= message
     a(class="tooltip" href="#")= 'Crown of Cowardly Kings'
+
     script(src='https://unpkg.com/@popperjs/core@2')
     script(src='https://unpkg.com/tippy.js@6')
     script(src='/public/tooltip-test.js')

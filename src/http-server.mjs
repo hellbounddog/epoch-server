@@ -53,9 +53,8 @@ function routes() {
 
   server.get('/tooltip', (_, res) => {
     res.render('tooltip', {
-      header: 'Epoch Tooltip Test',
-      title: 'Hi',
-      message: 'Hello there!',
+      header: 'Epoch Tooltip Test (future itemdb)',
+      title: 'I ❤️ Tooltips',
     });
   });
 

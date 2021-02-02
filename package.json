@@ -5,7 +5,7 @@
   "main": "src/index.mjs",
   "scripts": {
     "dev": "node --require dotenv/config src/index.mjs",
-    "serve": "",
+    "serve": "pm2 start src/index.mjs --name epoch-server --node-args '--require dotenv/config' --log  ./logs/server.log --time",
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "gts lint",
     "clean": "gts clean",

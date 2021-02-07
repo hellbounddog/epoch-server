@@ -1,16 +1,23 @@
 JS = $(shell find ./src -name "*.js")
 MJS = $(shell find ./src -name "*.mjs")
 DATA = $(shell find ./data -name "*.yaml")
+COMMIT = $(shell git rev-parse --short HEAD)
 
-all: sentient-types-data attributes-data creatures-data spells-data items-data player-data data tsc doc sass generate-linux-shell lint
+all: sentient-types-data attributes-data creatures-data spells-data items-data player-data data tsc doc sass generate-linux-shell
 
 .PHONY: generate-linux-shell
 generate-linux-shell:
 	@$(shell for i in `echo node_modules/*/bin`; do echo -n export PATH=\"\$PATH:`pwd`/$i | sed "s/bin\//bin/" && echo '";'; done)
 
-.PHONY: lint
-lint:
-	@write-good *.md --yes-eprime
+.PHONY: word-lint
+word-lint:
+	@mkdir -p logs/build
+	@write-good **/*.md > logs/build/word-lint-$(COMMIT).log
+
+.PHONY: word-lint-eprime
+word-lint-eprime:
+	@mkdir -p logs/build 
+	@write-good **/*.md --yes-eprime > logs/build/word-lint-eprime-$(COMMIT).log
 
 .PHONY: sass
 sass:

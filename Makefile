@@ -2,11 +2,15 @@ JS = $(shell find ./src -name "*.js")
 MJS = $(shell find ./src -name "*.mjs")
 DATA = $(shell find ./data -name "*.yaml")
 
-all: sentient-types-data attributes-data creatures-data spells-data items-data player-data data tsc doc sass generate-linux-shell
+all: sentient-types-data attributes-data creatures-data spells-data items-data player-data data tsc doc sass generate-linux-shell lint
 
 .PHONY: generate-linux-shell
 generate-linux-shell:
 	@$(shell for i in `echo node_modules/*/bin`; do echo -n export PATH=\"\$PATH:`pwd`/$i | sed "s/bin\//bin/" && echo '";'; done)
+
+.PHONY: lint
+lint:
+	@write-good *.md --yes-eprime
 
 .PHONY: sass
 sass:

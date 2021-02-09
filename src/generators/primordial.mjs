@@ -4,11 +4,6 @@ import {ArrayRandom} from '../lib/ArrayRandom.mjs';
 Array.prototype.random = ArrayRandom;
 
 import {DiceRoller} from 'rpg-dice-roller';
-const dice = new DiceRoller();
-const d1000 = dice.roll('10d100').total;
-const d100 = dice.roll('d100').total;
-const d6 = dice.roll('d6').total;
-
 import {v4 as uuid4} from 'uuid';
 
 /**
@@ -176,7 +171,7 @@ function generateName() {
  * @private
  * @todo document
  */
-function generateTitle() {
+function generateTitle(d1000, d100, d6) {
   let prefix = 'Missing';
   let title = 'Abomination';
 
@@ -293,10 +288,15 @@ function generateAlive() {
  * @todo document
  */
 function generatePrimordial() {
+  const dice = new DiceRoller();
+  const d1000 = dice.roll('10d100').total;
+  const d100 = dice.roll('d100').total;
+  const d6 = dice.roll('d6').total;
+
   const primordial = {
     id: uuid4(),
     name: generateName(),
-    title: generateTitle(),
+    title: generateTitle(d1000, d100, d6),
     alignment: generateAlignment(),
     alive: generateAlive(),
     d1000: d1000,
